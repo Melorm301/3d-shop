@@ -68,11 +68,11 @@
     document.querySelectorAll("[data-shop-handle]").forEach(function (el) { el.textContent = cfg.handle; });
     document.querySelectorAll("[data-shop-year]").forEach(function (el) { el.textContent = String(new Date().getFullYear()); });
 
-    document.querySelectorAll("[data-shop-mail]").forEach(function (el) {
-      el.setAttribute("href", "mailto:" + cfg.email);
+    document.querySelectorAll("[data-shop-telegram]").forEach(function (el) {
+      el.setAttribute("href", "https://t.me/" + encodeURIComponent(cfg.telegram.replace(/^@/, "")));
     });
-    document.querySelectorAll("[data-shop-mail-text]").forEach(function (el) {
-      el.textContent = cfg.email;
+    document.querySelectorAll("[data-shop-telegram-handle]").forEach(function (el) {
+      el.textContent = cfg.telegram;
     });
     document.querySelectorAll("[data-shop-instagram]").forEach(function (el) {
       el.setAttribute("href", cfg.instagram);
@@ -227,28 +227,6 @@
         });
       })(triggers[i]);
     }
-  }
-
-  /* --- Kontaktformular ---------------------------------------------------- */
-
-  function initContactForm() {
-    var form = document.querySelector("[data-contact-form]");
-    if (!form) return;
-
-    var status = document.querySelector("[data-form-status]");
-
-    form.addEventListener("submit", function (event) {
-      event.preventDefault();
-
-      /* Formularen er ikke koblet paa en backend endnu. Se kommentaren i
-         contact.html for de tre mulige veje (Pages Forms, Worker, mailtjeneste). */
-      if (status) {
-        status.hidden = false;
-        status.textContent =
-          "Tak. Formularen er ikke koblet på en udsendelseskanal endnu, så brug mail eller Instagram indtil videre.";
-      }
-      form.reset();
-    });
   }
 
   /* --- Produktside -------------------------------------------------------- */
@@ -561,8 +539,6 @@
     initProductPage();
     initCartPage();
     initAccordions();
-    initContactForm();
-
     initReveal();
   }
 

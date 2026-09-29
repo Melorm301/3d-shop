@@ -19,11 +19,11 @@ window.Shop = (function () {
   "use strict";
 
   /* --- Butiksidentitet ---------------------------------------------------
-     Ret navn, handle og mail her. Bruges i header, footer og på alle sider. */
+     Ret navn og kontaktlinks her. Bruges på alle sider. */
   var config = {
     name: "LAYERLAB",
     handle: "@layerlab",
-    email: "hej@layerlab.dk",
+    telegram: "@test",
     instagram: "https://instagram.com/",
     currency: "DKK"
   };
@@ -42,7 +42,7 @@ window.Shop = (function () {
         "images/products/recon-station-v2-01.webp",
         "images/products/recon-station-v2-02.webp"
       ],
-      featured: true
+      featured: false
     },
     {
       id: "recon-station-v1",
@@ -54,7 +54,7 @@ window.Shop = (function () {
       currency: "DKK",
       category: "Recon / Station",
       images: ["images/products/recon-station-v1-01.webp"],
-      featured: true
+      featured: false
     },
     {
       id: "insulin-ready-to-go-case",
@@ -69,7 +69,8 @@ window.Shop = (function () {
         "images/products/insulin-ready-to-go-01.webp",
         "images/products/insulin-ready-to-go-02.webp"
       ],
-      featured: true
+      featured: true,
+      featuredRank: 3
     },
     {
       id: "pen-holder-round-9",
@@ -86,7 +87,7 @@ window.Shop = (function () {
         "images/products/pen-holder-round-03.webp",
         "images/products/pen-holder-round-04.webp"
       ],
-      featured: true
+      featured: false
     },
     {
       id: "peptide-case-50-vials",
@@ -101,7 +102,7 @@ window.Shop = (function () {
         "images/products/peptide-case-50-vials-01.webp",
         "images/products/peptide-case-50-vials-02.webp"
       ],
-      featured: true
+      featured: false
     },
     {
       id: "pen-case",
@@ -117,7 +118,8 @@ window.Shop = (function () {
         "images/products/pen-case-02.webp",
         "images/products/pen-case-03.webp"
       ],
-      featured: false
+      featured: true,
+      featuredRank: 1
     },
     {
       id: "prep-station-large",
@@ -132,7 +134,7 @@ window.Shop = (function () {
         "images/products/prep-station-large-01.webp",
         "images/products/prep-station-large-02.webp"
       ],
-      featured: true
+      featured: false
     },
     {
       id: "64-vial-powcan-insert",
@@ -148,7 +150,8 @@ window.Shop = (function () {
         "images/products/64-vial-powcan-insert-02.webp",
         "images/products/64-vial-powcan-insert-03.webp"
       ],
-      featured: true
+      featured: true,
+      featuredRank: 2
     }
   ];
 
@@ -167,6 +170,9 @@ window.Shop = (function () {
 
   function featured(limit) {
     var list = products.filter(function (p) { return p.featured; });
+    list.sort(function (a, b) {
+      return (a.featuredRank || 0) - (b.featuredRank || 0);
+    });
     return typeof limit === "number" ? list.slice(0, limit) : list;
   }
 

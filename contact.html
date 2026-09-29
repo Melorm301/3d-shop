@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact · LAYERLAB</title>
-<meta name="description" content="Spørgsmål, ønsker til farver eller et custom print? Skriv en besked.">
+<title>Kontakt · LAYERLAB</title>
+<meta name="description" content="Kontakt LAYERLAB via Telegram om produkter, bestillinger og spørgsmål.">
 <meta name="theme-color" content="#07151E">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
@@ -24,7 +24,7 @@
       <a class="nav-link" href="index.html">Forside</a>
       <a class="nav-link" href="shop.html">Shop</a>
       <a class="nav-link" href="faq.html">FAQ</a>
-      <a class="nav-link" href="contact.html" aria-current="page">Contact</a>
+      <a class="nav-link" href="contact.html" aria-current="page">Kontakt</a>
     </nav>
 
     <div class="header-actions">
@@ -43,7 +43,7 @@
     <a href="index.html">Forside</a>
     <a href="shop.html">Shop</a>
     <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html">Kontakt</a>
     <a href="cart.html">Kurv <span class="cart-count" data-cart-count hidden>0</span></a>
   </div>
 </header>
@@ -55,16 +55,15 @@
       <nav class="breadcrumb" aria-label="Brødkrumme">
       <a href="index.html">Forside</a>
         <span class="sep" aria-hidden="true">/</span>
-        <span>Contact</span>
+        <span>Kontakt</span>
       </nav>
 
-      <p class="eyebrow">Contact</p>
+      <p class="eyebrow">Kontakt</p>
       <h1 class="display page-title">
-        Let&rsquo;s talk prints.
+        Skriv til os.
       </h1>
       <p class="lede mt-md">
-        Spørgsmål, ønsker til farver, eller noget du tror ville se bedre ud i plast?
-        Skriv en besked med så meget eller så lidt, du har.
+        Har du spørgsmål til et produkt eller en bestilling? Send os en besked på Telegram.
       </p>
     </div>
   </section>
@@ -73,62 +72,25 @@
     <div class="wrap contact-layout">
 
       <div>
-        <form data-contact-form>
-          <div class="field">
-            <label for="name">Name</label>
-            <input class="input" id="name" name="name" type="text" autocomplete="name" required>
-          </div>
-
-          <div class="field">
-            <label for="email">Email</label>
-            <input class="input" id="email" name="email" type="email" autocomplete="email" required>
-          </div>
-
-          <div class="field">
-            <label for="subject">Subject</label>
-            <input class="input" id="subject" name="subject" type="text">
-          </div>
-
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea class="textarea" id="message" name="message" required></textarea>
-          </div>
-
-          <button class="btn btn-primary" type="submit">Send message</button>
-
-          <div class="form-status" data-form-status role="status" hidden></div>
-        </form>
-
-        <!--
-          Formularen sender ikke data endnu. Den er lavet, så den kan kobles på
-          uden at ændre designet. Tre mulige veje:
-
-          1) Cloudflare Pages Forms
-             Tilføj name-attributter (findes allerede) og giv formen en action.
-             <form action="/kontakt" method="POST" data-static-form-name="contact">
-             Cloudflare modtager indsendelsen og kan videresende den.
-
-          2) Eget Worker-endpoint
-             fetch("/api/contact", { method: "POST", headers: { "Content-Type": "application/json" },
-             body: JSON.stringify(Object.fromEntries(new FormData(form))) })
-
-          3) Mailtjeneste via Worker (fx Resend eller Postmark)
-             Samme endpoint som ovenfor, men hvor Worker'en sender mailen videre.
-
-          Uanset vej: læg ikke mailadgang eller API-nøgler i denne fil.
-        -->
+        <h2 class="h3">Direkte på Telegram</h2>
+        <p class="body-sm mt-md">
+          Telegram åbner en samtale, hvor du kan skrive til os og sende billeder af det,
+          du spørger til.
+        </p>
+        <a class="btn btn-primary mt-md" href="https://t.me/test" data-shop-telegram target="_blank" rel="noopener noreferrer">
+          Skriv på Telegram <span class="mono telegram-handle" data-shop-telegram-handle>@test</span>
+        </a>
       </div>
 
       <aside>
-        <h2 class="h3">Andre veje</h2>
+        <h2 class="h3">Før du skriver</h2>
 
         <div class="contact-aside mt-md">
-          <a class="contact-line" href="#" data-shop-mail>
+          <a class="contact-line" href="https://t.me/test" data-shop-telegram target="_blank" rel="noopener noreferrer">
             <span class="h4">
-              <span data-icon="mail" data-icon-class="icon-sm"></span>
-              Email
+              Telegram
             </span>
-            <span class="mono" data-shop-mail-text></span>
+            <span class="mono telegram-handle" data-shop-telegram-handle>@test</span>
           </a>
 
           <a class="contact-line" href="https://instagram.com/" data-shop-instagram target="_blank" rel="noopener noreferrer">
@@ -141,13 +103,11 @@
         </div>
 
         <p class="body-sm mt-md">
-          Svar kommer som regel inden for et par dage. Har du et billede eller en fil,
-          så send den gerne med i en mail.
+          Skriv gerne produktnavn eller ordrenummer, så vi hurtigt kan hjælpe dig.
         </p>
 
         <p class="body-sm mt-md">
-          Kig også i <a class="link-quiet" href="faq.html">FAQ</a>, hvor de fleste
-          spørgsmål om materialer, produktion og fragt er besvaret.
+          Spørgsmål om fragt og levering? Se vores <a class="link-quiet" href="faq.html">FAQ</a>.
         </p>
       </aside>
 
@@ -174,16 +134,16 @@
         <ul>
           <li><a href="shop.html">Alle produkter</a></li>
           <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
         <h3>Info</h3>
         <ul>
-          <li><a href="faq.html#shipping">Shipping</a></li>
-          <li><a href="faq.html#returns">Returns</a></li>
-          <li><a href="faq.html#privacy">Privacy</a></li>
+          <li><a href="faq.html#shipping">Fragt</a></li>
+          <li><a href="faq.html#returns">Retur</a></li>
+          <li><a href="faq.html#privacy">Privatliv</a></li>
         </ul>
       </div>
 
@@ -191,7 +151,7 @@
         <h3>Social</h3>
         <ul>
           <li><a href="https://instagram.com/" data-shop-instagram target="_blank" rel="noopener noreferrer">Instagram <span class="mono" data-shop-handle>@layerlab</span></a></li>
-          <li><a href="#" data-shop-mail>E-mail</a></li>
+          <li><a href="https://t.me/test" data-shop-telegram target="_blank" rel="noopener noreferrer">Telegram <span class="mono telegram-handle" data-shop-telegram-handle>@test</span></a></li>
         </ul>
       </div>
     </div>
