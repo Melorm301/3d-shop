@@ -124,8 +124,11 @@
 
   /* --- Scroll-reveal ------------------------------------------------------ */
 
-  function initReveal() {
-    var nodes = document.querySelectorAll("[data-reveal]");
+  var revealObserver = null;
+
+  function initReveal(root) {
+    var scope = root || document;
+    var nodes = scope.querySelectorAll("[data-reveal]");
     if (!nodes.length) return;
 
     if (!("IntersectionObserver" in window) || reduceMotion()) {
@@ -133,16 +136,16 @@
       return;
     }
 
-    var observer = new IntersectionObserver(function (entries) {
+    if (!revealObserver) revealObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           entry.target.classList.add("is-in");
-          observer.unobserve(entry.target);
+          revealObserver.unobserve(entry.target);
         }
       });
     }, { rootMargin: "0px 0px -8% 0px", threshold: 0.06 });
 
-    nodes.forEach(function (el) { observer.observe(el); });
+    nodes.forEach(function (el) { revealObserver.observe(el); });
   }
 
   /* --- Produktkort -------------------------------------------------------- */
@@ -162,6 +165,7 @@
             '<span class="pcard-name">' + esc(product.name) + "</span>" +
             '<span class="pcard-price">' + esc(price) + "</span>" +
           "</span>" +
+          '<span class="category-tag">' + esc(product.category) + "</span>" +
           '<span class="pcard-desc body-sm">' + esc(product.tagline) + "</span>" +
         "</span>" +
       "</a>"
@@ -170,16 +174,55 @@
 
   function renderProductGrids() {
     var mounts = document.querySelectorAll("[data-products]");
-    for (var i = 0; i < mounts.length; i++) {
-      var mount = mounts[i];
+    var categoryFilter = document.querySelector("[data-category-filter]");
+    var countNode = document.querySelector("[data-product-count]");
+
+    if (categoryFilter) {
+      var categories = {};
+      var allProducts = window.Shop.all();
+      allProducts.forEach(function (product) {
+        if (product.category) categories[product.category] = true;
+      });
+      Object.keys(categories).sort().forEach(function (category) {
+        categoryFilter.insertAdjacentHTML("beforeend", '<option value="' + esc(category) + '">' + esc(category) + "</option>");
+      });
+    }
+
+    function renderMount(mount) {
       var limit = parseInt(mount.getAttribute("data-limit"), 10);
       var list = mount.getAttribute("data-product-source") === "all"
         ? window.Shop.all()
         : (isNaN(limit) ? window.Shop.featured() : window.Shop.featured(limit));
+      var category = mount.getAttribute("data-product-source") === "all" && categoryFilter
+        ? categoryFilter.value
+        : "all";
 
-      mount.innerHTML = list.map(function (product, index) {
-        return cardHTML(product, LAYOUTS[index % LAYOUTS.length]);
-      }).join("");
+      if (category !== "all") {
+        list = list.filter(function (product) { return product.category === category; });
+      }
+      if (countNode && mount.getAttribute("data-product-source") === "all") {
+        countNode.textContent = list.length + (list.length === 1 ? " produkt" : " produkter");
+      }
+      if (revealObserver) {
+        mount.querySelectorAll("[data-reveal]").forEach(function (el) { revealObserver.unobserve(el); });
+      }
+      mount.innerHTML = list.length
+        ? list.map(function (product, index) {
+            return cardHTML(product, LAYOUTS[index % LAYOUTS.length]);
+          }).join("")
+        : '<p class="catalog-empty">Ingen produkter i denne kategori endnu.</p>';
+    }
+
+    for (var i = 0; i < mounts.length; i++) {
+      renderMount(mounts[i]);
+    }
+    if (categoryFilter) {
+      categoryFilter.addEventListener("change", function () {
+        for (var j = 0; j < mounts.length; j++) {
+          renderMount(mounts[j]);
+          initReveal(mounts[j]);
+        }
+      });
     }
   }
 
@@ -239,6 +282,8 @@
     /* Tekst */
     root.querySelector("[data-p-name]").textContent = product.name;
     root.querySelector("[data-p-description]").textContent = product.description;
+    var categoryNode = root.querySelector("[data-p-category]");
+    if (categoryNode) categoryNode.textContent = product.category || "";
 
     var crumb = root.querySelector("[data-p-crumb]");
     if (crumb) crumb.textContent = product.name;

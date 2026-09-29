@@ -31,11 +31,11 @@ window.Shop = (function () {
       id: "recon-station-v2",
       sku: "SH-RECON-V2",
       name: "Recon Station V2",
-      tagline: "Kompakt station til vials og tilbehør ved rekonstruktion.",
-      description: "Kompakt station, der holder peptide-vials og tilbehør samlet under rekonstruktion, herunder når BAC-vand tilsættes. Stationen er en organisatorisk holder og ikke medicinsk udstyr.",
+      tagline: "Kompakt station til vials og tilbehør ved rekonstituering.",
+      description: "Kompakt station, der holder peptide-vials og tilbehør samlet ved rekonstituering af lyofiliseret peptidpulver. BAC-vand kan indgå, når det passer til det konkrete præparats anvisninger. Stationen er en organisatorisk holder og ikke medicinsk udstyr.",
       price: 12900,
       currency: "DKK",
-      category: "Recon / Station",
+      category: "Peptides",
       images: [
         "images/products/recon-station-v2-01.webp",
         "images/products/recon-station-v2-02.webp"
@@ -46,11 +46,11 @@ window.Shop = (function () {
       id: "recon-station-v1",
       sku: "SH-RECON-V1",
       name: "Recon Station V1",
-      tagline: "Cylindrisk station til vials og tilbehør ved rekonstruktion.",
-      description: "Cylindrisk station, der holder peptide-vials og tilbehør samlet under rekonstruktion, herunder når BAC-vand tilsættes. Stationen er en organisatorisk holder og ikke medicinsk udstyr.",
+      tagline: "Cylindrisk station til vials og tilbehør ved rekonstituering.",
+      description: "Cylindrisk station, der holder peptide-vials og tilbehør samlet ved rekonstituering af lyofiliseret peptidpulver. BAC-vand kan indgå, når det passer til det konkrete præparats anvisninger. Stationen er en organisatorisk holder og ikke medicinsk udstyr.",
       price: 15900,
       currency: "DKK",
-      category: "Recon / Station",
+      category: "Peptides",
       images: ["images/products/recon-station-v1-01.webp"],
       featured: false
     },
@@ -62,7 +62,7 @@ window.Shop = (function () {
       description: "Kompakt rejsecase med opdelt opbevaring.",
       price: 17900,
       currency: "DKK",
-      category: "Cases",
+      category: "Peptides",
       images: [
         "images/products/insulin-ready-to-go-01.webp",
         "images/products/insulin-ready-to-go-02.webp"
@@ -78,7 +78,7 @@ window.Shop = (function () {
       description: "Rund holder med plads til op til 9 pens.",
       price: 19900,
       currency: "DKK",
-      category: "Pen Holders",
+      category: "Peptides",
       images: [
         "images/products/pen-holder-round-01.webp",
         "images/products/pen-holder-round-02.webp",
@@ -95,7 +95,7 @@ window.Shop = (function () {
       description: "3D-printet case med plads til op til 50 vials.",
       price: 24900,
       currency: "DKK",
-      category: "Cases",
+      category: "Peptides",
       images: [
         "images/products/peptide-case-50-vials-01.webp",
         "images/products/peptide-case-50-vials-02.webp"
@@ -110,7 +110,7 @@ window.Shop = (function () {
       description: "Hardcase med organiseret plads til pens og tilbehør.",
       price: 29900,
       currency: "DKK",
-      category: "Cases / Pen Holders",
+      category: "Peptides",
       images: [
         "images/products/pen-case-01.webp",
         "images/products/pen-case-02.webp",
@@ -127,7 +127,7 @@ window.Shop = (function () {
       description: "Stor prep station med dispenser og flere opbevaringsrum.",
       price: 29900,
       currency: "DKK",
-      category: "Recon / Station",
+      category: "Peptides",
       images: [
         "images/products/prep-station-large-01.webp",
         "images/products/prep-station-large-02.webp"
@@ -142,7 +142,7 @@ window.Shop = (function () {
       description: "64-vials insert til Powcan-beholder. Prisen inkluderer både indsatsen og Powcan-beholderen.",
       price: 40000,
       currency: "DKK",
-      category: "Vial Inserts",
+      category: "Peptides",
       images: [
         "images/products/64-vial-powcan-insert-01.webp",
         "images/products/64-vial-powcan-insert-02.webp",
