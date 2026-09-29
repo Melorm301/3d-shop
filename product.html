@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Produkt · LAYERLAB</title>
-<meta name="description" content="Se produktet, vælg farve og størrelse, og læg det i kurven.">
+<meta name="description" content="Se produktdetaljer og priser, og kontakt LAYERLAB via Telegram.">
 <meta name="theme-color" content="#07151E">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
@@ -22,29 +22,23 @@
 
     <nav class="nav" aria-label="Hovedmenu">
       <a class="nav-link" href="index.html">Forside</a>
-      <a class="nav-link" href="shop.html">Shop</a>
+      <a class="nav-link" href="shop.html">Katalog</a>
       <a class="nav-link" href="faq.html">FAQ</a>
-      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-link" href="contact.html">Kontakt</a>
     </nav>
 
     <div class="header-actions">
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu">
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
       </button>
-      <a class="cart-link" href="cart.html" aria-label="Kurv">
-        <span data-icon="bag"></span>
-        <span class="cart-label">Kurv</span>
-        <span class="cart-count" data-cart-count hidden>0</span>
-      </a>
     </div>
   </div>
 
   <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
     <a href="index.html">Forside</a>
-    <a href="shop.html">Shop</a>
+    <a href="shop.html">Katalog</a>
     <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-    <a href="cart.html">Kurv <span class="cart-count" data-cart-count hidden>0</span></a>
+    <a href="contact.html">Kontakt</a>
   </div>
 </header>
 
@@ -53,7 +47,7 @@
   <nav class="wrap breadcrumb" aria-label="Brødkrumme">
     <a href="index.html">Forside</a>
     <span class="sep" aria-hidden="true">/</span>
-    <a href="shop.html">Shop</a>
+    <a href="shop.html">Katalog</a>
     <span class="sep" aria-hidden="true">/</span>
     <span data-p-crumb>Produkt</span>
   </nav>
@@ -65,7 +59,7 @@
       <!-- ---------- Galleri ---------- -->
       <div class="gallery">
         <div class="gallery-main">
-          <img data-gallery-main src="images/products/halloween-cat-01.jpg" width="1448" height="1086" alt="">
+          <img data-gallery-main src="images/products/64-vial-powcan-insert-01.webp" width="1122" height="1402" alt="">
           <button class="gallery-zoom" type="button" data-lightbox-open>
             <span data-icon="maximize" data-icon-class="icon-sm"></span>
             Se større
@@ -74,33 +68,28 @@
         <div class="gallery-thumbs" data-gallery-thumbs></div>
       </div>
 
-      <!-- ---------- Info og køb ---------- -->
+      <!-- ---------- Produktinformation ---------- -->
       <div>
         <h1 class="h1 product-name" data-p-name>Produkt</h1>
         <p class="product-price" data-p-price>–</p>
         <p class="lede product-lead" data-p-description></p>
 
         <div class="field-group" data-p-colors-group>
-          <p class="field-label">Color</p>
+          <p class="field-label">Farve</p>
           <div class="chipset" data-p-colors></div>
         </div>
 
         <div class="field-group" data-p-sizes-group>
-          <p class="field-label">Size</p>
+          <p class="field-label">Størrelse</p>
           <div class="chipset" data-p-sizes></div>
         </div>
 
         <div class="field-group">
-          <p class="field-label">Quantity</p>
-          <div class="buy-row">
-            <div class="qty">
-              <button type="button" data-qty-minus aria-label="Færre" data-icon="minus" data-icon-class="icon-sm"></button>
-              <span class="qty-value" data-p-qty>1</span>
-              <button type="button" data-qty-plus aria-label="Flere" data-icon="plus" data-icon-class="icon-sm"></button>
-            </div>
-            <button class="btn btn-primary" type="button" data-add-to-cart>Læg i kurv</button>
-          </div>
-          <div class="notice" data-p-notice hidden></div>
+          <p class="field-label">Spørgsmål og bestilling</p>
+          <p class="body-sm">Bestilling, fragt og detaljer aftales direkte via Telegram.</p>
+          <a class="btn btn-primary mt-md" href="https://t.me/test" data-shop-telegram target="_blank" rel="noopener noreferrer">
+            Bestil eller spørg på Telegram <span class="mono telegram-handle" data-shop-telegram-handle>@test</span>
+          </a>
         </div>
       </div>
     </section>
@@ -109,10 +98,10 @@
     <section class="section-tight">
       <div class="section-head">
         <div>
-          <p class="eyebrow">Flere ting</p>
-          <h2 class="h2" style="font-size:2rem">You might also like</h2>
+          <p class="eyebrow">Flere produkter</p>
+          <h2 class="h2" style="font-size:2rem">Se også</h2>
         </div>
-        <p class="mono"><a class="link-quiet" href="shop.html">Se alle produkter</a></p>
+        <p class="mono"><a class="link-quiet" href="shop.html">Hele kataloget</a></p>
       </div>
       <div class="related-grid" data-related></div>
     </section>
@@ -156,27 +145,17 @@
       </div>
 
       <div class="footer-col">
-        <h3>Shop</h3>
+        <h3>Katalog</h3>
         <ul>
-          <li><a href="shop.html">Alle produkter</a></li>
+          <li><a href="shop.html">Produktkatalog</a></li>
           <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
         </ul>
       </div>
 
       <div class="footer-col">
-        <h3>Info</h3>
+        <h3>Kontakt</h3>
         <ul>
-          <li><a href="faq.html#shipping">Shipping</a></li>
-          <li><a href="faq.html#returns">Returns</a></li>
-          <li><a href="faq.html#privacy">Privacy</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Social</h3>
-        <ul>
-          <li><a href="https://instagram.com/" data-shop-instagram target="_blank" rel="noopener noreferrer">Instagram <span class="mono" data-shop-handle>@layerlab</span></a></li>
           <li><a href="https://t.me/test" data-shop-telegram target="_blank" rel="noopener noreferrer">Telegram <span class="mono telegram-handle" data-shop-telegram-handle>@test</span></a></li>
         </ul>
       </div>
@@ -190,7 +169,6 @@
 </footer>
 
 <script src="js/products.js"></script>
-<script src="js/cart.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

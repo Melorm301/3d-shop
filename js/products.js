@@ -22,9 +22,7 @@ window.Shop = (function () {
      Ret navn og kontaktlinks her. Bruges på alle sider. */
   var config = {
     name: "LAYERLAB",
-    handle: "@layerlab",
     telegram: "@test",
-    instagram: "https://instagram.com/",
     currency: "DKK"
   };
 
@@ -33,8 +31,8 @@ window.Shop = (function () {
       id: "recon-station-v2",
       sku: "SH-RECON-V2",
       name: "Recon Station V2",
-      tagline: "Kompakt station til organiseret opbevaring.",
-      description: "Kompakt 3D-printet station og holder til organiseret opbevaring.",
+      tagline: "Kompakt station til vials og tilbehør ved rekonstruktion.",
+      description: "Kompakt station, der holder peptide-vials og tilbehør samlet under rekonstruktion, herunder når BAC-vand tilsættes. Stationen er en organisatorisk holder og ikke medicinsk udstyr.",
       price: 12900,
       currency: "DKK",
       category: "Recon / Station",
@@ -48,8 +46,8 @@ window.Shop = (function () {
       id: "recon-station-v1",
       sku: "SH-RECON-V1",
       name: "Recon Station V1",
-      tagline: "Cylindrisk station til organiseret opbevaring.",
-      description: "Cylindrisk 3D-printet station til organiseret opbevaring.",
+      tagline: "Cylindrisk station til vials og tilbehør ved rekonstruktion.",
+      description: "Cylindrisk station, der holder peptide-vials og tilbehør samlet under rekonstruktion, herunder når BAC-vand tilsættes. Stationen er en organisatorisk holder og ikke medicinsk udstyr.",
       price: 15900,
       currency: "DKK",
       category: "Recon / Station",

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kurv · LAYERLAB</title>
-<meta name="description" content="Din kurv hos LAYERLAB. Ret antal, fjern varer og se subtotal og total.">
+<title>Bestilling · LAYERLAB</title>
+<meta name="description" content="Bestilling og spørgsmål om produkter foregår direkte via Telegram.">
 <meta name="theme-color" content="#07151E">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
@@ -19,80 +19,40 @@
       <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
       <span class="brand-name" data-shop-name>LAYERLAB</span>
     </a>
-
     <nav class="nav" aria-label="Hovedmenu">
       <a class="nav-link" href="index.html">Forside</a>
-      <a class="nav-link" href="shop.html">Shop</a>
+      <a class="nav-link" href="shop.html">Katalog</a>
       <a class="nav-link" href="faq.html">FAQ</a>
-      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-link" href="contact.html">Kontakt</a>
     </nav>
-
     <div class="header-actions">
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu">
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
       </button>
-      <a class="cart-link" href="cart.html" aria-label="Kurv">
-        <span data-icon="bag"></span>
-        <span class="cart-label">Kurv</span>
-        <span class="cart-count" data-cart-count hidden>0</span>
-      </a>
     </div>
   </div>
-
   <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
     <a href="index.html">Forside</a>
-    <a href="shop.html">Shop</a>
+    <a href="shop.html">Katalog</a>
     <a href="faq.html">FAQ</a>
-    <a href="contact.html">Contact</a>
-    <a href="cart.html">Kurv <span class="cart-count" data-cart-count hidden>0</span></a>
+    <a href="contact.html">Kontakt</a>
   </div>
 </header>
 
 <main id="main">
-  <div class="wrap">
-
-    <nav class="breadcrumb" aria-label="Brødkrumme">
-      <a href="index.html">Forside</a>
-      <span class="sep" aria-hidden="true">/</span>
-      <span>Cart</span>
-    </nav>
-
-    <h1 class="h1" style="margin-bottom:clamp(1.5rem,3vw,2.5rem)">Your cart</h1>
-
-    <div data-cart-page style="padding-bottom:var(--space-section)">
-
-      <!-- Tom kurv -->
-      <div class="empty-cart" data-cart-empty hidden>
-        <h2 class="h2">Your cart is currently very light.</h2>
-        <p class="lede">
-          Der er ikke lagt noget i kurven endnu. Tag et kig på det, der kom af pladen sidst.
-        </p>
-        <a class="btn btn-accent" href="shop.html">Se shoppen</a>
+  <section class="catalog-intro">
+    <div class="wrap">
+      <p class="eyebrow">LAYERLAB · Bestilling</p>
+      <h1 class="display catalog-title">Bestil via Telegram.</h1>
+      <div class="catalog-intro-bottom">
+        <p class="lede">Vi tager imod spørgsmål og bestillinger direkte på Telegram. Skriv produktnavn og ønsket antal, så aftaler vi resten.</p>
+        <span class="catalog-count">Direkte kontakt</span>
       </div>
-
-      <!-- Kurv med varer -->
-      <div data-cart-filled hidden>
-        <div class="cart-layout">
-          <div>
-            <div class="cart-list" data-cart-list></div>
-            <p class="body-sm mt-md">
-              Kurven ligger kun i denne browser, indtil du går videre til betaling.
-            </p>
-          </div>
-
-          <aside class="cart-summary" data-cart-summary aria-label="Opsummering"></aside>
-        </div>
-      </div>
-
-      <div class="notice" data-cart-status hidden role="status"></div>
-
-      <noscript>
-        <div class="notice">
-          Kurven kræver JavaScript, fordi den gemmer sig lokalt i browseren.
-        </div>
-      </noscript>
+      <a class="btn btn-primary mt-md" href="https://t.me/test" data-shop-telegram target="_blank" rel="noopener noreferrer">
+        Skriv på Telegram <span class="mono telegram-handle" data-shop-telegram-handle>@test</span>
+      </a>
     </div>
-  </div>
+  </section>
 </main>
 
 <footer class="site-footer">
@@ -103,38 +63,23 @@
           <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
           <span class="brand-name" data-shop-name>LAYERLAB</span>
         </a>
-        <p class="footer-about">
-          Produkter til peptides og andre formål, udvalgt med fokus på kvalitet.
-        </p>
+        <p class="footer-about">Produktkatalog med produkter til peptides og andre formål.</p>
       </div>
-
       <div class="footer-col">
-        <h3>Shop</h3>
+        <h3>Katalog</h3>
         <ul>
-          <li><a href="shop.html">Alle produkter</a></li>
+          <li><a href="shop.html">Produktkatalog</a></li>
           <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
         </ul>
       </div>
-
       <div class="footer-col">
-        <h3>Info</h3>
+        <h3>Kontakt</h3>
         <ul>
-          <li><a href="faq.html#shipping">Shipping</a></li>
-          <li><a href="faq.html#returns">Returns</a></li>
-          <li><a href="faq.html#privacy">Privacy</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Social</h3>
-        <ul>
-          <li><a href="https://instagram.com/" data-shop-instagram target="_blank" rel="noopener noreferrer">Instagram <span class="mono" data-shop-handle>@layerlab</span></a></li>
           <li><a href="https://t.me/test" data-shop-telegram target="_blank" rel="noopener noreferrer">Telegram <span class="mono telegram-handle" data-shop-telegram-handle>@test</span></a></li>
         </ul>
       </div>
     </div>
-
     <div class="footer-bottom">
       <span>© <span data-shop-year>2026</span> <span data-shop-name>LAYERLAB</span></span>
       <span>Kvalitet · Funktion · Præcision</span>
@@ -143,7 +88,6 @@
 </footer>
 
 <script src="js/products.js"></script>
-<script src="js/cart.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

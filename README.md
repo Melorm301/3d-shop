@@ -1,4 +1,4 @@
-# LAYERLAB - statisk 3D-print shop
+# LAYERLAB - statisk produktkatalog
 
 Et lille, sammenhaengende website til en hobbybaseret 3D-printshop. Ren HTML, CSS og
 vanilla JavaScript. Ingen frameworks, ingen build-trin, ingen afhaengigheder.
@@ -10,18 +10,17 @@ eller Cloudflare Pages.
 
 ```
 /
-├── index.html        Forside: hero, shop, maker-sektion, printlog
-├── product.html      Produktside: galleri, varianter, kurv, detaljer
-├── cart.html         Kurv: varer, antal, opsummering, betaling
+├── index.html        Forside med hero og udvalgte produkter
+├── product.html      Produktside: galleri, pris og Telegram-kontakt
+├── cart.html         Bagudkompatibel bestillingsside med Telegram-link
 ├── faq.html          FAQ med kategorier og accordion
-├── contact.html      Kontaktformular og alternative kontaktveje
+├── contact.html      Kontakt via Telegram
 │
 ├── css/
 │   └── style.css     Alt design: tokens, komponenter, responsive regler
 │
 ├── js/
 │   ├── products.js   Butiksidentitet og alle produktdata
-│   ├── cart.js       Kurv med localStorage og checkout-forberedelse
 │   └── main.js       Faelles adfaerd og side-specifik logik
 │
 ├── images/
@@ -37,8 +36,8 @@ Indholdet kommer fra `js/products.js`.
 
 ## Ret butikken til
 
-**Navn, Instagram og mail** staar ét sted: `config` i `js/products.js`. Det bliver
-indsat i header, footer og paa kontakt- og produktside.
+**Navn og Telegram-brugernavn** staar ét sted: `config` i `js/products.js`.
+Telegram bruges til alle produktspørgsmål og bestillinger.
 
 **Farver og typografi** styres fra `:root` i `css/style.css`.
 
@@ -46,7 +45,7 @@ indsat i header, footer og paa kontakt- og produktside.
 
 ```js
 {
-  id: "stl-navn",                 // bruges i url og i kurven
+  id: "stl-navn",                 // bruges i produktets url
   name: "Produktnavn",
   tagline: "Kort linje, vises under navnet i shoppen",
   description: "Kort beskrivelse i 2-3 saetninger til produktsiden",
@@ -71,31 +70,11 @@ lavet til at kunne skiftes ud én til én. Brug samme filnavn, eller ret stierne
 `js/products.js`. Optimalt: 1448 x 1086 px (4:3) til produkter og 1672 x 941 px
 til hero-billedet.
 
-## Kurv
+## Bestilling og kontakt
 
-Kurven ligger i `localStorage` under noeglen `layerlab.cart.v1`. Den kan tilfoeje,
-fjerne, aendre antal, beregne subtotal og vise antal varer i headeren.
-
-**Vigtigt om priser:** priserne i browseren bruges kun til visning. Ved rigtig
-betaling skal serveren selv slaa prisen op ud fra `id`, farve, stoerrelse og antal.
-Det er forberedt i `checkoutPayload()` og `handleCheckout()` i `js/cart.js`.
-
-## Saadan kobles Stripe paa senere
-
-1. Opret en Cloudflare Worker paa ruten `/api/create-checkout-session`.
-2. Send `{ items: [{ id, color, size, qty }] }` som i `checkoutPayload()`.
-3. Slaa de rigtige priser op i Worker'ens egen produktliste (ikke fra klienten).
-4. Opret en Stripe Checkout Session med `line_items` og returnér `{ url }`.
-5. Klienten videresender allerede til `data.url`, naar svaret kommer.
-
-Betaling kan ikke fuldfoeres, foer dette endpoint findes. Indtil da viser kurven en
-besked om, at betalingen ikke er koblet paa.
-
-## Kontaktformular
-
-Formularen i `contact.html` sender ingen data endnu. Der ligger en kommentar i
-filen med tre mulige veje: Cloudflare Pages Forms, eget Worker-endpoint eller en
-mailtjeneste via Worker. Laeg aldrig noegler eller mailadgang i frontend-filerne.
+Siden er et katalog uden onlinekurv eller checkout. Produktspørgsmål og
+bestillinger foregår direkte via Telegram. Skift `telegram` i `config` i
+`js/products.js`, når det endelige Telegram-brugernavn er klar.
 
 ## Tilgaengelighed og detaljer
 
