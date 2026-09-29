@@ -261,8 +261,8 @@
     if (!product) return;
 
     var state = {
-      color: (product.colors[0] || {}).name || "",
-      size: (product.sizes[0] || {}).name || "",
+      color: ((product.colors || [])[0] || {}).name || "",
+      size: ((product.sizes || [])[0] || {}).name || "",
       qty: 1,
       imageIndex: 0
     };

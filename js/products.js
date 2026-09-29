@@ -30,149 +30,123 @@ window.Shop = (function () {
 
   var products = [
     {
-      id: "halloween-cat",
-      name: "Halloween Cat",
-      tagline: "Siddende kat i mat sort.",
-      description:
-        "En rolig, siddende kat med lukkede øjne og fine knurhår. Formen er holdt " +
-        "enkel, så den passer lige så godt på skrivebordet som i vindueskarmen.",
-      price: 14900,
+      id: "recon-station-v2",
+      sku: "SH-RECON-V2",
+      name: "Recon Station V2",
+      tagline: "Kompakt station til organiseret opbevaring.",
+      description: "Kompakt 3D-printet station og holder til organiseret opbevaring.",
+      price: 12900,
       currency: "DKK",
-      colors: [
-        { name: "Black", hex: "#1A1917" },
-        { name: "Bone White", hex: "#EFE9DC" },
-        { name: "Burnt Orange", hex: "#C9500F" }
-      ],
-      sizes: [{ name: "One size", price: 14900 }],
+      category: "Recon / Station",
       images: [
-        "images/products/halloween-cat-01.jpg",
-        "images/products/halloween-cat-02.jpg",
-        "images/products/halloween-cat-03.jpg"
+        "images/products/recon-station-v2-01.webp",
+        "images/products/recon-station-v2-02.webp"
       ],
-      featured: true,
-      latest: { state: "ready", note: "Lige lagt op" }
+      featured: true
     },
-
     {
-      id: "fjord-wave-vase",
-      name: "Fjord Wave Vase",
-      tagline: "Vase med bløde bølger.",
-      description:
-        "Vasen har bløde, lodrette bølger, der giver liv i overfladen. Den kan " +
-        "bruges til tørre blomster eller stå alene som dekoration.",
-      price: 24900,
+      id: "recon-station-v1",
+      sku: "SH-RECON-V1",
+      name: "Recon Station V1",
+      tagline: "Cylindrisk station til organiseret opbevaring.",
+      description: "Cylindrisk 3D-printet station til organiseret opbevaring.",
+      price: 15900,
       currency: "DKK",
-      colors: [
-        { name: "Bone White", hex: "#EFE9DC" },
-        { name: "Terracotta", hex: "#B5643F" },
-        { name: "Charcoal", hex: "#3A3936" }
-      ],
-      sizes: [
-        { name: "Small", price: 24900 },
-        { name: "Medium", price: 27900 },
-        { name: "Large", price: 34900 }
-      ],
-      images: [
-        "images/products/fjord-wave-vase-01.jpg",
-        "images/products/fjord-wave-vase-02.jpg"
-      ],
-      featured: true,
-      latest: { state: "ready", note: "Sidste tre tilbage" },
-      priceFrom: true
+      category: "Recon / Station",
+      images: ["images/products/recon-station-v1-01.webp"],
+      featured: true
     },
-
     {
-      id: "ghost-lady",
-      name: "Ghost Lady",
-      tagline: "Lille spøgelse med orange kant.",
-      description:
-        "En lille, venlig figur med en malet kant for neden. Den er fin som " +
-        "enkeltstående pynt eller sammen med resten af efterårets ting.",
+      id: "insulin-ready-to-go-case",
+      sku: "SH-CASE-INSULIN",
+      name: "Insulin Ready-to-Go Case",
+      tagline: "Kompakt rejsecase med opdelt opbevaring.",
+      description: "Kompakt rejsecase med opdelt opbevaring.",
+      price: 17900,
+      currency: "DKK",
+      category: "Cases",
+      images: [
+        "images/products/insulin-ready-to-go-01.webp",
+        "images/products/insulin-ready-to-go-02.webp"
+      ],
+      featured: true
+    },
+    {
+      id: "pen-holder-round-9",
+      sku: "SH-PEN-009",
+      name: "9 Pen Holder Round",
+      tagline: "Rund holder med plads til op til 9 pens.",
+      description: "Rund holder med plads til op til 9 pens.",
       price: 19900,
       currency: "DKK",
-      colors: [
-        { name: "White", hex: "#EFE9DC" },
-        { name: "Burnt Orange", hex: "#C9500F" }
-      ],
-      sizes: [{ name: "One size", price: 19900 }],
+      category: "Pen Holders",
       images: [
-        "images/products/ghost-lady-01.jpg",
-        "images/products/ghost-lady-02.jpg"
+        "images/products/pen-holder-round-01.webp",
+        "images/products/pen-holder-round-02.webp",
+        "images/products/pen-holder-round-03.webp",
+        "images/products/pen-holder-round-04.webp"
       ],
-      featured: true,
-      latest: { state: "ready", note: "Klar i denne uge" }
+      featured: true
     },
-
     {
-      id: "desk-organizer",
-      name: "Minimal Desk Organizer",
-      tagline: "Skellet bakke til skrivebordet.",
-      description:
-        "To rum til penne, clips og småting, så skrivebordet holder sig nogenlunde " +
-        "ryddeligt. Den er nem at flytte rundt og nem at tørre af.",
-      price: 18900,
-      currency: "DKK",
-      colors: [
-        { name: "Charcoal", hex: "#3A3936" },
-        { name: "Bone White", hex: "#EFE9DC" },
-        { name: "Burnt Orange", hex: "#C9500F" }
-      ],
-      sizes: [
-        { name: "Standard", price: 18900 },
-        { name: "Wide", price: 22900 }
-      ],
-      images: [
-        "images/products/desk-organizer-01.jpg",
-        "images/products/desk-organizer-02.jpg"
-      ],
-      featured: true,
-      latest: { state: "soon", note: "Kommer snart" },
-      priceFrom: true
-    },
-
-    {
-      id: "hex-planter",
-      name: "Hex Planter",
-      tagline: "Facetteret potte.",
-      description:
-        "Seks flader og en let skrå kant gør potten enkel at se på. Den kan bruges " +
-        "til en lille plante eller stå tom som dekoration.",
-      price: 21900,
-      currency: "DKK",
-      colors: [
-        { name: "Terracotta", hex: "#B5643F" },
-        { name: "Sand", hex: "#D6C3A1" },
-        { name: "Charcoal", hex: "#3A3936" }
-      ],
-      sizes: [
-        { name: "Small", price: 21900 },
-        { name: "Large", price: 27900 }
-      ],
-      images: [
-        "images/products/hex-planter-01.jpg",
-        "images/products/hex-planter-02.jpg"
-      ],
-      featured: true,
-      priceFrom: true
-    },
-
-    {
-      id: "dice-tower",
-      name: "Modular Dice Tower",
-      tagline: "Tårn i to farver.",
-      description:
-        "Et lille tårn til terninger, hvor de to farver mødes midt på. Det kan " +
-        "deles i to, så det er nemt at tage med.",
+      id: "peptide-case-50-vials",
+      sku: "SH-CASE-VIAL50",
+      name: "Peptide 50 Vials Case",
+      tagline: "Case med plads til op til 50 vials.",
+      description: "3D-printet case med plads til op til 50 vials.",
       price: 24900,
       currency: "DKK",
-      colors: [
-        { name: "Charcoal / Orange", hex: "#3A3936" },
-        { name: "Bone / Charcoal", hex: "#EFE9DC" }
-      ],
-      sizes: [{ name: "One size", price: 24900 }],
+      category: "Cases",
       images: [
-        "images/products/dice-tower-01.jpg",
-        "images/products/dice-tower-02.jpg"
+        "images/products/peptide-case-50-vials-01.webp",
+        "images/products/peptide-case-50-vials-02.webp"
+      ],
+      featured: true
+    },
+    {
+      id: "pen-case",
+      sku: "SH-PEN-CASE-005",
+      name: "Pen Case",
+      tagline: "Hardcase til pens og tilbehør.",
+      description: "Hardcase med organiseret plads til pens og tilbehør.",
+      price: 29900,
+      currency: "DKK",
+      category: "Cases / Pen Holders",
+      images: [
+        "images/products/pen-case-01.webp",
+        "images/products/pen-case-02.webp",
+        "images/products/pen-case-03.webp"
+      ],
+      featured: false
+    },
+    {
+      id: "prep-station-large",
+      sku: "SH-PREP-LARGE",
+      name: "Stor Prep Station",
+      tagline: "Stor prep station med dispenser og opbevaringsrum.",
+      description: "Stor prep station med dispenser og flere opbevaringsrum.",
+      price: 29900,
+      currency: "DKK",
+      category: "Recon / Station",
+      images: [
+        "images/products/prep-station-large-01.webp",
+        "images/products/prep-station-large-02.webp"
+      ],
+      featured: true
+    },
+    {
+      id: "64-vial-powcan-insert",
+      sku: "SH-64-VIAL-POWCAN",
+      name: "64 Vial Powcan Insert",
+      tagline: "Plads til 64 vials. Powcan-beholder medfølger.",
+      description: "64-vials insert til Powcan-beholder. Prisen inkluderer både indsatsen og Powcan-beholderen.",
+      price: 40000,
+      currency: "DKK",
+      category: "Vial Inserts",
+      images: [
+        "images/products/64-vial-powcan-insert-01.webp",
+        "images/products/64-vial-powcan-insert-02.webp",
+        "images/products/64-vial-powcan-insert-03.webp"
       ],
       featured: true
     }
