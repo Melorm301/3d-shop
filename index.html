@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LAYERLAB · 3D-printede ting i små serier</title>
+<meta name="description" content="Lille webshop med 3D-printede figurer, vaser og praktiske ting til hjemmet. Små serier, og nye ting kommer til løbende.">
+<meta name="theme-color" content="#F4F1EA">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Spring til indhold</a>
+
+<header class="site-header">
+  <div class="wrap header-bar">
+    <a class="brand" href="index.html" aria-label="Til forsiden">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="brand-name" data-shop-name>LAYERLAB</span>
+    </a>
+
+    <nav class="nav" aria-label="Hovedmenu">
+      <a class="nav-link" href="index.html" aria-current="page">Home</a>
+      <a class="nav-link" href="#shop">Shop</a>
+      <a class="nav-link" href="faq.html">FAQ</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+      </button>
+      <a class="cart-link" href="cart.html" aria-label="Kurv">
+        <span data-icon="bag"></span>
+        <span class="cart-label">Kurv</span>
+        <span class="cart-count" data-cart-count hidden>0</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
+    <a href="index.html">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Kurv <span class="cart-count" data-cart-count hidden>0</span></a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Lille 3D-printværksted</p>
+
+      <h1 class="display hero-title">Printed differently.</h1>
+
+      <div class="hero-body">
+        <div class="hero-copy">
+          <p class="lede">
+            3D-printede figurer, vaser og praktiske ting til hjemmet. Der bliver lavet
+            små serier, og nye ting kommer til løbende.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-accent" href="#shop">Se produkter</a>
+            <a class="link-quiet" href="#proces">Sådan bliver det lavet</a>
+          </div>
+        </div>
+
+        <figure class="hero-visual">
+          <div class="hero-figure">
+            <img src="images/hero-studio.jpg" width="1672" height="941" alt="Fem 3D-printede objekter i mat sort, offwhite og terracotta på en lys overflade">
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SHOP ===================== -->
+  <section class="section" id="shop">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Shop</p>
+          <h2 class="h2">Fra printeren</h2>
+        </div>
+      </div>
+
+      <div class="product-grid" data-products></div>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <!-- ===================== SÅDAN BLIVER DET LAVET ===================== -->
+  <section class="section" id="proces">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Sådan bliver det lavet</p>
+          <h2 class="h2">Fire trin, én ting ad gangen</h2>
+        </div>
+      </div>
+
+      <ol class="process-rail">
+        <li class="stage" data-reveal>
+          <span class="stage-num">01</span>
+          <h3 class="h4">Design</h3>
+          <p>Det starter med en idé. Nogle ting begynder som en skitse, andre som en fil.</p>
+        </li>
+        <li class="stage" data-reveal style="--d:.06s">
+          <span class="stage-num">02</span>
+          <h3 class="h4">Slice</h3>
+          <p>Formen bliver gjort klar, så den kan laves i ét stykke.</p>
+        </li>
+        <li class="stage" data-reveal style="--d:.12s">
+          <span class="stage-num">03</span>
+          <h3 class="h4">Print</h3>
+          <p>Tingen bliver bygget, og der bliver taget en lille serie ad gangen.</p>
+        </li>
+        <li class="stage" data-reveal style="--d:.18s">
+          <span class="stage-num">04</span>
+          <h3 class="h4">Finish</h3>
+          <p>Kanter bliver renset, og hver ting bliver tjekket igennem til sidst.</p>
+        </li>
+      </ol>
+
+      <div class="maker-note" data-reveal>
+        <h3 class="h2" style="font-size:clamp(1.4rem,2.4vw,1.9rem)">
+          En lille produktion drevet af lyst.
+        </h3>
+        <p class="lede" style="margin-top:1.25rem">
+          Der bliver lavet små serier, og nye farver og former kommer til løbende.
+          Har du et ønske til farve eller størrelse, er det nemmest at aftale direkte.
+        </p>
+        <p class="mt-md">
+          <a class="link-quiet" href="contact.html">Skriv om et print</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hairline">
+
+  <!-- ===================== LATEST ===================== -->
+  <section class="section" id="seneste">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Nyt</p>
+          <h2 class="h2">Latest off the printer</h2>
+        </div>
+      </div>
+
+      <ul class="latest-list" data-latest></ul>
+    </div>
+  </section>
+
+  <!-- ===================== CTA ===================== -->
+  <section class="section-tight">
+    <div class="wrap">
+      <div class="cta-band" data-reveal>
+        <div class="cta-band-inner">
+          <div>
+            <p class="eyebrow">Næste serie</p>
+            <h2 class="h2">Se hvad der er nyt lige nu.</h2>
+            <p>
+              Nye ting bliver lagt op, efterhånden som de er klar. Nogle bliver en lille
+              serie, andre bliver enkeltstykker.
+            </p>
+            <a class="btn btn-primary" href="#shop">Se de nyeste</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="brand-name" data-shop-name>LAYERLAB</span>
+        </a>
+        <p class="footer-about">
+          En lille webshop med 3D-printede figurer, vaser og praktiske ting. Skriv
+          gerne, hvis du har et ønske til farve eller størrelse.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="#shop">Products</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Info</h3>
+        <ul>
+          <li><a href="faq.html#shipping">Shipping</a></li>
+          <li><a href="faq.html#returns">Returns</a></li>
+          <li><a href="faq.html#privacy">Privacy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Social</h3>
+        <ul>
+          <li><a href="https://instagram.com/" data-shop-instagram target="_blank" rel="noopener noreferrer">Instagram <span class="mono" data-shop-handle>@layerlab</span></a></li>
+          <li><a href="#" data-shop-mail>E-mail</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-shop-year>2026</span> <span data-shop-name>LAYERLAB</span></span>
+      <span>Små serier, nye ting løbende</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

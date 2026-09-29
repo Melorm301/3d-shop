@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Produkt · LAYERLAB</title>
+<meta name="description" content="Se produktet, vælg farve og størrelse, og læg det i kurven.">
+<meta name="theme-color" content="#F4F1EA">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Spring til indhold</a>
+
+<header class="site-header">
+  <div class="wrap header-bar">
+    <a class="brand" href="index.html" aria-label="Til forsiden">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="brand-name" data-shop-name>LAYERLAB</span>
+    </a>
+
+    <nav class="nav" aria-label="Hovedmenu">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="index.html#shop">Shop</a>
+      <a class="nav-link" href="faq.html">FAQ</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+      </button>
+      <a class="cart-link" href="cart.html" aria-label="Kurv">
+        <span data-icon="bag"></span>
+        <span class="cart-label">Kurv</span>
+        <span class="cart-count" data-cart-count hidden>0</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
+    <a href="index.html">Home</a>
+    <a href="index.html#shop">Shop</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Kurv <span class="cart-count" data-cart-count hidden>0</span></a>
+  </div>
+</header>
+
+<main id="main">
+
+  <nav class="wrap breadcrumb" aria-label="Brødkrumme">
+    <a href="index.html">Home</a>
+    <span class="sep" aria-hidden="true">/</span>
+    <a href="index.html#shop">Shop</a>
+    <span class="sep" aria-hidden="true">/</span>
+    <span data-p-crumb>Produkt</span>
+  </nav>
+
+  <div class="wrap" data-product-page>
+
+    <section class="product-layout" style="padding-bottom:var(--space-section)">
+
+      <!-- ---------- Galleri ---------- -->
+      <div class="gallery">
+        <div class="gallery-main">
+          <img data-gallery-main src="images/products/halloween-cat-01.jpg" width="1448" height="1086" alt="">
+          <button class="gallery-zoom" type="button" data-lightbox-open>
+            <span data-icon="maximize" data-icon-class="icon-sm"></span>
+            Se større
+          </button>
+        </div>
+        <div class="gallery-thumbs" data-gallery-thumbs></div>
+      </div>
+
+      <!-- ---------- Info og køb ---------- -->
+      <div>
+        <h1 class="h1 product-name" data-p-name>Produkt</h1>
+        <p class="product-price" data-p-price>–</p>
+        <p class="lede product-lead" data-p-description></p>
+
+        <div class="field-group" data-p-colors-group>
+          <p class="field-label">Color</p>
+          <div class="chipset" data-p-colors></div>
+        </div>
+
+        <div class="field-group" data-p-sizes-group>
+          <p class="field-label">Size</p>
+          <div class="chipset" data-p-sizes></div>
+        </div>
+
+        <div class="field-group">
+          <p class="field-label">Quantity</p>
+          <div class="buy-row">
+            <div class="qty">
+              <button type="button" data-qty-minus aria-label="Færre" data-icon="minus" data-icon-class="icon-sm"></button>
+              <span class="qty-value" data-p-qty>1</span>
+              <button type="button" data-qty-plus aria-label="Flere" data-icon="plus" data-icon-class="icon-sm"></button>
+            </div>
+            <button class="btn btn-primary" type="button" data-add-to-cart>Læg i kurv</button>
+          </div>
+          <div class="notice" data-p-notice hidden></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- Relaterede produkter ---------- -->
+    <section class="section-tight">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Flere ting</p>
+          <h2 class="h2" style="font-size:clamp(1.5rem,2.6vw,2.1rem)">You might also like</h2>
+        </div>
+        <p class="mono"><a class="link-quiet" href="index.html#shop">Se alle</a></p>
+      </div>
+      <div class="related-grid" data-related></div>
+    </section>
+
+    <!-- ---------- Lysboks ---------- -->
+    <dialog class="lightbox" data-lightbox aria-label="Produktbillede">
+      <img class="lightbox-img" data-lightbox-image src="" width="1448" height="1086" alt="">
+      <div class="lightbox-bar">
+        <div class="lightbox-nav">
+          <button class="lightbox-btn" type="button" data-lightbox-prev>
+            <span data-icon="chevronLeft" data-icon-class="icon-sm"></span>
+            Forrige
+          </button>
+          <button class="lightbox-btn" type="button" data-lightbox-next>
+            Næste
+            <span data-icon="chevronRight" data-icon-class="icon-sm"></span>
+          </button>
+        </div>
+        <button class="lightbox-btn" type="button" data-lightbox-close>
+          Luk
+          <span data-icon="x" data-icon-class="icon-sm"></span>
+        </button>
+      </div>
+    </dialog>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand-col">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="brand-name" data-shop-name>LAYERLAB</span>
+        </a>
+        <p class="footer-about">
+          En lille webshop med 3D-printede figurer, vaser og praktiske ting. Skriv
+          gerne, hvis du har et ønske til farve eller størrelse.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="index.html#shop">Products</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Info</h3>
+        <ul>
+          <li><a href="faq.html#shipping">Shipping</a></li>
+          <li><a href="faq.html#returns">Returns</a></li>
+          <li><a href="faq.html#privacy">Privacy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Social</h3>
+        <ul>
+          <li><a href="https://instagram.com/" data-shop-instagram target="_blank" rel="noopener noreferrer">Instagram <span class="mono" data-shop-handle>@layerlab</span></a></li>
+          <li><a href="#" data-shop-mail>E-mail</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-shop-year>2026</span> <span data-shop-name>LAYERLAB</span></span>
+      <span>Små serier, nye ting løbende</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
