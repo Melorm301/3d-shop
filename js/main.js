@@ -183,7 +183,9 @@
     for (var i = 0; i < mounts.length; i++) {
       var mount = mounts[i];
       var limit = parseInt(mount.getAttribute("data-limit"), 10);
-      var list = isNaN(limit) ? window.Shop.featured() : window.Shop.featured(limit);
+      var list = mount.getAttribute("data-product-source") === "all"
+        ? window.Shop.all()
+        : (isNaN(limit) ? window.Shop.featured() : window.Shop.featured(limit));
 
       mount.innerHTML = list.map(function (product, index) {
         return cardHTML(product, LAYOUTS[index % LAYOUTS.length]);
@@ -556,8 +558,6 @@
 
     /* Indhold foer reveal, saa nye kort ogsaa animerer ind. */
     renderProductGrids();
-    renderLatest("[data-latest]", 3);
-
     initProductPage();
     initCartPage();
     initAccordions();

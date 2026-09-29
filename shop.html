@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>LAYERLAB · Objekter med karakter</title>
-<meta name="description" content="Udforsk LAYERLABs udvalg af 3D-printede objekter, samlerfund og ting til hjemmet. Nye designs kommer til løbende.">
+<title>Shop · LAYERLAB</title>
+<meta name="description" content="Se hele udvalget af 3D-printede objekter fra LAYERLAB.">
 <meta name="theme-color" content="#F4F1EA">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
@@ -19,14 +19,12 @@
       <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
       <span class="brand-name" data-shop-name>LAYERLAB</span>
     </a>
-
     <nav class="nav" aria-label="Hovedmenu">
-      <a class="nav-link" href="index.html" aria-current="page">Forside</a>
-      <a class="nav-link" href="shop.html">Shop</a>
+      <a class="nav-link" href="index.html">Forside</a>
+      <a class="nav-link" href="shop.html" aria-current="page">Shop</a>
       <a class="nav-link" href="faq.html">FAQ</a>
       <a class="nav-link" href="contact.html">Kontakt</a>
     </nav>
-
     <div class="header-actions">
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu">
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
@@ -38,10 +36,9 @@
       </a>
     </div>
   </div>
-
   <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
     <a href="index.html">Forside</a>
-    <a href="shop.html">Shop</a>
+    <a href="shop.html" aria-current="page">Shop</a>
     <a href="faq.html">FAQ</a>
     <a href="contact.html">Kontakt</a>
     <a href="cart.html">Kurv <span class="cart-count" data-cart-count hidden>0</span></a>
@@ -49,66 +46,22 @@
 </header>
 
 <main id="main">
-
-  <!-- ===================== HERO ===================== -->
-  <section class="hero">
+  <section class="catalog-intro">
     <div class="wrap">
-      <h1 class="display hero-title">Printed differently.</h1>
-
-      <div class="hero-body">
-        <div class="hero-copy">
-          <p class="lede">
-            Et udvalg af 3D-printede objekter med hver deres udtryk. Fra særlige
-            samlerfund til ting til hjemmet, med nye designs på vej løbende.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-accent" href="shop.html">Udforsk shoppen</a>
-          </div>
-        </div>
-
-        <figure class="hero-visual">
-          <div class="hero-figure">
-            <img src="images/hero-studio.jpg" width="1672" height="941" alt="Fem 3D-printede objekter i mat sort, offwhite og terracotta på en lys overflade">
-          </div>
-        </figure>
+      <p class="eyebrow">LAYERLAB · Udvalget</p>
+      <h1 class="display catalog-title">Shop.</h1>
+      <div class="catalog-intro-bottom">
+        <p class="lede">Objekter med karakter, fra særlige samlerfund til ting til hjemmet. Gå på opdagelse i hele udvalget.</p>
+        <span class="catalog-count">Hele kollektionen</span>
       </div>
     </div>
   </section>
 
-  <!-- ===================== UDVALGTE PRODUKTER ===================== -->
-  <section class="section" id="shop">
+  <section class="section catalog-section" aria-label="Alle produkter">
     <div class="wrap">
-      <div class="section-head">
-        <div>
-          <p class="eyebrow">Udvalgt</p>
-          <h2 class="h2">Et udvalg af favoritter</h2>
-        </div>
-        <a class="link-quiet" href="shop.html">Se alle produkter</a>
-      </div>
-
-      <div class="product-grid product-grid--featured" data-products data-limit="3"></div>
+      <div class="product-grid product-grid--catalog" data-products data-product-source="all"></div>
     </div>
   </section>
-
-  <!-- ===================== CTA ===================== -->
-  <section class="section-tight">
-    <div class="wrap">
-      <div class="cta-band" data-reveal>
-        <div class="cta-band-inner">
-          <div>
-            <p class="eyebrow">Hele udvalget</p>
-            <h2 class="h2">Find din næste favorit.</h2>
-            <p>
-              Gå på opdagelse i alle produkter, fra nye idéer til velkendte favoritter.
-            </p>
-            <a class="btn btn-primary" href="shop.html">Se alle produkter</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
 </main>
 
 <footer class="site-footer">
@@ -119,12 +72,8 @@
           <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
           <span class="brand-name" data-shop-name>LAYERLAB</span>
         </a>
-        <p class="footer-about">
-          3D-printede objekter, samlerfund og ting til hjemmet. Nye designs kommer
-          til løbende.
-        </p>
+        <p class="footer-about">3D-printede objekter, samlerfund og ting til hjemmet. Nye designs kommer til løbende.</p>
       </div>
-
       <div class="footer-col">
         <h3>Shop</h3>
         <ul>
@@ -133,7 +82,6 @@
           <li><a href="contact.html">Kontakt</a></li>
         </ul>
       </div>
-
       <div class="footer-col">
         <h3>Info</h3>
         <ul>
@@ -142,7 +90,6 @@
           <li><a href="faq.html#privacy">Privatliv</a></li>
         </ul>
       </div>
-
       <div class="footer-col">
         <h3>Social</h3>
         <ul>
@@ -151,10 +98,9 @@
         </ul>
       </div>
     </div>
-
     <div class="footer-bottom">
       <span>© <span data-shop-year>2026</span> <span data-shop-name>LAYERLAB</span></span>
-      <span>Små serier, nye ting løbende</span>
+      <span>Nye designs kommer til løbende</span>
     </div>
   </div>
 </footer>
