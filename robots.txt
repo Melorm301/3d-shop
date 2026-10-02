@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://melorm301.github.io/3d-shop/sitemap.xml

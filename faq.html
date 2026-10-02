@@ -3,8 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FAQ · NordForm</title>
-<meta name="description" content="Svar på spørgsmål om produkterne, materialerne og hvordan du spørger eller bestiller via Telegram.">
+<title>FAQ om produkter og bestilling | NordForm</title>
+<meta name="description" content="Find svar om NordForms produkter, bestilling, fragt og levering. Ordreforespørgsler bekræftes direkte via Telegram.">
+<link rel="canonical" href="https://melorm301.github.io/3d-shop/faq.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NordForm">
+<meta property="og:title" content="FAQ | NordForm">
+<meta property="og:description" content="Svar om NordForms produkter, bestilling, fragt og levering.">
+<meta property="og:url" content="https://melorm301.github.io/3d-shop/faq.html">
+<meta property="og:image" content="https://melorm301.github.io/3d-shop/images/products/64-vial-powcan-insert-02.webp">
 <meta name="theme-color" content="#07151E">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
@@ -22,12 +29,13 @@
 
     <nav class="nav" aria-label="Hovedmenu">
       <a class="nav-link" href="index.html">Forside</a>
-      <a class="nav-link" href="shop.html">Katalog</a>
+      <a class="nav-link" href="shop.html">Shop</a>
       <a class="nav-link" href="faq.html" aria-current="page">FAQ</a>
       <a class="nav-link" href="contact.html">Kontakt</a>
     </nav>
 
     <div class="header-actions">
+      <a class="cart-link" href="cart.html" aria-label="Kurv"><span data-icon="bag"></span><span class="cart-count" data-cart-count hidden>0</span></a>
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu">
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
       </button>
@@ -36,7 +44,8 @@
 
   <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
     <a href="index.html">Forside</a>
-    <a href="shop.html">Katalog</a>
+    <a href="shop.html">Shop</a>
+    <a href="cart.html">Kurv <span class="cart-count" data-cart-count hidden>0</span></a>
     <a href="faq.html">FAQ</a>
     <a href="contact.html">Kontakt</a>
   </div>
@@ -57,8 +66,8 @@
         Ofte stillede spørgsmål
       </h1>
       <p class="lede mt-md">
-        Her finder du svar om produkterne og kataloget. Har du spørgsmål eller vil
-        du høre mere om et produkt, så skriv direkte på Telegram.
+        Her finder du svar om produkterne og shoppen. Har du spørgsmål eller vil
+        du høre mere om et produkt, så læg det i kurven eller skriv direkte på Telegram.
       </p>
     </div>
   </section>
@@ -143,8 +152,9 @@
           <div class="acc-panel" id="ao1" role="region" aria-labelledby="to1">
             <div class="acc-inner">
               <p>
-                Skriv til <a href="https://t.me/test" data-shop-telegram target="_blank" rel="noopener noreferrer">@test på Telegram</a>
-                med navnet på produktet. Så aftaler vi tilgængelighed, pris og levering direkte.
+                Læg produkterne i kurven, og fortsæt til checkout. Herfra åbnes en ordrekladde
+                i Telegram. Beskeden sendes først, når du selv trykker Send; derefter aftaler
+                vi lagerstatus, fragt og betaling.
               </p>
             </div>
           </div>
@@ -326,9 +336,9 @@
       </div>
 
       <div class="footer-col">
-        <h3>Katalog</h3>
+        <h3>Shop</h3>
         <ul>
-          <li><a href="shop.html">Produktkatalog</a></li>
+          <li><a href="shop.html">Alle produkter</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Kontakt</a></li>
         </ul>
@@ -351,6 +361,7 @@
 </footer>
 
 <script src="js/products.js"></script>
+<script src="js/cart.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

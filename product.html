@@ -3,8 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Produkt · NordForm</title>
-<meta name="description" content="Se produktdetaljer og priser, og kontakt NordForm via Telegram.">
+<title>Produkter til vials og pens | NordForm</title>
+<meta name="description" content="Se produktdetaljer, billeder og priser fra NordForm. Læg produktet i kurven, og send din ordreforespørgsel via Telegram.">
+<link rel="canonical" href="https://melorm301.github.io/3d-shop/product.html">
+<meta property="og:type" content="product">
+<meta property="og:site_name" content="NordForm">
+<meta property="og:title" content="Produkter til vials og pens | NordForm">
+<meta property="og:description" content="Se produktdetaljer, billeder og priser fra NordForm.">
+<meta property="og:url" content="https://melorm301.github.io/3d-shop/product.html">
+<meta property="og:image" content="https://melorm301.github.io/3d-shop/images/products/64-vial-powcan-insert-02.webp">
+<script type="application/ld+json" data-product-schema>{}</script>
 <meta name="theme-color" content="#07151E">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
@@ -22,12 +30,13 @@
 
     <nav class="nav" aria-label="Hovedmenu">
       <a class="nav-link" href="index.html">Forside</a>
-      <a class="nav-link" href="shop.html">Katalog</a>
+      <a class="nav-link" href="shop.html">Shop</a>
       <a class="nav-link" href="faq.html">FAQ</a>
       <a class="nav-link" href="contact.html">Kontakt</a>
     </nav>
 
     <div class="header-actions">
+      <a class="cart-link" href="cart.html" aria-label="Kurv"><span data-icon="bag"></span><span class="cart-count" data-cart-count hidden>0</span></a>
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu">
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
       </button>
@@ -36,7 +45,8 @@
 
   <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
     <a href="index.html">Forside</a>
-    <a href="shop.html">Katalog</a>
+    <a href="shop.html">Shop</a>
+    <a href="cart.html">Kurv <span class="cart-count" data-cart-count hidden>0</span></a>
     <a href="faq.html">FAQ</a>
     <a href="contact.html">Kontakt</a>
   </div>
@@ -47,7 +57,7 @@
   <nav class="wrap breadcrumb" aria-label="Brødkrumme">
     <a href="index.html">Forside</a>
     <span class="sep" aria-hidden="true">/</span>
-    <a href="shop.html">Katalog</a>
+    <a href="shop.html">Shop</a>
     <span class="sep" aria-hidden="true">/</span>
     <span data-p-crumb>Produkt</span>
   </nav>
@@ -86,11 +96,16 @@
         </div>
 
         <div class="field-group">
-          <p class="field-label">Spørgsmål og bestilling</p>
-          <p class="body-sm">Bestilling, fragt og detaljer aftales direkte via Telegram.</p>
-          <a class="btn btn-primary mt-md" href="https://t.me/test" data-shop-telegram target="_blank" rel="noopener noreferrer">
-            Bestil eller spørg på Telegram <span class="mono telegram-handle" data-shop-telegram-handle>@test</span>
-          </a>
+          <p class="field-label">Antal</p>
+          <div class="buy-row">
+            <div class="qty">
+              <button type="button" data-qty-minus aria-label="Færre">−</button>
+              <span class="qty-value" data-p-qty>1</span>
+              <button type="button" data-qty-plus aria-label="Flere">+</button>
+            </div>
+            <button class="btn btn-primary" type="button" data-add-to-cart>Læg i kurv</button>
+          </div>
+          <p class="body-sm mt-md">Fragt og betaling aftales, når du sender din ordreforespørgsel via Telegram.</p>
         </div>
       </div>
     </section>
@@ -102,7 +117,7 @@
           <p class="eyebrow">Flere produkter</p>
           <h2 class="h2" style="font-size:2rem">Se også</h2>
         </div>
-        <p class="mono"><a class="link-quiet" href="shop.html">Hele kataloget</a></p>
+        <p class="mono"><a class="link-quiet" href="shop.html">Til shoppen</a></p>
       </div>
       <div class="related-grid" data-related></div>
     </section>
@@ -146,9 +161,9 @@
       </div>
 
       <div class="footer-col">
-        <h3>Katalog</h3>
+        <h3>Shop</h3>
         <ul>
-          <li><a href="shop.html">Produktkatalog</a></li>
+          <li><a href="shop.html">Alle produkter</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Kontakt</a></li>
         </ul>
@@ -171,6 +186,7 @@
 </footer>
 
 <script src="js/products.js"></script>
+<script src="js/cart.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

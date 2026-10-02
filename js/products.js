@@ -11,8 +11,8 @@
       og i relaterede produkter.
 
    "sizes[].price" er prisen i ØRE (14900 = 149,00 DKK). Prisen vises ud fra
-   den valgte størrelse. Ved rigtig betaling må prisen ALDRIG læses fra denne
-   fil i browseren. Se handleCheckout() i cart.js.
+   den valgte størrelse. Telegram-checkout er en manuel ordreforespørgsel;
+   denne browserfil er ikke betalingsautoritet.
    ========================================================================== */
 
 window.Shop = (function () {

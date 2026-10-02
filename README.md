@@ -1,4 +1,4 @@
-# NordForm - statisk produktkatalog
+# NordForm - statisk shop
 
 Et lille, sammenhaengende website til en hobbybaseret 3D-printshop. Ren HTML, CSS og
 vanilla JavaScript. Ingen frameworks, ingen build-trin, ingen afhaengigheder.
@@ -11,8 +11,10 @@ eller Cloudflare Pages.
 ```
 /
 ├── index.html        Forside med hero og udvalgte produkter
-├── product.html      Produktside: galleri, pris og Telegram-kontakt
-├── cart.html         Bagudkompatibel bestillingsside med Telegram-link
+├── shop.html         Produktoversigt med kategorifilter og kurvknapper
+├── product.html      Produktside: galleri, pris og kurvknap
+├── cart.html         Browserlokal kurv
+├── checkout.html     Ordreoversigt og Telegram-bestilling
 ├── faq.html          FAQ med kategorier og accordion
 ├── contact.html      Kontakt via Telegram
 │
@@ -21,6 +23,7 @@ eller Cloudflare Pages.
 │
 ├── js/
 │   ├── products.js   Butiksidentitet og alle produktdata
+│   ├── cart.js       Kurv og ordrekladde til Telegram
 │   └── main.js       Faelles adfaerd og side-specifik logik
 │
 ├── images/
@@ -31,7 +34,7 @@ eller Cloudflare Pages.
     └── favicon.svg
 ```
 
-`product.html` laeser produktet fra url'en, fx `product.html?id=halloween-cat`.
+`product.html` laeser produktet fra url'en, fx `product.html?id=pen-case`.
 Indholdet kommer fra `js/products.js`.
 
 ## Ret butikken til
@@ -73,9 +76,15 @@ til hero-billedet.
 
 ## Bestilling og kontakt
 
-Siden er et katalog uden onlinekurv eller checkout. Produktspørgsmål og
-bestillinger foregår direkte via Telegram. Skift `telegram` i `config` i
-`js/products.js`, når det endelige Telegram-brugernavn er klar.
+Kurven gemmes lokalt i kundens browser. Checkout sender ikke betaling eller
+ordren automatisk: den åbner en ordrekladde i Telegram, som kunden selv vælger
+at sende. Lagerstatus, fragt og betaling aftales derefter. Skift `telegram` i
+`config` i `js/products.js`, når det endelige Telegram-brugernavn er klar.
+
+SEO-grundlaget omfatter sidetitler, beskrivelser, canonical- og Open Graph-tags,
+strukturerede data for virksomheden og produktsider samt `sitemap.xml` og
+`robots.txt`. Indholdet hostes på GitHub Pages; tilpas de kanoniske URLs i
+HTML-filerne og sitemap, hvis domænet ændres.
 
 ## Tilgaengelighed og detaljer
 

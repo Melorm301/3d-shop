@@ -3,8 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NordForm · Kvalitetsprodukter til peptides</title>
-<meta name="description" content="Udvalgte produkter til peptides og andre formål, med fokus på kvalitet, funktion og præcision.">
+<title>NordForm | Shop af opbevaring og tilbehør</title>
+<meta name="description" content="Shop NordForms udvalg af organiserings- og opbevaringsprodukter til vials, pens og tilbehør. Se priser og bestil via Telegram.">
+<link rel="canonical" href="https://melorm301.github.io/3d-shop/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NordForm">
+<meta property="og:title" content="NordForm | Shop af opbevaring og tilbehør">
+<meta property="og:description" content="Shop NordForms udvalg af organiserings- og opbevaringsprodukter til vials, pens og tilbehør.">
+<meta property="og:url" content="https://melorm301.github.io/3d-shop/">
+<meta property="og:image" content="https://melorm301.github.io/3d-shop/images/products/64-vial-powcan-insert-02.webp">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://melorm301.github.io/3d-shop/#website","url":"https://melorm301.github.io/3d-shop/","name":"NordForm","inLanguage":"da"},{"@type":"Organization","@id":"https://melorm301.github.io/3d-shop/#organization","name":"NordForm","url":"https://melorm301.github.io/3d-shop/","identifier":{"@type":"PropertyValue","propertyID":"CVR","value":"41693908"}}]}
+</script>
 <meta name="theme-color" content="#07151E">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
@@ -22,12 +32,13 @@
 
     <nav class="nav" aria-label="Hovedmenu">
       <a class="nav-link" href="index.html" aria-current="page">Forside</a>
-      <a class="nav-link" href="shop.html">Katalog</a>
+      <a class="nav-link" href="shop.html">Shop</a>
       <a class="nav-link" href="faq.html">FAQ</a>
       <a class="nav-link" href="contact.html">Kontakt</a>
     </nav>
 
     <div class="header-actions">
+      <a class="cart-link" href="cart.html" aria-label="Kurv"><span data-icon="bag"></span><span class="cart-count" data-cart-count hidden>0</span></a>
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu">
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
       </button>
@@ -36,9 +47,10 @@
 
   <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
     <a href="index.html">Forside</a>
-    <a href="shop.html">Katalog</a>
+    <a href="shop.html">Shop</a>
     <a href="faq.html">FAQ</a>
     <a href="contact.html">Kontakt</a>
+    <a href="cart.html">Kurv <span class="cart-count" data-cart-count hidden>0</span></a>
   </div>
 </header>
 
@@ -68,7 +80,7 @@
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-accent" href="shop.html">Udforsk kataloget</a>
+            <a class="btn btn-accent" href="shop.html">Gå til shoppen</a>
           </div>
         </div>
 
@@ -84,7 +96,7 @@
           <p class="eyebrow">Udvalgt</p>
           <h2 class="h2">Udvalgte produkter</h2>
         </div>
-        <a class="link-quiet" href="shop.html">Se hele kataloget</a>
+        <a class="link-quiet" href="shop.html">Se hele shoppen</a>
       </div>
 
       <div class="product-grid product-grid--featured" data-products data-limit="3"></div>
@@ -102,7 +114,7 @@
             <p>
               Se hele sortimentet af produkter til peptides og andre formål.
             </p>
-            <a class="btn btn-primary" href="shop.html">Se hele kataloget</a>
+            <a class="btn btn-primary" href="shop.html">Se hele shoppen</a>
           </div>
         </div>
       </div>
@@ -125,9 +137,9 @@
       </div>
 
       <div class="footer-col">
-        <h3>Katalog</h3>
+        <h3>Shop</h3>
         <ul>
-          <li><a href="shop.html">Produktkatalog</a></li>
+          <li><a href="shop.html">Alle produkter</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Kontakt</a></li>
         </ul>
@@ -150,6 +162,7 @@
 </footer>
 
 <script src="js/products.js"></script>
+<script src="js/cart.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

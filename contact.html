@@ -3,8 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kontakt · NordForm</title>
-<meta name="description" content="Kontakt NordForm via Telegram om produkter, bestillinger og spørgsmål.">
+<title>Kontakt NordForm | Produkter og bestilling</title>
+<meta name="description" content="Kontakt NordForm på Telegram om produkter, ordreforespørgsler, levering og spørgsmål.">
+<link rel="canonical" href="https://melorm301.github.io/3d-shop/contact.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NordForm">
+<meta property="og:title" content="Kontakt | NordForm">
+<meta property="og:description" content="Skriv til NordForm på Telegram om produkter og ordreforespørgsler.">
+<meta property="og:url" content="https://melorm301.github.io/3d-shop/contact.html">
+<meta property="og:image" content="https://melorm301.github.io/3d-shop/images/products/64-vial-powcan-insert-02.webp">
 <meta name="theme-color" content="#07151E">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
@@ -22,12 +29,13 @@
 
     <nav class="nav" aria-label="Hovedmenu">
       <a class="nav-link" href="index.html">Forside</a>
-      <a class="nav-link" href="shop.html">Katalog</a>
+      <a class="nav-link" href="shop.html">Shop</a>
       <a class="nav-link" href="faq.html">FAQ</a>
       <a class="nav-link" href="contact.html" aria-current="page">Kontakt</a>
     </nav>
 
     <div class="header-actions">
+      <a class="cart-link" href="cart.html" aria-label="Kurv"><span data-icon="bag"></span><span class="cart-count" data-cart-count hidden>0</span></a>
       <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu">
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
       </button>
@@ -36,7 +44,8 @@
 
   <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
     <a href="index.html">Forside</a>
-    <a href="shop.html">Katalog</a>
+    <a href="shop.html">Shop</a>
+    <a href="cart.html">Kurv <span class="cart-count" data-cart-count hidden>0</span></a>
     <a href="faq.html">FAQ</a>
     <a href="contact.html">Kontakt</a>
   </div>
@@ -117,9 +126,9 @@
       </div>
 
       <div class="footer-col">
-        <h3>Katalog</h3>
+        <h3>Shop</h3>
         <ul>
-          <li><a href="shop.html">Produktkatalog</a></li>
+          <li><a href="shop.html">Alle produkter</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Kontakt</a></li>
         </ul>
@@ -142,6 +151,7 @@
 </footer>
 
 <script src="js/products.js"></script>
+<script src="js/cart.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

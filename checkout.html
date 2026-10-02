@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kurv | NordForm</title>
-<meta name="description" content="Gennemse din kurv hos NordForm, juster antal og fortsæt til checkout for at sende en ordreforespørgsel.">
+<title>Checkout | NordForm</title>
+<meta name="description" content="Gennemse din ordre hos NordForm, og fortsæt til Telegram for at sende en ordreforespørgsel.">
 <meta name="robots" content="noindex,follow">
-<link rel="canonical" href="https://melorm301.github.io/3d-shop/cart.html">
+<link rel="canonical" href="https://melorm301.github.io/3d-shop/checkout.html">
 <meta name="theme-color" content="#07151E">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
@@ -17,17 +17,18 @@
   <div class="wrap header-bar">
     <a class="brand" href="index.html" aria-label="NordForm, forside"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-name" data-shop-name>NordForm</span></a>
     <nav class="nav" aria-label="Hovedmenu"><a class="nav-link" href="index.html">Forside</a><a class="nav-link" href="shop.html">Shop</a><a class="nav-link" href="faq.html">FAQ</a><a class="nav-link" href="contact.html">Kontakt</a></nav>
-    <div class="header-actions"><a class="cart-link" href="cart.html" aria-current="page" aria-label="Kurv"><span data-icon="bag"></span><span class="cart-label">Kurv</span><span class="cart-count" data-cart-count hidden>0</span></a><button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu"><span data-icon="menu"></span></button></div>
+    <div class="header-actions"><a class="cart-link" href="cart.html" aria-label="Kurv"><span data-icon="bag"></span><span class="cart-label">Kurv</span><span class="cart-count" data-cart-count hidden>0</span></a><button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu"><span data-icon="menu"></span></button></div>
   </div>
-  <div class="mobile-nav" id="mobile-nav" data-mobile-nav><a href="index.html">Forside</a><a href="shop.html">Shop</a><a href="faq.html">FAQ</a><a href="contact.html">Kontakt</a><a href="cart.html" aria-current="page">Kurv <span class="cart-count" data-cart-count hidden>0</span></a></div>
+  <div class="mobile-nav" id="mobile-nav" data-mobile-nav><a href="index.html">Forside</a><a href="shop.html">Shop</a><a href="faq.html">FAQ</a><a href="contact.html">Kontakt</a><a href="cart.html">Kurv <span class="cart-count" data-cart-count hidden>0</span></a></div>
 </header>
 <main id="main">
   <section class="section-tight">
     <div class="wrap">
-      <nav class="breadcrumb" aria-label="Brødkrumme"><a href="index.html">Forside</a><span class="sep" aria-hidden="true">/</span><span>Kurv</span></nav>
-      <p class="eyebrow">NordForm · Shop</p>
-      <h1 class="display page-title">Din kurv.</h1>
-      <div class="cart-page" data-cart-page aria-live="polite"></div>
+      <nav class="breadcrumb" aria-label="Brødkrumme"><a href="index.html">Forside</a><span class="sep" aria-hidden="true">/</span><a href="cart.html">Kurv</a><span class="sep" aria-hidden="true">/</span><span>Checkout</span></nav>
+      <p class="eyebrow">NordForm · Checkout</p>
+      <h1 class="display page-title">Gennemse ordre.</h1>
+      <p class="lede mt-md">Tjek antal og varetotal. Din forespørgsel fortsætter i Telegram, hvor lagerstatus, fragt og betaling bekræftes.</p>
+      <div class="cart-page" data-checkout-page aria-live="polite"></div>
     </div>
   </section>
 </main>

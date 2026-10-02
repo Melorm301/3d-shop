@@ -12,6 +12,7 @@
 
   var ICON_PATHS = {
     plus: '<path d="M5 12h14"/><path d="M12 5v14"/>',
+    bag: '<path d="M5 8h14l-1 13H6L5 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/>',
     x: '<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',
     menu: '<path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/>',
     maximize: '<path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/>',
@@ -157,19 +158,22 @@
     var price = (product.priceFrom ? "fra " : "") + window.Shop.formatPrice(product.price, product.currency);
 
     return (
-      '<a class="pcard pcard--' + layout + '" href="product.html?id=' + encodeURIComponent(product.id) + '" data-reveal>' +
-        '<span class="pcard-media">' +
-          '<img src="' + esc(product.images[0]) + '" alt="' + esc(product.name) + '" width="1448" height="1086" loading="lazy" decoding="async">' +
-        "</span>" +
-        '<span class="pcard-body">' +
+      '<article class="pcard pcard--' + layout + '" data-reveal>' +
+        '<a class="pcard-link" href="product.html?id=' + encodeURIComponent(product.id) + '">' +
+          '<span class="pcard-media">' +
+            '<img src="' + esc(product.images[0]) + '" alt="' + esc(product.name) + '" width="1448" height="1086" loading="lazy" decoding="async">' +
+          "</span>" +
+          '<span class="pcard-body">' +
           '<span class="pcard-meta">' +
             '<span class="pcard-name">' + esc(product.name) + "</span>" +
             '<span class="pcard-price">' + esc(price) + "</span>" +
           "</span>" +
           '<span class="category-tag">' + esc(product.category) + "</span>" +
           '<span class="pcard-desc body-sm">' + esc(product.tagline) + "</span>" +
-        "</span>" +
-      "</a>"
+          "</span>" +
+        '</a>' +
+        '<button class="btn btn-sm btn-ghost pcard-add" type="button" data-add-product="' + esc(product.id) + '">Læg i kurv</button>' +
+      "</article>"
     );
   }
 
@@ -279,6 +283,40 @@
     };
 
     document.title = product.name + " · " + window.Shop.config.name;
+    var description = (product.tagline + " Se billeder og pris hos NordForm.").slice(0, 160);
+    var descriptionMeta = document.querySelector('meta[name="description"]');
+    if (descriptionMeta) descriptionMeta.content = description;
+    var canonical = document.querySelector('link[rel="canonical"]');
+    var productUrl = "https://melorm301.github.io/3d-shop/product.html?id=" + encodeURIComponent(product.id);
+    if (canonical) canonical.href = productUrl;
+    var ogTitle = document.querySelector('meta[property="og:title"]');
+    var ogDescription = document.querySelector('meta[property="og:description"]');
+    var ogUrl = document.querySelector('meta[property="og:url"]');
+    var ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogTitle) ogTitle.content = document.title;
+    if (ogDescription) ogDescription.content = description;
+    if (ogUrl) ogUrl.content = productUrl;
+    if (ogImage) ogImage.content = "https://melorm301.github.io/3d-shop/" + product.images[0];
+    var productSchema = document.querySelector("[data-product-schema]");
+    if (productSchema) {
+      productSchema.textContent = JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Product",
+        name: product.name,
+        description: product.description,
+        image: product.images.map(function (image) { return "https://melorm301.github.io/3d-shop/" + image; }),
+        sku: product.sku,
+        category: product.category,
+        brand: { "@type": "Brand", name: window.Shop.config.name },
+        offers: {
+          "@type": "Offer",
+          url: productUrl,
+          priceCurrency: product.currency,
+          price: (product.price / 100).toFixed(2),
+          seller: { "@type": "Organization", name: window.Shop.config.name }
+        }
+      });
+    }
 
     /* Tekst */
     root.querySelector("[data-p-name]").textContent = product.name;
@@ -411,6 +449,25 @@
       sizeGroup.hidden = true;
     }
     paintPrice();
+
+    var quantity = 1;
+    var quantityNode = root.querySelector("[data-p-qty]");
+    var minus = root.querySelector("[data-qty-minus]");
+    var plus = root.querySelector("[data-qty-plus]");
+    var addButton = root.querySelector("[data-add-to-cart]");
+    if (minus) minus.addEventListener("click", function () {
+      quantity = Math.max(1, quantity - 1);
+      if (quantityNode) quantityNode.textContent = String(quantity);
+    });
+    if (plus) plus.addEventListener("click", function () {
+      quantity = Math.min(99, quantity + 1);
+      if (quantityNode) quantityNode.textContent = String(quantity);
+    });
+    if (addButton) addButton.addEventListener("click", function () {
+      window.Cart.add(product.id, quantity);
+      addButton.textContent = "Lagt i kurv";
+      window.setTimeout(function () { addButton.textContent = "Læg i kurv"; }, 1200);
+    });
 
     /* Relaterede produkter */
     var relatedMount = root.querySelector("[data-related]");
