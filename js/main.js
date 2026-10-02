@@ -59,6 +59,7 @@
     var cfg = window.Shop.config;
 
     document.querySelectorAll("[data-shop-name]").forEach(function (el) { el.textContent = cfg.name; });
+    document.querySelectorAll("[data-shop-cvr]").forEach(function (el) { el.textContent = cfg.cvr; });
     document.querySelectorAll("[data-shop-year]").forEach(function (el) { el.textContent = String(new Date().getFullYear()); });
 
     document.querySelectorAll("[data-shop-telegram]").forEach(function (el) {

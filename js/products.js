@@ -21,7 +21,8 @@ window.Shop = (function () {
   /* --- Butiksidentitet ---------------------------------------------------
      Ret navn og kontaktlinks her. Bruges på alle sider. */
   var config = {
-    name: "LAYERLAB",
+    name: "NordForm",
+    cvr: "41693908",
     telegram: "@test",
     currency: "DKK"
   };

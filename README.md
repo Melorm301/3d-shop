@@ -1,4 +1,4 @@
-# LAYERLAB - statisk produktkatalog
+# NordForm - statisk produktkatalog
 
 Et lille, sammenhaengende website til en hobbybaseret 3D-printshop. Ren HTML, CSS og
 vanilla JavaScript. Ingen frameworks, ingen build-trin, ingen afhaengigheder.
@@ -36,8 +36,9 @@ Indholdet kommer fra `js/products.js`.
 
 ## Ret butikken til
 
-**Navn og Telegram-brugernavn** staar ét sted: `config` i `js/products.js`.
-Telegram bruges til alle produktspørgsmål og bestillinger.
+Virksomhedsnavn: **NordForm**. CVR: **41693908**. De centrale værdier og
+Telegram-brugernavn staar i `config` i `js/products.js`. Telegram bruges til alle
+produktspørgsmål og bestillinger.
 
 **Farver og typografi** styres fra `:root` i `css/style.css`.
 
