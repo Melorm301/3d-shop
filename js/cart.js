@@ -52,7 +52,7 @@
       '<button class="cart-remove" type="button" data-cart-action="remove" data-item-key="' + itemKey + '" aria-label="Fjern ' + ui.esc(product.name) + ' fra kurven">Fjern</button></article>';
   }
   function emptyHTML() {
-    return '<div class="cart-empty"><div class="cart-empty-mark" aria-hidden="true">∅</div><h2 class="h3">Plads til noget godt.</h2><p class="body mt-md">Din kurv er tom. Find en form, der passer ind i din hverdag.</p><a class="btn btn-primary mt-md" href="shop.html">Se udvalget <span class="arrow" aria-hidden="true">↗</span></a></div>';
+    return '<div class="cart-empty"><div class="cart-empty-mark" aria-hidden="true">∅</div><h2 class="h3">Plads til noget godt.</h2><p class="body mt-md">Din kurv er tom. Find en form, der passer ind i din hverdag.</p><a class="btn btn-primary mt-md" href="shop.html">Se udvalget <span class="arrow" aria-hidden="true">→</span></a></div>';
   }
   function orderText() {
     var lines = ['Hej STYKK, jeg vil gerne bestille:'];
@@ -77,7 +77,7 @@
     return '<aside class="cart-summary"><p class="eyebrow">' + (checkout ? 'Din ordreforespørgsel' : 'Det, du har valgt') + '</p>' +
       '<div class="cart-total"><span>Vejledende varetotal</span><strong>' + total + '</strong></div><div class="summary-line"><span>Fragt</span><span>Aftales</span></div><div class="summary-line"><span>Betaling</span><span>Aftales på Telegram</span></div>' +
       '<p class="body-sm mt-md">' + (checkout ? 'Telegram åbner med din forespørgsel som kladde. Du sender selv beskeden. Detaljer, endelig pris, fragt og betaling aftales derefter.' : 'Fragt og endelig total bekræftes på Telegram, før du bestiller.') + '</p>' +
-      (checkout ? '<a class="btn btn-primary btn-block mt-md" data-telegram-order target="_blank" rel="noopener noreferrer">Åbn ordre i Telegram <span class="arrow" aria-hidden="true">↗</span></a><button class="order-copy mt-md" type="button" data-copy-order>Kopiér ordretekst</button><textarea class="copy-fallback" data-copy-fallback aria-label="Ordretekst til kopiering" readonly hidden></textarea><a class="link-quiet mt-md" href="cart.html">Tilbage til kurven</a>' : '<a class="btn btn-primary btn-block mt-md" href="checkout.html">Gennemse din forespørgsel <span class="arrow" aria-hidden="true">↗</span></a><a class="link-quiet mt-md" href="shop.html">Fortsæt med at shoppe</a>') + '</aside>';
+      (checkout ? '<a class="btn btn-primary btn-block mt-md" data-telegram-order target="_blank" rel="noopener noreferrer">Åbn ordre i Telegram <span class="arrow" aria-hidden="true">→</span></a><button class="order-copy mt-md" type="button" data-copy-order>Kopiér ordretekst</button><textarea class="copy-fallback" data-copy-fallback aria-label="Ordretekst til kopiering" readonly hidden></textarea><a class="link-quiet mt-md" href="cart.html">Tilbage til kurven</a>' : '<a class="btn btn-primary btn-block mt-md" href="checkout.html">Gennemse din forespørgsel <span class="arrow" aria-hidden="true">→</span></a><a class="link-quiet mt-md" href="shop.html">Fortsæt med at shoppe</a>') + '</aside>';
   }
   function render() {
     var focused = document.activeElement;
@@ -99,7 +99,7 @@
       drawer.querySelector('[data-drawer-items]').innerHTML = items.length ? '<div class="cart-items">' + rows + '</div>' : emptyHTML();
       var footer = drawer.querySelector('[data-drawer-footer]');
       footer.hidden = !items.length;
-      footer.innerHTML = '<div class="cart-total"><span>Vejledende varetotal</span><strong>' + window.Shop.formatPrice(subtotal()) + '</strong></div><p class="body-sm">Endelig pris, fragt og betaling aftales på Telegram.</p><a class="btn btn-primary btn-block" href="checkout.html">Gennemse din forespørgsel <span class="arrow" aria-hidden="true">↗</span></a><a class="link-quiet" href="cart.html">Se hele kurven</a>';
+      footer.innerHTML = '<div class="cart-total"><span>Vejledende varetotal</span><strong>' + window.Shop.formatPrice(subtotal()) + '</strong></div><p class="body-sm">Endelig pris, fragt og betaling aftales på Telegram.</p><a class="btn btn-primary btn-block" href="checkout.html">Gennemse din forespørgsel <span class="arrow" aria-hidden="true">→</span></a><a class="link-quiet" href="cart.html">Se hele kurven</a>';
     }
     syncOrderLinks();
     if (focusKey && focusedMount) {

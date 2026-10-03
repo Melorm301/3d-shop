@@ -16,7 +16,7 @@
       '<span class="pcard-body"><span class="pcard-meta"><span class="pcard-name">' + ui.esc(product.name) + '</span><span class="pcard-price" title="Vejledende pris pr. STYKK">' + ui.esc(price) + '</span></span>' +
       '<span class="category-tag">' + ui.esc(product.category) + '</span><span class="pcard-desc body-sm">' + ui.esc(product.tagline) + '</span>' + swatches + '</span></a>' +
       (colors.length > 1 || (product.sizes || []).length > 1
-        ? '<a class="btn btn-sm pcard-add" href="product.html?id=' + encodeURIComponent(product.id) + '">Vælg variant <span class="arrow" aria-hidden="true">↗</span></a>'
+        ? '<a class="btn btn-sm pcard-add" href="product.html?id=' + encodeURIComponent(product.id) + '">Vælg variant <span class="arrow" aria-hidden="true">→</span></a>'
         : '<button class="btn btn-sm pcard-add" type="button" data-add-product="' + ui.esc(product.id) + '" aria-label="Læg ' + ui.esc(product.name) + ' i kurv">Læg i kurv <span class="arrow" aria-hidden="true">+</span></button>') + '</article>';
   }
   function init() {
@@ -55,7 +55,7 @@
           });
           if (count) count.textContent = list.length + (list.length === 1 ? ' objekt' : ' objekter');
         }
-        mount.innerHTML = list.length ? list.map(cardHTML).join('') : '<div class="catalog-empty"><h2 class="h3">Vi fandt ikke den form.</h2><p class="body mt-md">Prøv en anden søgning, eller se hele udvalget.</p><button class="btn btn-primary" type="button" data-reset-filters>Vis alle objekter ↗</button></div>';
+        mount.innerHTML = list.length ? list.map(cardHTML).join('') : '<div class="catalog-empty"><h2 class="h3">Vi fandt ikke den form.</h2><p class="body mt-md">Prøv en anden søgning, eller se hele udvalget.</p><button class="btn btn-primary" type="button" data-reset-filters>Vis alle objekter →</button></div>';
       });
     }
     [category, sort].filter(Boolean).forEach(function (control) { control.addEventListener('change', render); });

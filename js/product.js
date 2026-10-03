@@ -9,7 +9,7 @@
     var product = id ? window.Shop.byId(id) : window.Shop.all()[0];
     if (!product) {
       root.hidden = true;
-      root.insertAdjacentHTML('beforebegin', '<section class="wrap section"><p class="eyebrow">STYKK / Produkt</p><h1 class="h2">Den form kunne vi ikke finde.</h1><p class="body mt-md">Produktet findes ikke i vores nuværende udvalg.</p><a class="btn btn-primary mt-md" href="shop.html">Se alle objekter ↗</a></section>');
+      root.insertAdjacentHTML('beforebegin', '<section class="wrap section"><p class="eyebrow">STYKK / Produkt</p><h1 class="h2">Den form kunne vi ikke finde.</h1><p class="body mt-md">Produktet findes ikke i vores nuværende udvalg.</p><a class="btn btn-primary mt-md" href="shop.html">Se alle objekter →</a></section>');
       document.title = 'Produkt ikke fundet · STYKK';
       var robots = document.createElement('meta'); robots.name = 'robots'; robots.content = 'noindex,follow'; document.head.appendChild(robots);
       return;
