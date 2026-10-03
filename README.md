@@ -1,94 +1,129 @@
-# NordForm - statisk shop
+# NordForm
 
-Et lille, sammenhaengende website til en hobbybaseret 3D-printshop. Ren HTML, CSS og
-vanilla JavaScript. Ingen frameworks, ingen build-trin, ingen afhaengigheder.
+En dansk butik til 3D-printede opbevarings- og organiseringsprodukter. Ren HTML,
+CSS og JavaScript. Ingen framework-, installations- eller buildkrav til butikken.
 
-Siden kan aabnes direkte fra filsystemet og hostes som statisk site paa fx GitHub Pages
-eller Cloudflare Pages.
+## Lokal preview
+
+Kør fra projektmappen:
+
+```sh
+python3 -m http.server 4173 --bind 127.0.0.1
+```
+
+Åbn `http://127.0.0.1:4173/`. Filerne kan også åbnes direkte eller hostes statisk
+på GitHub Pages. Brug en lokal server til at teste kurvens lagring på tværs af sider.
 
 ## Struktur
 
-```
-/
-├── index.html        Forside med hero og udvalgte produkter
-├── shop.html         Produktoversigt med kategorifilter og kurvknapper
-├── product.html      Produktside: galleri, pris og kurvknap
-├── cart.html         Browserlokal kurv
-├── checkout.html     Ordreoversigt og Telegram-bestilling
-├── faq.html          FAQ med kategorier og accordion
-├── contact.html      Kontakt via Telegram
-│
-├── css/
-│   └── style.css     Alt design: tokens, komponenter, responsive regler
-│
-├── js/
-│   ├── products.js   Butiksidentitet og alle produktdata
-│   ├── cart.js       Kurv og ordrekladde til Telegram
-│   └── main.js       Faelles adfaerd og side-specifik logik
-│
-├── images/
-│   ├── hero-studio.jpg
-│   └── products/     Produktbilleder
-│
-└── assets/
-    └── favicon.svg
-```
+- `index.html`: produktorienteret forside, udvalgte objekter, historie,
+  samlinger, printlag og specialprint.
+- `shop.html`: søgning, samlinger, kategorier, sortering og quick add.
+- `product.html?id=pen-case`: galleri, lysboks, produktinformation, varianter
+  når de findes i data, antal og mobil købsknap.
+- `cart.html`: browserlokal kurv og ordreoversigt.
+- `checkout.html`: gennemse varer, tilføj en bemærkning og klargør Telegram-ordre.
+- `contact.html`: direkte kontakt og formular til specialønsker.
+- `faq.html`: eksisterende svar om produkter, bestilling, specialprint og levering.
+- `css/style.css`: fælles tokens, typografi, komponenter, responsive regler og
+  reduceret bevægelse.
+- `js/products.js`: den eksisterende butiksidentitet, produktdata og priser i øre.
+- `js/image-data.js`: billedmål og responsive versioner af produktbillederne.
+- `js/ui.js`: genbrugelige billed-, ikon- og dialogfunktioner.
+- `js/catalog.js`: produktkort og katalogfiltre.
+- `js/product.js`: produktgalleri, metadata, varianter og købskontroller.
+- `js/cart.js`: kurv, prisberegning, lagring, kurvskuffe og Telegram-kladder.
+- `js/main.js`: fælles navigation, FAQ, kontaktformular og printlagsanimation.
 
-`product.html` laeser produktet fra url'en, fx `product.html?id=pen-case`.
-Indholdet kommer fra `js/products.js`.
+Header og footer findes i HTML på alle sider, så navigationen ikke afhænger af
+JavaScript. Dialoger bruger browserens native fokusstyring. Escape lukker dem,
+og fokus returnerer til det element, der åbnede dem. Bevægelse respekterer
+`prefers-reduced-motion`.
 
-## Ret butikken til
+## Produkter og varianter
 
-Virksomhedsnavn: **NordForm**. CVR: **41693908**. De centrale værdier og
-Telegram-brugernavn staar i `config` i `js/products.js`. Telegram bruges til alle
-produktspørgsmål og bestillinger.
+Alle otte eksisterende produkter, deres IDs, SKU'er, priser, tekster og originale
+billeder er bevaret i `js/products.js`. Der er én eksisterende kategori: Peptides.
+Samlingerne Cases, Holdere & indsatser og Stationer grupperer det eksisterende
+udvalg efter funktion; de erstatter ikke kategoridata.
 
-**Farver og typografi** styres fra `:root` i `css/style.css`.
+Samlingen vælges med `shop.html?collection=cases`, `holders` eller `stations`.
+Søgning, kategori og sortering fungerer sammen.
 
-**Produkter** tilfoejes i `products`-arrayet i `js/products.js`:
+Farve- og størrelseskontroller vises kun, når produktet faktisk har disse data.
+Eksempel på dataskema:
 
 ```js
-{
-  id: "stl-navn",                 // bruges i produktets url
-  name: "Produktnavn",
-  tagline: "Kort linje, vises under navnet i shoppen",
-  description: "Kort beskrivelse i 2-3 saetninger til produktsiden",
-  price: 14900,                   // OERE. 14900 = 149,00 DKK
-  currency: "DKK",
-  colors: [{ name: "Black", hex: "#1A1917" }],
-  sizes: [{ name: "One size", price: 14900 }],
-  images: ["images/products/stl-navn-01.jpg"],
-  featured: true,                 // vises i shop-grid'en
-  priceFrom: true,                // viser "fra ..." naar der er flere stoerrelser
-  latest: { state: "ready", note: "Lige lagt op" }
-}
+colors: [{ name: 'Sort', hex: '#252720' }],
+sizes: [{ name: 'Lille', price: 14900 }, { name: 'Stor', price: 19900 }]
 ```
 
-Hold produktsiden ren: navn, pris, en kort linje og en kort beskrivelse. Alt
-teknisk om printet er bevidst udeladt.
+Kurven holder kombinationer af produkt, farve og størrelse adskilt. Den valgte
+størrelses pris bruges i varetotal og Telegram-kladde. Produkter med flere
+varianter henviser fra kataloget til produktsiden i stedet for at tilføje et
+uklart valg direkte.
 
-## Billeder
-
-Produktbillederne i `images/products/` er midlertidige AI-genererede studiofotos,
-lavet til at kunne skiftes ud én til én. Brug samme filnavn, eller ret stierne i
-`js/products.js`. Optimalt: 1448 x 1086 px (4:3) til produkter og 1672 x 941 px
-til hero-billedet.
+Den oprindelige lagringsnøgle `nordform.cart.v1` bevares. Tidligere kurve med
+`{ id, qty }` læses fortsat. Antal begrænses til 1–99, ukendte produkter afvises,
+og beskadigede data håndteres. Flere åbne faner synkroniseres. Hvis lagring er
+blokeret, virker kurven i den aktuelle side uden vedvarende lagring.
 
 ## Bestilling og kontakt
 
-Kurven gemmes lokalt i kundens browser. Checkout sender ikke betaling eller
-ordren automatisk: den åbner en ordrekladde i Telegram, som kunden selv vælger
-at sende. Lagerstatus, fragt og betaling aftales derefter. Skift `telegram` i
-`config` i `js/products.js`, når det endelige Telegram-brugernavn er klar.
+**NordForm · CVR 41693908**. Telegram-brugernavnet ligger i `Shop.config` i
+`js/products.js` og er fortsat **`@test`**. Ret det til virksomhedens rigtige
+brugernavn, før butikken bruges til reelle ordreforespørgsler.
 
-SEO-grundlaget omfatter sidetitler, beskrivelser, canonical- og Open Graph-tags,
-strukturerede data for virksomheden og produktsider samt `sitemap.xml` og
-`robots.txt`. Indholdet hostes på GitHub Pages; tilpas de kanoniske URLs i
-HTML-filerne og sitemap, hvis domænet ændres.
+Checkout foretager ingen betaling og sender ingen besked automatisk. Kunden
+åbner en ordrekladde i Telegram og vælger selv at sende den. Lagerstatus, fragt,
+levering og betaling aftales direkte. Ordreteksten kan også kopieres.
 
-## Tilgaengelighed og detaljer
+Kontaktformularen validerer idé og antal og klargør en Telegram-besked med de
+oplysninger, kunden har indtastet. Fotos og modeller kan vedhæftes i Telegram.
+Der findes ingen upload-, betalings-, lager- eller formularserver i projektet.
+Ordrebemærkninger og kontaktoplysninger gemmes ikke i localStorage.
 
-- Semantisk HTML, skip-link, fokusring og `prefers-reduced-motion` er respekteret.
-- Alle sider deler ét stylesheet. Header og footer er gentaget i hver fil, fordi
-  siden er statisk og skal kunne laeses uden JavaScript.
-- `hidden` bruges til tilstande, saa indhold ikke vises forkert foer JavaScript koerer.
+## Billeder og SEO
+
+Eksisterende billedfiler er bevaret. `*-480.webp` og `*-960.webp` er mindre,
+fulde versioner af de samme billeder; ingen nye produkter eller billeder er
+AI-genereret til redesignets brug. Billederne vises uden at beskære vigtige
+produktdele. Den eksisterende billedkvalitet og baggrunde varierer.
+
+Katalog og udvalgte produkter findes også som statisk HTML for hurtig første
+visning og crawlbare produktlinks. JavaScript tilføjer filtre og kurvfunktioner.
+Efter ændring af produktdata kan den statiske visning opdateres med:
+
+```sh
+node scripts/render-catalog.cjs
+```
+
+Det er en valgfri vedligeholdelseskommando, ikke et buildkrav. JavaScript bruger
+altid de aktuelle produktdata. Billedvarianter og manifest kan opdateres med
+`scripts/prepare-images.py` (Python med Pillow; kun til billedvedligeholdelse).
+
+Sidetitler, beskrivelser, canonical- og Open Graph-tags, eksisterende
+virksomhedsdata, dynamisk Product-schema, `sitemap.xml` og `robots.txt` er bevaret.
+Kurv og checkout er `noindex,follow`. Ukendte produkt-IDs viser en tydelig fejl
+frem for et andet produkt. Produktspecifik metadata kræver som før JavaScript;
+separate statiske produkt-URLs kan være en senere forbedring.
+
+Ved en ny designudgivelse ændres `?v=` på CSS- og scriptlinks, så besøgende med
+cachede filer får de nye ressourcer sammen. Kanoniske URLs og sitemap skal
+opdateres, hvis butikken flytter fra GitHub Pages til et andet domæne.
+
+## Validering
+
+Kør regressionstests uden ekstra pakker (Node.js 18 eller nyere):
+
+```sh
+node --test tests/*.test.cjs
+```
+
+Testene kontrollerer gamle kurve, prisberegning, varianter, antal, fjernelse,
+synkronisering, interne links, fragmenter, billedfiler, metadata og JavaScript.
+
+Browserkontrol ved redesign: alle syv sider ved 320, 375, 390, 430, 768, 1024,
+1280, 1440 og 1920 px. Interaktioner kontrolleres i den faktiske browser:
+filtre, søgning, sortering, galleri, lysboks, mobile menu/dialoger, fokus,
+kurvkontroller, checkout og formularvalidering. Der sendes ingen testordrer.

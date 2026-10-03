@@ -7,35 +7,55 @@
 <meta name="description" content="Gennemse din kurv hos NordForm, juster antal og fortsæt til checkout for at sende en ordreforespørgsel.">
 <meta name="robots" content="noindex,follow">
 <link rel="canonical" href="https://melorm301.github.io/3d-shop/cart.html">
-<meta name="theme-color" content="#07151E">
+<meta name="theme-color" content="#F5F3EE">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=20261003e">
 </head>
-<body>
+<body class="page-cart">
 <a class="skip-link" href="#main">Spring til indhold</a>
 <header class="site-header">
   <div class="wrap header-bar">
     <a class="brand" href="index.html" aria-label="NordForm, forside"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-name" data-shop-name>NordForm</span></a>
-    <nav class="nav" aria-label="Hovedmenu"><a class="nav-link" href="index.html">Forside</a><a class="nav-link" href="shop.html">Shop</a><a class="nav-link" href="faq.html">FAQ</a><a class="nav-link" href="contact.html">Kontakt</a></nav>
-    <div class="header-actions"><a class="cart-link" href="cart.html" aria-current="page" aria-label="Kurv"><span data-icon="bag"></span><span class="cart-label">Kurv</span><span class="cart-count" data-cart-count hidden>0</span></a><button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu"><span data-icon="menu"></span></button></div>
+    <nav class="nav" aria-label="Hovedmenu"><a class="nav-link" href="shop.html">Shop</a><a class="nav-link" href="index.html#om">Om NordForm</a><a class="nav-link" href="contact.html#custom">Specialprint</a><a class="nav-link" href="faq.html">FAQ</a></nav>
+    <div class="header-actions">
+      <a class="cart-link" href="cart.html" data-cart-open aria-haspopup="dialog" aria-label="Åbn kurv"><span class="cart-label">Kurv</span><span data-icon="bag"></span><span class="cart-count" data-cart-count>0</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu"><span data-icon="menu"></span></button>
+    </div>
   </div>
-  <div class="mobile-nav" id="mobile-nav" data-mobile-nav><a href="index.html">Forside</a><a href="shop.html">Shop</a><a href="faq.html">FAQ</a><a href="contact.html">Kontakt</a><a href="cart.html" aria-current="page">Kurv <span class="cart-count" data-cart-count hidden>0</span></a></div>
+  <dialog class="mobile-nav" id="mobile-nav" data-mobile-nav aria-label="Hovedmenu">
+    <div class="mobile-nav-top"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-name" data-shop-name>NordForm</span></a><button class="icon-button" type="button" data-nav-close aria-label="Luk menu"><span data-icon="x"></span></button></div>
+    <p class="eyebrow">Gå på opdagelse</p><nav aria-label="Mobilmenu"><a href="shop.html"><span>Shop</span><span class="arrow" aria-hidden="true">↗</span></a><a href="index.html#om"><span>Om NordForm</span><span class="arrow" aria-hidden="true">↗</span></a><a href="contact.html#custom"><span>Specialprint</span><span class="arrow" aria-hidden="true">↗</span></a><a href="faq.html"><span>FAQ</span><span class="arrow" aria-hidden="true">↗</span></a><a href="cart.html"><span>Din kurv</span><span class="arrow" aria-hidden="true">↗</span></a></nav>
+    <p class="mobile-nav-note">Form med et formål.<br>Lavet lag for lag.</p>
+  </dialog>
 </header>
+<noscript><nav class="wrap no-js-nav" aria-label="Menu uden JavaScript"><a href="index.html">Forside</a><a href="shop.html">Shop</a><a href="contact.html">Kontakt</a><a href="faq.html">FAQ</a></nav></noscript>
 <main id="main">
   <section class="section-tight">
     <div class="wrap">
       <nav class="breadcrumb" aria-label="Brødkrumme"><a href="index.html">Forside</a><span class="sep" aria-hidden="true">/</span><span>Kurv</span></nav>
-      <p class="eyebrow">NordForm · Shop</p>
-      <h1 class="display page-title">Din kurv.</h1>
-      <div class="cart-page" data-cart-page aria-live="polite"></div>
+      <p class="eyebrow">01 / Din kurv</p>
+      <h1 class="display page-title">Din kurv<span class="accent-dot">.</span></h1>
+      <div class="cart-page" data-cart-page aria-live="polite"><p class="body">Aktivér JavaScript for at se din gemte kurv. Du kan også <a href="contact.html">kontakte os</a> om en bestilling.</p></div>
     </div>
   </section>
 </main>
-<footer class="site-footer"><div class="wrap"><div class="footer-grid">
-  <div class="footer-brand-col"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-name" data-shop-name>NordForm</span></a><p class="footer-about">Produkter til opbevaring og organisering af vials, pens og tilbehør.</p></div>
-  <div class="footer-col"><h3>Shop</h3><ul><li><a href="shop.html">Alle produkter</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Kontakt</a></li></ul></div>
-  <div class="footer-col"><h3>Kontakt</h3><ul><li><a href="https://t.me/test" data-shop-telegram target="_blank" rel="noopener noreferrer">Telegram <span class="mono telegram-handle" data-shop-telegram-handle>@test</span></a></li></ul></div>
-</div><div class="footer-bottom"><span>© <span data-shop-year>2026</span> <span data-shop-name>NordForm</span></span><span>CVR: <span data-shop-cvr>41693908</span></span><span>Kvalitet · Funktion · Præcision</span></div></div></footer>
-<script src="js/products.js"></script><script src="js/cart.js"></script><script src="js/main.js"></script>
+<footer class="site-footer"><div class="wrap">
+  <div class="footer-top"><p class="eyebrow">Designet digitalt. Lavet lag for lag.</p><a class="footer-to-top" href="#main" aria-label="Til toppen">Til toppen <span aria-hidden="true">↑</span></a></div>
+  <a class="footer-wordmark" href="index.html" aria-label="NordForm, forside">NordForm<span class="footer-dot">.</span></a>
+  <div class="footer-grid">
+    <p class="footer-about">Gennemtænkte former.<br>Plads til det, du bruger.</p>
+    <div class="footer-col"><h2>Gå på opdagelse</h2><ul><li><a href="shop.html">Alle produkter</a></li><li><a href="index.html#om">Om NordForm</a></li><li><a href="contact.html#custom">Specialprint</a></li></ul></div>
+    <div class="footer-col"><h2>Vi hjælper gerne</h2><ul><li><a href="faq.html">Spørgsmål &amp; svar</a></li><li><a href="faq.html#orders">Bestilling &amp; betaling</a></li><li><a href="faq.html#shipping">Fragt &amp; levering</a></li><li><a href="contact.html">Kontakt</a></li></ul></div>
+    <div class="footer-col"><h2>En direkte linje</h2><ul><li><a href="https://t.me/test" data-shop-telegram target="_blank" rel="noopener noreferrer">Telegram <span class="arrow" aria-hidden="true">↗</span></a></li><li><span class="mono telegram-handle" data-shop-telegram-handle>@test</span></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© <span data-shop-year>2026</span> <span data-shop-name>NordForm</span></span><span>CVR <span data-shop-cvr>41693908</span></span><span>Form med et formål.</span></div>
+</div></footer>
+<script src="js/products.js?v=20261003e"></script>
+<script src="js/image-data.js?v=20261003e"></script>
+<script src="js/ui.js?v=20261003e"></script>
+<script src="js/cart.js?v=20261003e"></script>
+<script src="js/catalog.js?v=20261003e"></script>
+<script src="js/product.js?v=20261003e"></script>
+<script src="js/main.js?v=20261003e"></script>
 </body>
 </html>

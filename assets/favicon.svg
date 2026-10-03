@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#171614"/>
-  <g fill="#C9500F">
-    <rect x="8" y="9.5" width="16" height="2.2"/>
-    <rect x="8" y="14.9" width="16" height="2.2"/>
-    <rect x="8" y="20.3" width="16" height="2.2"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="2" fill="#f5f3ee"/><g fill="#c34320" transform="skewY(-12)"><path d="M5 10h22v3H5zM5 17h18v3H5zM5 24h14v3H5z"/></g></svg>

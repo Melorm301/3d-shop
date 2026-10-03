@@ -13,45 +13,28 @@
 <meta property="og:url" content="https://melorm301.github.io/3d-shop/product.html">
 <meta property="og:image" content="https://melorm301.github.io/3d-shop/images/products/64-vial-powcan-insert-02.webp">
 <script type="application/ld+json" data-product-schema>{}</script>
-<meta name="theme-color" content="#07151E">
+<meta name="theme-color" content="#F5F3EE">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=20261003e">
 </head>
-<body>
-
+<body class="page-product">
 <a class="skip-link" href="#main">Spring til indhold</a>
-
 <header class="site-header">
   <div class="wrap header-bar">
-    <a class="brand" href="index.html" aria-label="Til forsiden">
-      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-      <span class="brand-name" data-shop-name>NordForm</span>
-    </a>
-
-    <nav class="nav" aria-label="Hovedmenu">
-      <a class="nav-link" href="index.html">Forside</a>
-      <a class="nav-link" href="shop.html">Shop</a>
-      <a class="nav-link" href="faq.html">FAQ</a>
-      <a class="nav-link" href="contact.html">Kontakt</a>
-    </nav>
-
+    <a class="brand" href="index.html" aria-label="NordForm, forside"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-name" data-shop-name>NordForm</span></a>
+    <nav class="nav" aria-label="Hovedmenu"><a class="nav-link" href="shop.html">Shop</a><a class="nav-link" href="index.html#om">Om NordForm</a><a class="nav-link" href="contact.html#custom">Specialprint</a><a class="nav-link" href="faq.html">FAQ</a></nav>
     <div class="header-actions">
-      <a class="cart-link" href="cart.html" aria-label="Kurv"><span data-icon="bag"></span><span class="cart-count" data-cart-count hidden>0</span></a>
-      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
-      </button>
+      <a class="cart-link" href="cart.html" data-cart-open aria-haspopup="dialog" aria-label="Åbn kurv"><span class="cart-label">Kurv</span><span data-icon="bag"></span><span class="cart-count" data-cart-count>0</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu"><span data-icon="menu"></span></button>
     </div>
   </div>
-
-  <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
-    <a href="index.html">Forside</a>
-    <a href="shop.html">Shop</a>
-    <a href="cart.html">Kurv <span class="cart-count" data-cart-count hidden>0</span></a>
-    <a href="faq.html">FAQ</a>
-    <a href="contact.html">Kontakt</a>
-  </div>
+  <dialog class="mobile-nav" id="mobile-nav" data-mobile-nav aria-label="Hovedmenu">
+    <div class="mobile-nav-top"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-name" data-shop-name>NordForm</span></a><button class="icon-button" type="button" data-nav-close aria-label="Luk menu"><span data-icon="x"></span></button></div>
+    <p class="eyebrow">Gå på opdagelse</p><nav aria-label="Mobilmenu"><a href="shop.html"><span>Shop</span><span class="arrow" aria-hidden="true">↗</span></a><a href="index.html#om"><span>Om NordForm</span><span class="arrow" aria-hidden="true">↗</span></a><a href="contact.html#custom"><span>Specialprint</span><span class="arrow" aria-hidden="true">↗</span></a><a href="faq.html"><span>FAQ</span><span class="arrow" aria-hidden="true">↗</span></a><a href="cart.html"><span>Din kurv</span><span class="arrow" aria-hidden="true">↗</span></a></nav>
+    <p class="mobile-nav-note">Form med et formål.<br>Lavet lag for lag.</p>
+  </dialog>
 </header>
-
+<noscript><nav class="wrap no-js-nav" aria-label="Menu uden JavaScript"><a href="index.html">Forside</a><a href="shop.html">Shop</a><a href="contact.html">Kontakt</a><a href="faq.html">FAQ</a></nav></noscript>
 <main id="main">
 
   <nav class="wrap breadcrumb" aria-label="Brødkrumme">
@@ -64,12 +47,12 @@
 
   <div class="wrap" data-product-page>
 
-    <section class="product-layout" style="padding-bottom:var(--space-section)">
+    <section class="product-layout" >
 
       <!-- ---------- Galleri ---------- -->
       <div class="gallery">
         <div class="gallery-main">
-          <img data-gallery-main src="images/products/64-vial-powcan-insert-01.webp" width="1122" height="1402" alt="">
+          <img data-gallery-main width="1122" height="1402" alt="">
           <button class="gallery-zoom" type="button" data-lightbox-open>
             <span data-icon="maximize" data-icon-class="icon-sm"></span>
             Se større
@@ -79,18 +62,20 @@
       </div>
 
       <!-- ---------- Produktinformation ---------- -->
-      <div>
+      <div class="product-info">
+        <p class="eyebrow product-edition">NordForm / Objekt</p>
         <span class="category-tag product-category" data-p-category></span>
         <h1 class="h1 product-name" data-p-name>Produkt</h1>
         <p class="product-price" data-p-price>–</p>
         <p class="lede product-lead" data-p-description></p>
+        <p class="mono product-sku" data-p-sku></p>
 
-        <div class="field-group" data-p-colors-group>
+        <div class="field-group" data-p-colors-group hidden>
           <p class="field-label">Farve</p>
           <div class="chipset" data-p-colors></div>
         </div>
 
-        <div class="field-group" data-p-sizes-group>
+        <div class="field-group" data-p-sizes-group hidden>
           <p class="field-label">Størrelse</p>
           <div class="chipset" data-p-sizes></div>
         </div>
@@ -100,22 +85,24 @@
           <div class="buy-row">
             <div class="qty">
               <button type="button" data-qty-minus aria-label="Færre">−</button>
-              <span class="qty-value" data-p-qty>1</span>
+              <span class="qty-value" data-p-qty aria-live="polite">1</span>
               <button type="button" data-qty-plus aria-label="Flere">+</button>
             </div>
-            <button class="btn btn-primary" type="button" data-add-to-cart>Læg i kurv</button>
+            <button class="btn btn-primary" type="button" data-add-to-cart>Læg i kurv <span class="arrow" aria-hidden="true">↗</span></button>
           </div>
-          <p class="body-sm mt-md">Fragt og betaling aftales, når du sender din ordreforespørgsel via Telegram.</p>
+          <p class="body-sm mt-md">Lagerstatus, fragt og betaling bekræftes på Telegram, før du bestiller.</p>
         </div>
+<div class="product-details"><details open><summary>Produktet</summary><p data-p-detail></p></details><details><summary>Materialer &amp; overflade</summary><p>Vi printer i PLA og PETG afhængigt af produktet. De fine lag i overfladen er en del af 3D-printets udtryk. Spørg os om materialet til netop dette produkt.</p></details><details><summary>Bestilling &amp; levering</summary><p>Læg produktet i kurven og fortsæt til din ordrekladde i Telegram. Lagerstatus, fragtpris, levering og betaling aftales direkte, før ordren bekræftes.</p><a class="link-quiet" href="faq.html#shipping">Læs om levering ↗</a></details><details><summary>En anden farve eller størrelse?</summary><p>Har du bestemte mål eller en farve i tankerne? Send os dit ønske, så ser vi på mulighederne og aftaler en pris.</p><a class="link-quiet" href="contact.html#custom">Fortæl os om dit ønske ↗</a></details></div>
       </div>
     </section>
 
+    <div class="mobile-buy" data-mobile-buy><div><span data-mobile-product></span><strong data-mobile-price></strong></div><button class="btn btn-primary" type="button" data-mobile-add>Læg i kurv <span aria-hidden="true">↗</span></button></div>
     <!-- ---------- Relaterede produkter ---------- -->
     <section class="section-tight">
       <div class="section-head">
         <div>
           <p class="eyebrow">Flere produkter</p>
-          <h2 class="h2" style="font-size:2rem">Se også</h2>
+          <h2 class="h2" >Passer ind i din hverdag.</h2>
         </div>
         <p class="mono"><a class="link-quiet" href="shop.html">Til shoppen</a></p>
       </div>
@@ -124,7 +111,7 @@
 
     <!-- ---------- Lysboks ---------- -->
     <dialog class="lightbox" data-lightbox aria-label="Produktbillede">
-      <img class="lightbox-img" data-lightbox-image src="" width="1448" height="1086" alt="">
+      <img class="lightbox-img" data-lightbox-image width="1448" height="1086" alt="">
       <div class="lightbox-bar">
         <div class="lightbox-nav">
           <button class="lightbox-btn" type="button" data-lightbox-prev>
@@ -144,49 +131,25 @@
     </dialog>
 
   </div>
-
+  <noscript><p class="wrap body">Aktivér JavaScript for at vælge produktet og bruge kurven. Du kan også <a href="contact.html">kontakte NordForm</a> om din bestilling.</p></noscript>
 </main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand-col">
-        <a class="brand" href="index.html">
-          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span class="brand-name" data-shop-name>NordForm</span>
-        </a>
-        <p class="footer-about">
-          Produkter til peptides og andre formål, udvalgt med fokus på kvalitet.
-        </p>
-      </div>
-
-      <div class="footer-col">
-        <h3>Shop</h3>
-        <ul>
-          <li><a href="shop.html">Alle produkter</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Kontakt</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h3>Kontakt</h3>
-        <ul>
-          <li><a href="https://t.me/test" data-shop-telegram target="_blank" rel="noopener noreferrer">Telegram <span class="mono telegram-handle" data-shop-telegram-handle>@test</span></a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <span>© <span data-shop-year>2026</span> <span data-shop-name>NordForm</span></span>
-      <span>CVR: <span data-shop-cvr>41693908</span></span>
-      <span>Kvalitet · Funktion · Præcision</span>
-    </div>
+<footer class="site-footer"><div class="wrap">
+  <div class="footer-top"><p class="eyebrow">Designet digitalt. Lavet lag for lag.</p><a class="footer-to-top" href="#main" aria-label="Til toppen">Til toppen <span aria-hidden="true">↑</span></a></div>
+  <a class="footer-wordmark" href="index.html" aria-label="NordForm, forside">NordForm<span class="footer-dot">.</span></a>
+  <div class="footer-grid">
+    <p class="footer-about">Gennemtænkte former.<br>Plads til det, du bruger.</p>
+    <div class="footer-col"><h2>Gå på opdagelse</h2><ul><li><a href="shop.html">Alle produkter</a></li><li><a href="index.html#om">Om NordForm</a></li><li><a href="contact.html#custom">Specialprint</a></li></ul></div>
+    <div class="footer-col"><h2>Vi hjælper gerne</h2><ul><li><a href="faq.html">Spørgsmål &amp; svar</a></li><li><a href="faq.html#orders">Bestilling &amp; betaling</a></li><li><a href="faq.html#shipping">Fragt &amp; levering</a></li><li><a href="contact.html">Kontakt</a></li></ul></div>
+    <div class="footer-col"><h2>En direkte linje</h2><ul><li><a href="https://t.me/test" data-shop-telegram target="_blank" rel="noopener noreferrer">Telegram <span class="arrow" aria-hidden="true">↗</span></a></li><li><span class="mono telegram-handle" data-shop-telegram-handle>@test</span></li></ul></div>
   </div>
-</footer>
-
-<script src="js/products.js"></script>
-<script src="js/cart.js"></script>
-<script src="js/main.js"></script>
+  <div class="footer-bottom"><span>© <span data-shop-year>2026</span> <span data-shop-name>NordForm</span></span><span>CVR <span data-shop-cvr>41693908</span></span><span>Form med et formål.</span></div>
+</div></footer>
+<script src="js/products.js?v=20261003e"></script>
+<script src="js/image-data.js?v=20261003e"></script>
+<script src="js/ui.js?v=20261003e"></script>
+<script src="js/cart.js?v=20261003e"></script>
+<script src="js/catalog.js?v=20261003e"></script>
+<script src="js/product.js?v=20261003e"></script>
+<script src="js/main.js?v=20261003e"></script>
 </body>
 </html>

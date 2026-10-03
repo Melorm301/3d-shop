@@ -12,103 +12,63 @@
 <meta property="og:description" content="Se NordForms udvalg af produkter til organisering og opbevaring af vials, pens og tilbehør.">
 <meta property="og:url" content="https://melorm301.github.io/3d-shop/shop.html">
 <meta property="og:image" content="https://melorm301.github.io/3d-shop/images/products/64-vial-powcan-insert-02.webp">
-<meta name="theme-color" content="#07151E">
+<meta name="theme-color" content="#F5F3EE">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=20261003e">
 </head>
-<body>
-
+<body class="page-shop">
 <a class="skip-link" href="#main">Spring til indhold</a>
-
 <header class="site-header">
   <div class="wrap header-bar">
-    <a class="brand" href="index.html" aria-label="Til forsiden">
-      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-      <span class="brand-name" data-shop-name>NordForm</span>
-    </a>
-    <nav class="nav" aria-label="Hovedmenu">
-      <a class="nav-link" href="index.html">Forside</a>
-      <a class="nav-link" href="shop.html" aria-current="page">Shop</a>
-      <a class="nav-link" href="faq.html">FAQ</a>
-      <a class="nav-link" href="contact.html">Kontakt</a>
-    </nav>
+    <a class="brand" href="index.html" aria-label="NordForm, forside"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-name" data-shop-name>NordForm</span></a>
+    <nav class="nav" aria-label="Hovedmenu"><a class="nav-link" href="shop.html" aria-current="page">Shop</a><a class="nav-link" href="index.html#om">Om NordForm</a><a class="nav-link" href="contact.html#custom">Specialprint</a><a class="nav-link" href="faq.html">FAQ</a></nav>
     <div class="header-actions">
-      <a class="cart-link" href="cart.html" aria-label="Kurv"><span data-icon="bag"></span><span class="cart-count" data-cart-count hidden>0</span></a>
-      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
-      </button>
+      <a class="cart-link" href="cart.html" data-cart-open aria-haspopup="dialog" aria-label="Åbn kurv"><span class="cart-label">Kurv</span><span data-icon="bag"></span><span class="cart-count" data-cart-count>0</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Åbn menu"><span data-icon="menu"></span></button>
     </div>
   </div>
-  <div class="mobile-nav" id="mobile-nav" data-mobile-nav>
-    <a href="index.html">Forside</a>
-    <a href="shop.html" aria-current="page">Shop</a>
-    <a href="cart.html">Kurv <span class="cart-count" data-cart-count hidden>0</span></a>
-    <a href="faq.html">FAQ</a>
-    <a href="contact.html">Kontakt</a>
-  </div>
+  <dialog class="mobile-nav" id="mobile-nav" data-mobile-nav aria-label="Hovedmenu">
+    <div class="mobile-nav-top"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-name" data-shop-name>NordForm</span></a><button class="icon-button" type="button" data-nav-close aria-label="Luk menu"><span data-icon="x"></span></button></div>
+    <p class="eyebrow">Gå på opdagelse</p><nav aria-label="Mobilmenu"><a href="shop.html" aria-current="page"><span>Shop</span><span class="arrow" aria-hidden="true">↗</span></a><a href="index.html#om"><span>Om NordForm</span><span class="arrow" aria-hidden="true">↗</span></a><a href="contact.html#custom"><span>Specialprint</span><span class="arrow" aria-hidden="true">↗</span></a><a href="faq.html"><span>FAQ</span><span class="arrow" aria-hidden="true">↗</span></a><a href="cart.html"><span>Din kurv</span><span class="arrow" aria-hidden="true">↗</span></a></nav>
+    <p class="mobile-nav-note">Form med et formål.<br>Lavet lag for lag.</p>
+  </dialog>
 </header>
-
+<noscript><nav class="wrap no-js-nav" aria-label="Menu uden JavaScript"><a href="index.html">Forside</a><a href="shop.html">Shop</a><a href="contact.html">Kontakt</a><a href="faq.html">FAQ</a></nav></noscript>
 <main id="main">
-  <section class="catalog-intro">
-    <div class="wrap">
-      <p class="eyebrow">NordForm · Udvalget</p>
-      <h1 class="display catalog-title">Shop.</h1>
-      <div class="catalog-intro-bottom">
-        <p class="lede">Udvalgte produkter til peptides og andre formål, med fokus på kvalitet.</p>
-        <span class="catalog-count">NordForm · Produkter</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="section catalog-section" aria-label="Alle produkter">
-    <div class="wrap">
-      <div class="catalog-toolbar">
-        <label for="category-filter">Kategori</label>
-        <select id="category-filter" data-category-filter>
-          <option value="all">Alle kategorier</option>
-        </select>
-        <p class="catalog-results" data-product-count aria-live="polite"></p>
-      </div>
-      <div class="product-grid product-grid--catalog" data-products data-product-source="all"></div>
-    </div>
-  </section>
+  <section class="catalog-intro"><div class="wrap"><div class="hero-topline"><p class="eyebrow">NordForm / Alle objekter</p><span class="mono">Form med et formål.</span></div><h1 class="display catalog-title">Udvalget<span class="accent-dot">.</span></h1><div class="catalog-intro-bottom"><p class="lede">En plads til det, du bruger.<br>Find din næste form her.</p><span class="mono">Opbevaring / Organisering</span></div></div></section>
+  <section class="section catalog-section" aria-label="Alle produkter"><div class="wrap">
+    <div class="catalog-collections" aria-label="Samlinger"><button type="button" data-collection="all" aria-pressed="true">Alle objekter</button><button type="button" data-collection="cases" aria-pressed="false">Cases</button><button type="button" data-collection="holders" aria-pressed="false">Holdere &amp; indsatser</button><button type="button" data-collection="stations" aria-pressed="false">Stationer</button></div>
+    <div class="catalog-toolbar"><div class="search-field"><label class="visually-hidden" for="product-search">Søg efter et produkt</label><span data-icon="search"></span><input type="search" id="product-search" placeholder="Find et produkt…" data-product-search autocomplete="off"></div><div class="select-field"><label for="category-filter">Kategori</label><select id="category-filter" data-category-filter><option value="all">Alle kategorier</option></select></div><div class="select-field"><label for="sort-products">Sortér</label><select id="sort-products" data-product-sort><option value="featured">Udvalgte først</option><option value="price-low">Pris: lav til høj</option><option value="price-high">Pris: høj til lav</option><option value="name">Navn: A–Å</option></select></div><p class="catalog-results" data-product-count role="status"></p></div>
+    <div class="product-grid product-grid--catalog" data-products data-product-source="all">
+<article class="pcard"><a class="pcard-link" href="product.html?id=pen-case"><span class="pcard-media"><img src="images/products/pen-case-01.webp" decoding="async" loading="lazy" width="1122" height="1402" srcset="images/products/pen-case-01-480.webp 480w, images/products/pen-case-01-960.webp 960w, images/products/pen-case-01.webp 1122w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, 30vw" alt="Pen Case"><img class="pcard-secondary" src="images/products/pen-case-02.webp" decoding="async" loading="lazy" width="1122" height="1402" srcset="images/products/pen-case-02-480.webp 480w, images/products/pen-case-02-960.webp 960w, images/products/pen-case-02.webp 1122w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, 30vw" alt="" aria-hidden="true"><span class="pcard-image-count" aria-hidden="true">03 / Billeder</span></span><span class="pcard-body"><span class="pcard-meta"><span class="pcard-name">Pen Case</span><span class="pcard-price">299 DKK</span></span><span class="category-tag">Peptides</span><span class="pcard-desc body-sm">Hardcase til pens og tilbehør.</span></span></a><button class="btn btn-sm pcard-add" type="button" data-add-product="pen-case" aria-label="Læg Pen Case i kurv">Læg i kurv <span class="arrow" aria-hidden="true">+</span></button></article>
+<article class="pcard"><a class="pcard-link" href="product.html?id=64-vial-powcan-insert"><span class="pcard-media"><img src="images/products/64-vial-powcan-insert-01.webp" decoding="async" loading="lazy" width="1122" height="1402" srcset="images/products/64-vial-powcan-insert-01-480.webp 480w, images/products/64-vial-powcan-insert-01-960.webp 960w, images/products/64-vial-powcan-insert-01.webp 1122w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, 30vw" alt="64 Vial Powcan Insert"><img class="pcard-secondary" src="images/products/64-vial-powcan-insert-02.webp" decoding="async" loading="lazy" width="1122" height="1402" srcset="images/products/64-vial-powcan-insert-02-480.webp 480w, images/products/64-vial-powcan-insert-02-960.webp 960w, images/products/64-vial-powcan-insert-02.webp 1122w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, 30vw" alt="" aria-hidden="true"><span class="pcard-image-count" aria-hidden="true">03 / Billeder</span></span><span class="pcard-body"><span class="pcard-meta"><span class="pcard-name">64 Vial Powcan Insert</span><span class="pcard-price">400 DKK</span></span><span class="category-tag">Peptides</span><span class="pcard-desc body-sm">Plads til 64 vials. Powcan-beholder medfølger.</span></span></a><button class="btn btn-sm pcard-add" type="button" data-add-product="64-vial-powcan-insert" aria-label="Læg 64 Vial Powcan Insert i kurv">Læg i kurv <span class="arrow" aria-hidden="true">+</span></button></article>
+<article class="pcard"><a class="pcard-link" href="product.html?id=insulin-ready-to-go-case"><span class="pcard-media"><img src="images/products/insulin-ready-to-go-01.webp" decoding="async" loading="lazy" width="810" height="607" srcset="images/products/insulin-ready-to-go-01-480.webp 480w, images/products/insulin-ready-to-go-01.webp 810w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, 30vw" alt="Insulin Ready-to-Go Case"><img class="pcard-secondary" src="images/products/insulin-ready-to-go-02.webp" decoding="async" loading="lazy" width="941" height="1672" srcset="images/products/insulin-ready-to-go-02-480.webp 480w, images/products/insulin-ready-to-go-02.webp 941w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, 30vw" alt="" aria-hidden="true"><span class="pcard-image-count" aria-hidden="true">02 / Billeder</span></span><span class="pcard-body"><span class="pcard-meta"><span class="pcard-name">Insulin Ready-to-Go Case</span><span class="pcard-price">179 DKK</span></span><span class="category-tag">Peptides</span><span class="pcard-desc body-sm">Kompakt rejsecase med opdelt opbevaring.</span></span></a><button class="btn btn-sm pcard-add" type="button" data-add-product="insulin-ready-to-go-case" aria-label="Læg Insulin Ready-to-Go Case i kurv">Læg i kurv <span class="arrow" aria-hidden="true">+</span></button></article>
+<article class="pcard"><a class="pcard-link" href="product.html?id=recon-station-v2"><span class="pcard-media"><img src="images/products/recon-station-v2-01.webp" decoding="async" loading="lazy" width="1122" height="1402" srcset="images/products/recon-station-v2-01-480.webp 480w, images/products/recon-station-v2-01-960.webp 960w, images/products/recon-station-v2-01.webp 1122w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, 30vw" alt="Recon Station V2"><img class="pcard-secondary" src="images/products/recon-station-v2-02.webp" decoding="async" loading="lazy" width="1122" height="1402" srcset="images/products/recon-station-v2-02-480.webp 480w, images/products/recon-station-v2-02-960.webp 960w, images/products/recon-station-v2-02.webp 1122w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, 30vw" alt="" aria-hidden="true"><span class="pcard-image-count" aria-hidden="true">02 / Billeder</span></span><span class="pcard-body"><span class="pcard-meta"><span class="pcard-name">Recon Station V2</span><span class="pcard-price">129 DKK</span></span><span class="category-tag">Peptides</span><span class="pcard-desc body-sm">Kompakt station til vials og tilbehør ved rekonstituering.</span></span></a><button class="btn btn-sm pcard-add" type="button" data-add-product="recon-station-v2" aria-label="Læg Recon Station V2 i kurv">Læg i kurv <span class="arrow" aria-hidden="true">+</span></button></article>
+<article class="pcard"><a class="pcard-link" href="product.html?id=recon-station-v1"><span class="pcard-media"><img src="images/products/recon-station-v1-01.webp" decoding="async" loading="lazy" width="1122" height="1402" srcset="images/products/recon-station-v1-01-480.webp 480w, images/products/recon-station-v1-01-960.webp 960w, images/products/recon-station-v1-01.webp 1122w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, 30vw" alt="Recon Station V1"><span class="pcard-image-count" aria-hidden="true">01 / Billeder</span></span><span class="pcard-body"><span class="pcard-meta"><span class="pcard-name">Recon Station V1</span><span class="pcard-price">159 DKK</span></span><span class="category-tag">Peptides</span><span class="pcard-desc body-sm">Cylindrisk station til vials og tilbehør ved rekonstituering.</span></span></a><button class="btn btn-sm pcard-add" type="button" data-add-product="recon-station-v1" aria-label="Læg Recon Station V1 i kurv">Læg i kurv <span class="arrow" aria-hidden="true">+</span></button></article>
+<article class="pcard"><a class="pcard-link" href="product.html?id=pen-holder-round-9"><span class="pcard-media"><img src="images/products/pen-holder-round-01.webp" decoding="async" loading="lazy" width="1122" height="1402" srcset="images/products/pen-holder-round-01-480.webp 480w, images/products/pen-holder-round-01-960.webp 960w, images/products/pen-holder-round-01.webp 1122w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, 30vw" alt="9 Pen Holder Round"><img class="pcard-secondary" src="images/products/pen-holder-round-02.webp" decoding="async" loading="lazy" width="1122" height="1402" srcset="images/products/pen-holder-round-02-480.webp 480w, images/products/pen-holder-round-02-960.webp 960w, images/products/pen-holder-round-02.webp 1122w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, 30vw" alt="" aria-hidden="true"><span class="pcard-image-count" aria-hidden="true">04 / Billeder</span></span><span class="pcard-body"><span class="pcard-meta"><span class="pcard-name">9 Pen Holder Round</span><span class="pcard-price">199 DKK</span></span><span class="category-tag">Peptides</span><span class="pcard-desc body-sm">Rund holder med plads til op til 9 pens.</span></span></a><button class="btn btn-sm pcard-add" type="button" data-add-product="pen-holder-round-9" aria-label="Læg 9 Pen Holder Round i kurv">Læg i kurv <span class="arrow" aria-hidden="true">+</span></button></article>
+<article class="pcard"><a class="pcard-link" href="product.html?id=peptide-case-50-vials"><span class="pcard-media"><img src="images/products/peptide-case-50-vials-01.webp" decoding="async" loading="lazy" width="1920" height="2560" srcset="images/products/peptide-case-50-vials-01-480.webp 480w, images/products/peptide-case-50-vials-01-960.webp 960w, images/products/peptide-case-50-vials-01.webp 1920w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, 30vw" alt="Peptide 50 Vials Case"><img class="pcard-secondary" src="images/products/peptide-case-50-vials-02.webp" decoding="async" loading="lazy" width="1920" height="2560" srcset="images/products/peptide-case-50-vials-02-480.webp 480w, images/products/peptide-case-50-vials-02-960.webp 960w, images/products/peptide-case-50-vials-02.webp 1920w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, 30vw" alt="" aria-hidden="true"><span class="pcard-image-count" aria-hidden="true">02 / Billeder</span></span><span class="pcard-body"><span class="pcard-meta"><span class="pcard-name">Peptide 50 Vials Case</span><span class="pcard-price">249 DKK</span></span><span class="category-tag">Peptides</span><span class="pcard-desc body-sm">Case med plads til op til 50 vials.</span></span></a><button class="btn btn-sm pcard-add" type="button" data-add-product="peptide-case-50-vials" aria-label="Læg Peptide 50 Vials Case i kurv">Læg i kurv <span class="arrow" aria-hidden="true">+</span></button></article>
+<article class="pcard"><a class="pcard-link" href="product.html?id=prep-station-large"><span class="pcard-media"><img src="images/products/prep-station-large-01.webp" decoding="async" loading="lazy" width="1000" height="750" srcset="images/products/prep-station-large-01-480.webp 480w, images/products/prep-station-large-01-960.webp 960w, images/products/prep-station-large-01.webp 1000w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, 30vw" alt="Stor Prep Station"><img class="pcard-secondary" src="images/products/prep-station-large-02.webp" decoding="async" loading="lazy" width="4284" height="5712" srcset="images/products/prep-station-large-02-480.webp 480w, images/products/prep-station-large-02-960.webp 960w, images/products/prep-station-large-02.webp 4284w" sizes="(max-width: 479px) 92vw, (max-width: 767px) 44vw, 30vw" alt="" aria-hidden="true"><span class="pcard-image-count" aria-hidden="true">02 / Billeder</span></span><span class="pcard-body"><span class="pcard-meta"><span class="pcard-name">Stor Prep Station</span><span class="pcard-price">299 DKK</span></span><span class="category-tag">Peptides</span><span class="pcard-desc body-sm">Stor prep station med dispenser og opbevaringsrum.</span></span></a><button class="btn btn-sm pcard-add" type="button" data-add-product="prep-station-large" aria-label="Læg Stor Prep Station i kurv">Læg i kurv <span class="arrow" aria-hidden="true">+</span></button></article>
+</div>
+    <noscript><p>Aktivér JavaScript for at se det fulde udvalg og bruge kurven. <a href="contact.html">Kontakt os</a> for hjælp med en bestilling.</p></noscript>
+  </div></section>
 </main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand-col">
-        <a class="brand" href="index.html">
-          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
-          <span class="brand-name" data-shop-name>NordForm</span>
-        </a>
-        <p class="footer-about">Produkter til peptides og andre formål, udvalgt med fokus på kvalitet.</p>
-      </div>
-      <div class="footer-col">
-        <h3>Shop</h3>
-        <ul>
-          <li><a href="shop.html">Alle produkter</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="contact.html">Kontakt</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3>Kontakt</h3>
-        <ul>
-          <li><a href="https://t.me/test" data-shop-telegram target="_blank" rel="noopener noreferrer">Telegram <span class="mono telegram-handle" data-shop-telegram-handle>@test</span></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© <span data-shop-year>2026</span> <span data-shop-name>NordForm</span></span>
-      <span>CVR: <span data-shop-cvr>41693908</span></span>
-      <span>Kvalitet · Funktion · Præcision</span>
-    </div>
+<footer class="site-footer"><div class="wrap">
+  <div class="footer-top"><p class="eyebrow">Designet digitalt. Lavet lag for lag.</p><a class="footer-to-top" href="#main" aria-label="Til toppen">Til toppen <span aria-hidden="true">↑</span></a></div>
+  <a class="footer-wordmark" href="index.html" aria-label="NordForm, forside">NordForm<span class="footer-dot">.</span></a>
+  <div class="footer-grid">
+    <p class="footer-about">Gennemtænkte former.<br>Plads til det, du bruger.</p>
+    <div class="footer-col"><h2>Gå på opdagelse</h2><ul><li><a href="shop.html">Alle produkter</a></li><li><a href="index.html#om">Om NordForm</a></li><li><a href="contact.html#custom">Specialprint</a></li></ul></div>
+    <div class="footer-col"><h2>Vi hjælper gerne</h2><ul><li><a href="faq.html">Spørgsmål &amp; svar</a></li><li><a href="faq.html#orders">Bestilling &amp; betaling</a></li><li><a href="faq.html#shipping">Fragt &amp; levering</a></li><li><a href="contact.html">Kontakt</a></li></ul></div>
+    <div class="footer-col"><h2>En direkte linje</h2><ul><li><a href="https://t.me/test" data-shop-telegram target="_blank" rel="noopener noreferrer">Telegram <span class="arrow" aria-hidden="true">↗</span></a></li><li><span class="mono telegram-handle" data-shop-telegram-handle>@test</span></li></ul></div>
   </div>
-</footer>
-
-<script src="js/products.js"></script>
-<script src="js/cart.js"></script>
-<script src="js/main.js"></script>
+  <div class="footer-bottom"><span>© <span data-shop-year>2026</span> <span data-shop-name>NordForm</span></span><span>CVR <span data-shop-cvr>41693908</span></span><span>Form med et formål.</span></div>
+</div></footer>
+<script src="js/products.js?v=20261003e"></script>
+<script src="js/image-data.js?v=20261003e"></script>
+<script src="js/ui.js?v=20261003e"></script>
+<script src="js/cart.js?v=20261003e"></script>
+<script src="js/catalog.js?v=20261003e"></script>
+<script src="js/product.js?v=20261003e"></script>
+<script src="js/main.js?v=20261003e"></script>
 </body>
 </html>
