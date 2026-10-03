@@ -233,6 +233,106 @@ window.Shop = (function () {
     "imageAlts": [
       "Lys Svøb-spøgelsesfigur med foldet overflade i en efterårsopstilling"
     ]
+  },
+  {
+    "id": "sno-flexifigur",
+    "sku": "ST-008",
+    "name": "Sno / flexifigur",
+    "tagline": "En lille figur, der kan sno sig.",
+    "description": "En leddelt figur med en buet, farverig form. Den kan formes og snoes i hånden. Prisen er vejledende pr. figur.",
+    "price": 4900,
+    "estimatedPrice": true,
+    "estimatedUnit": "pr. figur",
+    "currency": "DKK",
+    "category": "Legetøj",
+    "images": [
+      "images/stykk/sno-flexifigur.webp"
+    ],
+    "isNew": true,
+    "featuredRank": 8,
+    "imageAlts": [
+      "Række af farverige, leddelte figurer formet i buede slangeagtige kurver med en mindre pink figur foran"
+    ]
+  },
+  {
+    "id": "krible-flexifigur",
+    "sku": "ST-009",
+    "name": "Krible / flexifigur",
+    "tagline": "Små dyr med en leddelt krop.",
+    "description": "Små, farverige figurer med en rund krop og små detaljer. Billedet viser dem i flere farver og former. Prisen er vejledende pr. figur.",
+    "price": 2900,
+    "estimatedPrice": true,
+    "estimatedUnit": "pr. figur",
+    "currency": "DKK",
+    "category": "Legetøj",
+    "images": [
+      "images/stykk/krible-flexifigur.webp"
+    ],
+    "isNew": true,
+    "featuredRank": 9,
+    "imageAlts": [
+      "Små, farverige leddelte dyrefigurer vist på række i regnbuens farver med en pink figur separat"
+    ]
+  },
+  {
+    "id": "juletryk-kageform",
+    "sku": "ST-010",
+    "name": "Juletryk / kageform",
+    "tagline": "Et lille juletryk til hjemmebag.",
+    "description": "En rund kageform med præget julehilsen. Billedet viser formen sammen med småkager, hvor teksten står frem i dejen. Prisen er vejledende pr. form.",
+    "price": 7900,
+    "estimatedPrice": true,
+    "estimatedUnit": "pr. form",
+    "currency": "DKK",
+    "category": "Køkken",
+    "images": [
+      "images/stykk/juletryk-kageform.webp"
+    ],
+    "isNew": true,
+    "featuredRank": 10,
+    "imageAlts": [
+      "Rund kageform med Merry Christmas-tekst vist sammen med stemplede småkager"
+    ]
+  },
+  {
+    "id": "punkt-mobilholder",
+    "sku": "ST-011",
+    "name": "Punkt / mobilholder",
+    "tagline": "Et blødt punkt til mobilen.",
+    "description": "En lille, rund mobilholder med profileret overflade. Billedet viser en telefon, der står lodret i holderen. Prisen er vejledende pr. holder.",
+    "price": 7900,
+    "estimatedPrice": true,
+    "estimatedUnit": "pr. holder",
+    "currency": "DKK",
+    "category": "Tilbehør",
+    "images": [
+      "images/stykk/punkt-mobilholder.webp"
+    ],
+    "isNew": true,
+    "featuredRank": 11,
+    "imageAlts": [
+      "Lys mobilskærm placeret lodret i en lille rund, rosa holder på et bord"
+    ]
+  },
+  {
+    "id": "fold-mobilholder",
+    "sku": "ST-012",
+    "name": "Fold / mobilholder",
+    "tagline": "En enkel vinkel til mobilen.",
+    "description": "En sort mobilholder med vinklet ryg og en bred, lav forkant. Den kompakte form lader telefonen stå oprejst på bordet. Prisen er vejledende pr. holder.",
+    "price": 6900,
+    "estimatedPrice": true,
+    "estimatedUnit": "pr. holder",
+    "currency": "DKK",
+    "category": "Tilbehør",
+    "images": [
+      "images/stykk/fold-mobilholder.webp"
+    ],
+    "isNew": true,
+    "featuredRank": 12,
+    "imageAlts": [
+      "Sort, vinklet mobilholder med bred forkant og åben trekantet sideprofil"
+    ]
   }
 ];
 
@@ -260,6 +360,19 @@ window.Shop = (function () {
   function latest(limit) {
     var list = products.filter(function (p) { return !!p.latest; });
     return typeof limit === "number" ? list.slice(0, limit) : list;
+  }
+
+  function newArrivals(limit) {
+    var list = products.filter(function (p) { return !!p.isNew; });
+    list.sort(function (a, b) { return (a.featuredRank || 99) - (b.featuredRank || 99); });
+    return typeof limit === "number" ? list.slice(0, limit) : list;
+  }
+
+  function productPrice(product) {
+    var prefix = product && product.estimatedPrice ? "ca. " : "";
+    var price = formatPrice(product ? product.price : 0, product ? product.currency : config.currency);
+    var unit = product && product.estimatedUnit ? " / " + product.estimatedUnit : "";
+    return prefix + price + unit;
   }
 
   function related(currentId, limit) {
@@ -292,6 +405,8 @@ window.Shop = (function () {
     all: all,
     byId: byId,
     featured: featured,
+    newArrivals: newArrivals,
+    productPrice: productPrice,
     latest: latest,
     related: related,
     formatPrice: formatPrice,

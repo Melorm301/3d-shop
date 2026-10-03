@@ -44,8 +44,8 @@
     var variant = [item.color, item.size].filter(Boolean).join(' / ');
     return '<article class="cart-row"><a class="cart-thumb" href="product.html?id=' + encodeURIComponent(product.id) + '" tabindex="-1">' + ui.imageHTML(product.images[0], '', '100px') + '</a>' +
       '<div class="cart-item-main"><a class="cart-item-name" href="product.html?id=' + encodeURIComponent(product.id) + '">' + ui.esc(product.name) + '</a>' +
-      (variant ? '<span class="body-sm">' + ui.esc(variant) + '</span>' : '') + '<span class="body-sm">' + (product.estimatedPrice ? 'ca. ' : '') + window.Shop.formatPrice(unitPrice(item), product.currency) + ' / stk.</span></div>' +
-      '<strong class="cart-line-price">' + window.Shop.formatPrice(unitPrice(item) * item.qty, product.currency) + '</strong>' +
+      (variant ? '<span class="body-sm">' + ui.esc(variant) + '</span>' : '') + '<span class="body-sm">' + (product.estimatedPrice ? window.Shop.productPrice(product) : window.Shop.formatPrice(unitPrice(item), product.currency) + ' / stk.') + '</span></div>' +
+      '<strong class="cart-line-price">' + (product.estimatedPrice ? 'ca. ' : '') + window.Shop.formatPrice(unitPrice(item) * item.qty, product.currency) + '</strong>' +
       '<div class="cart-quantity" role="group" aria-label="Antal af ' + ui.esc(product.name) + '">' +
       '<button type="button" data-cart-action="decrease" data-item-key="' + itemKey + '" aria-label="Fjern én ' + ui.esc(product.name) + '">−</button><span aria-live="polite">' + item.qty + '</span>' +
       '<button type="button" data-cart-action="increase" data-item-key="' + itemKey + '" aria-label="Tilføj én ' + ui.esc(product.name) + '"' + (item.qty >= 99 ? ' disabled' : '') + '>+</button></div>' +
@@ -59,7 +59,7 @@
     items.forEach(function (item) {
       var product = productFor(item);
       var variant = [item.color, item.size].filter(Boolean).join(' / ');
-      lines.push('– ' + product.name + (variant ? ' (' + variant + ')' : '') + ' × ' + item.qty + ' (ca. ' + window.Shop.formatPrice(unitPrice(item) * item.qty, product.currency) + ')');
+      lines.push('– ' + product.name + (variant ? ' (' + variant + ')' : '') + ' × ' + item.qty + ' (' + (product.estimatedPrice ? 'ca. ' : '') + window.Shop.formatPrice(unitPrice(item) * item.qty, product.currency) + ')');
     });
     lines.push('Vejledende varetotal: ' + window.Shop.formatPrice(subtotal()));
     if (orderNote.trim()) lines.push('Bemærkning: ' + orderNote.trim());

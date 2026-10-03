@@ -3,10 +3,10 @@
   'use strict';
   var ui = window.STYKKUI;
   function collection(product) {
-    return { Bolig: 'home', Tilbehør: 'accessories', Objekter: 'objects' }[product.category] || 'all';
+    return product.isNew ? 'new' : { Bolig: 'home', Tilbehør: 'accessories', Objekter: 'objects', Legetøj: 'toys', Køkken: 'kitchen' }[product.category] || 'all';
   }
   function cardHTML(product) {
-    var price = (product.estimatedPrice ? 'ca. ' : product.priceFrom ? 'fra ' : '') + window.Shop.formatPrice(product.price, product.currency);
+    var price = product.estimatedPrice ? window.Shop.productPrice(product) : (product.priceFrom ? 'fra ' : '') + window.Shop.formatPrice(product.price, product.currency);
     var colors = product.colors || [];
     var swatches = colors.length ? '<span class="pcard-swatches" aria-label="Farver vist på billederne: ' + ui.esc(colors.map(function (color) { return color.name; }).join(', ')) + '">' + colors.map(function (color) { return '<i style="background:' + ui.esc(color.hex) + '" aria-hidden="true"></i>'; }).join('') + '</span>' : '';
     return '<article class="pcard"><a class="pcard-link" href="product.html?id=' + encodeURIComponent(product.id) + '">' +
@@ -27,7 +27,7 @@
     var count = document.querySelector('[data-product-count]');
     var buttons = document.querySelectorAll('[data-collection]');
     var active = new URLSearchParams(window.location.search).get('collection') || 'all';
-    if (['all', 'home', 'accessories', 'objects'].indexOf(active) === -1) active = 'all';
+    if (['all', 'home', 'accessories', 'objects', 'toys', 'kitchen', 'new'].indexOf(active) === -1) active = 'all';
     if (category) {
       var categories = Array.from(new Set(window.Shop.all().map(function (product) { return product.category; }).filter(Boolean))).sort();
       categories.forEach(function (value) { category.insertAdjacentHTML('beforeend', '<option value="' + ui.esc(value) + '">' + ui.esc(value) + '</option>'); });
@@ -36,7 +36,9 @@
       buttons.forEach(function (button) { button.setAttribute('aria-pressed', String(button.dataset.collection === active)); });
       mounts.forEach(function (mount) {
         var all = mount.dataset.productSource === 'all';
-        var list = all ? window.Shop.all() : window.Shop.featured(Number(mount.dataset.limit) || undefined);
+        var isNew = mount.dataset.productSource === 'new';
+        var limit = Number(mount.dataset.limit) || undefined;
+        var list = isNew ? window.Shop.newArrivals(limit) : all ? window.Shop.all() : window.Shop.featured(limit);
         if (all) {
           list = list.filter(function (product) {
             var query = search ? search.value.trim().toLocaleLowerCase('da') : '';

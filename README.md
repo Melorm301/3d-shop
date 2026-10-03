@@ -13,7 +13,7 @@ python3 -m http.server 4173 --bind 127.0.0.1
 ## Sider og moduler
 
 - `index.html`: fotografisk hero, udvalgte STYKK, filosofi, dekorative objekter, fremstilling, specialdesign og kundeservice.
-- `shop.html`: syv produkter i Bolig, Tilbehør og Objekter; søgning, kategori og sortering.
+- `shop.html`: 12 produkter i Bolig, Tilbehør, Objekter, Legetøj og Køkken; særskilt Nyheder-filter; søgning, kategori og sortering.
 - `about.html`: brandets tilgang til form, funktion og materialevalg.
 - `product.html?id=bue-knage`: galleri, lysboks, ønsket farve, antal, produktdetaljer og relaterede STYKK.
 - `cart.html` og `checkout.html`: vedvarende kurv, vejledende varetotal, bemærkning og manuel ordrekladde.
@@ -24,12 +24,12 @@ python3 -m http.server 4173 --bind 127.0.0.1
 - `js/ui.js`, `catalog.js`, `product.js`, `main.js`: delte UI-primitiver, katalog, produktvisning, navigation og formularer.
 - `js/cart.js`: kurv, antal, variantegenskaber, totaler, lagring og Telegram-kladde.
 - `css/style.css`: fælles typografi, flader, komponenter, responsive layouts og reduced-motion-regler.
-- `images/stykk/`: otte originale referencebilleder og versioner til 480 og 960 px.
+- `images/stykk/`: 13 originale referencebilleder og versioner til 480 og 960 px.
 - `docs/REDESIGN-RAPPORT.md`: designvalg, billedoversigt, kontrolresultater og næste iteration.
 
 ## Sortiment og cirka-priser
 
-Det tidligere sortiment er fjernet efter ejerens udtrykkelige instruktion. Der er syv nye STYKK med vejledende designpriser: Rib / vægknage 89 DKK, Bue / knage 109 DKK, Rib / dørknage 129 DKK, Klem / poseclip 39 DKK, Skrå / holder 79 DKK, Tak / objekt 119 DKK og Svøb / figur 89 DKK.
+Det tidligere sortiment er fjernet efter ejerens udtrykkelige instruktion. Der er syv nye STYKK med vejledende designpriser: Rib / vægknage 89 DKK, Bue / knage 109 DKK, Rib / dørknage 129 DKK, Klem / poseclip 39 DKK, Skrå / holder 79 DKK, Tak / objekt 119 DKK, Svøb / figur 89 DKK, Sno / flexifigur 49 DKK pr. figur, Krible / flexifigur 29 DKK pr. figur, Juletryk / kageform 79 DKK pr. form, Punkt / mobilholder 79 DKK pr. holder og Fold / mobilholder 69 DKK pr. holder.
 
 `estimatedPrice: true` markerer de vejledende priser. Produktschema indeholder derfor ikke et fast pristilbud. Prisen er pr. STYKK, selv om billederne viser flere farver. Farvevalg er ønsker baseret på billedmaterialet og bekræftes før bestilling. Der findes ingen dokumenterede produktmål, materialetyper, belastningsgrænser eller certificeringer i det nye materiale.
 

@@ -12,7 +12,7 @@ Mobilen har eget hero-flow, tilpassede billedproportioner, enkel fuldskærmsmenu
 
 ## Nyt sortiment
 
-På ejerens efterfølgende instruktion er alle otte tidligere varer, deres priser og de gamle billedassets fjernet. Git-historikken bevarer det tidligere materiale. Ingen billeder af andre produkter bruges som erstatninger på gamle varer.
+På ejerens efterfølgende instruktion er alle otte tidligere varer, deres priser og de gamle billedassets fjernet. Git-historikken bevarer det tidligere materiale. Ingen billeder af andre produkter bruges som erstatninger på gamle varer. Fem nye produkter fra billedmappen er siden tilføjet. STYKK-kataloget har nu 12 produkter.
 
 | STYKK | Kategori | Vejledende pris pr. stk. |
 | --- | --- | ---: |
@@ -23,12 +23,17 @@ På ejerens efterfølgende instruktion er alle otte tidligere varer, deres prise
 | Skrå / holder | Tilbehør | ca. 79 DKK |
 | Tak / objekt | Objekter | ca. 119 DKK |
 | Svøb / figur | Objekter | ca. 89 DKK |
+| Sno / flexifigur | Legetøj | ca. 49 DKK pr. figur |
+| Krible / flexifigur | Legetøj | ca. 29 DKK pr. figur |
+| Juletryk / kageform | Køkken | ca. 79 DKK pr. form |
+| Punkt / mobilholder | Tilbehør | ca. 79 DKK pr. holder |
+| Fold / mobilholder | Tilbehør | ca. 69 DKK pr. holder |
 
 Priserne er lavet til redesignet som ønsket. De vises som cirka-priser og bekræftes i det manuelle ordreflow. Produktbeskrivelserne tager udgangspunkt i det synlige design og forklarer anvendelsen uden at opfinde mål, belastning, certificeringer, materialetyper eller lagerstatus. Farveønsker er baseret på billedmaterialet. Relaterede produkter prioriterer samme kategori.
 
 ## Billedmateriale
 
-Alle ni billeder er gennemgået visuelt. Otte er kopieret ind i `images/stykk/`; hver har lokale responsive versioner på 480 og 960 px. Originalerne er allerede WebP og ca. 25–50 KB pr. billede. Der er ingen runtime-referencer til den oprindelige billedmappe.
+Alle ni tidligere billeder og de fem nyligt tilføjede billeder er gennemgået visuelt. De nye fem er kopieret ind i `images/stykk/` og har lokale responsive versioner på 480 og 960 px. Alle billeder ligger lokalt som WebP; der er ingen runtime-referencer til Desktop-mappen.
 
 | Original fil | Lokal fil / brug |
 | --- | --- |
@@ -40,13 +45,19 @@ Alle ni billeder er gennemgået visuelt. Otte er kopieret ind i `images/stykk/`;
 | `2025-11-09_bfe802a67d7dd.webp` | `skra-holder.webp` · shop og produktside |
 | `2025-11-16_c540fbdd15f248.webp` | `tak-objekt.webp` · editorial-sektion, shop og produktside |
 | `f71d36a3cf962f45.webp` | `svoeb-figur.webp` · shop og produktside |
+| `2025-11-13_32e322732f9b5.webp` | `sno-flexifigur.webp` · nye Nyheder-sektion, shop og produktside |
+| `dc148145f1ca4664.webp` | `krible-flexifigur.webp` · Nyheder, shop og produktside |
+| `2025-11-02_732eec4bba7288.webp` | `juletryk-kageform.webp` · Nyheder, Køkken og produktside |
+| `d0d76cc34fe73e53.webp` | `punkt-mobilholder.webp` · Nyheder, Tilbehør og produktside |
+| `9ec3dc30d689d092.webp` | `fold-mobilholder.webp` · Nyheder, Tilbehør og produktside |
 | `f08944412e2e6760.webp` | Fravalgt: indbrændt Customize/WiFi/3D PRINTABLE-reklamegrafik passer ikke til STYKK |
 
 ## Komponenter og indhold
 
 - Ny forside, kollektionsside og selvstændig `about.html`.
 - Ny wordmark, favicon og webmanifest; fælles STYKK-header/footer og mobilmenu.
-- Nyt produktdatasæt med navnesystem, kategorier, billeder, billedbeskrivelser, vejledende priser og farveønsker.
+- Produktdatasæt med navne, kategorier, billeder, billedbeskrivelser, vejledende priser, pris pr. enhed og farveønsker.
+- Nyhedsfilter i shoppen og en femprodukters nyhedssektion på forsiden.
 - Produktkort med rene billedflader og variantvalg, hvor flere farver vises.
 - Produktvisning med stort galleri, keyboard-navigation, lysboks, variant-/antalvalg og sektionerne Om produktet, Materiale & detaljer, Fremstilling og Bestilling & levering.
 - Kontaktformular kan åbnes med produktforespørgsel udfyldt. Den tilhørende PDP-link sender produktets ID med.
@@ -95,3 +106,7 @@ Performance understøttes af små WebP-filer, srcset/sizes, faste billedproporti
 Den afsluttende genåbning af previewet og screenshot-eksport blev afvist af browserens sikkerhedskontrol, fordi administratorpolitikken ikke kunne verificeres. Den tidligere dokumenterede browserkontrol og visuelle gennemgang blev gennemført. Ingen alternativ adgang blev brugt til at omgå kontrollen.
 
 Ændringerne er lokale. De er ikke deployet, committed eller pushet.
+
+## Senest tilføjet fra billedmappen
+
+Fem nye filer føjet til katalog og forside: Sno / flexifigur (ca. 49 DKK pr. figur), Krible / flexifigur (ca. 29 DKK pr. figur), Juletryk / kageform (ca. 79 DKK pr. form), Punkt / mobilholder (ca. 79 DKK pr. holder) og Fold / mobilholder (ca. 69 DKK pr. holder). To flexifigurer er separate modeller med hvert sit billede. Begge mobilholdere er medtaget, da den rosa kugleformede holder og den sorte vinkelformede model har forskellige udtryk. Alle priser er markeret vejledende.

@@ -60,7 +60,7 @@
     root.querySelector('[data-mobile-product]').textContent = product.name;
     var quantity = 1;
     function paintPrice() {
-      var price = (product.estimatedPrice ? 'ca. ' : '') + window.Shop.formatPrice(window.Shop.priceForSize(product, state.size), product.currency);
+      var price = product.estimatedPrice && !product.sizes ? window.Shop.productPrice(product) : (product.estimatedPrice ? 'ca. ' : '') + window.Shop.formatPrice(window.Shop.priceForSize(product, state.size), product.currency);
       root.querySelector('[data-p-price]').textContent = price;
       root.querySelector('[data-mobile-price]').textContent = price;
     }
