@@ -28,7 +28,7 @@
     });
   }
   function imageAttributes(src, sizes, eager) {
-    var info = (window.NordFormImages || {})[src];
+    var info = (window.STYKKImages || {})[src];
     var attributes = ' src="' + esc(src) + '" decoding="async"';
     if (!eager) attributes += ' loading="lazy"';
     if (info) {
@@ -57,5 +57,5 @@
     dialog.showModal();
     document.body.classList.add('has-modal');
   }
-  window.NordFormUI = { esc: esc, icon: icon, hydrate: hydrate, imageHTML: imageHTML, imageAttributes: imageAttributes, openDialog: openDialog };
+  window.STYKKUI = { esc: esc, icon: icon, hydrate: hydrate, imageHTML: imageHTML, imageAttributes: imageAttributes, openDialog: openDialog };
 })();

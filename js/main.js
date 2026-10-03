@@ -1,7 +1,7 @@
 /* Shared identity, navigation and small enhancements. No external requests. */
 (function () {
   'use strict';
-  var ui = window.NordFormUI;
+  var ui = window.STYKKUI;
   function initIdentity() {
     var config = window.Shop.config;
     document.querySelectorAll('[data-shop-name]').forEach(function (node) { node.textContent = config.name; });
@@ -44,6 +44,8 @@
     var form = document.querySelector('[data-custom-form]');
     if (!form) return;
     var success = form.querySelector('[data-custom-success]');
+    var requested = window.Shop.byId(new URLSearchParams(window.location.search).get('product'));
+    if (requested) form.elements.idea.value = 'Jeg vil gerne høre mere om ' + requested.name + ': pris, farver, mål og materiale.';
     form.addEventListener('input', function () { success.hidden = true; form.elements.idea.setCustomValidity(''); });
     form.addEventListener('submit', function (event) {
       event.preventDefault();
@@ -51,7 +53,7 @@
       idea.setCustomValidity(idea.value.trim().length < 5 ? 'Beskriv gerne din idé med mindst fem tegn.' : '');
       if (!form.reportValidity()) return;
       var fields = new FormData(form);
-      var lines = ['Hej NordForm,'];
+      var lines = ['Hej STYKK,'];
       if (String(fields.get('name')).trim()) lines.push('Mit navn er ' + String(fields.get('name')).trim() + '.');
       lines.push(String(fields.get('idea')).trim());
       if (String(fields.get('dimensions')).trim()) lines.push('Cirka mål: ' + String(fields.get('dimensions')).trim());
@@ -62,18 +64,15 @@
     });
   }
   function initLayerReveal() {
-    if (!('IntersectionObserver' in window)) return;
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) { if (entry.isIntersecting) { entry.target.classList.add('is-in'); observer.unobserve(entry.target); } });
-    }, { threshold: .2 });
-    document.querySelectorAll('[data-reveal]').forEach(function (node) { observer.observe(node); });
+    }, { threshold: .12 });
+    document.querySelectorAll('[data-reveal]').forEach(function (node) { node.classList.add('will-reveal'); observer.observe(node); });
   }
   function init() {
     ui.hydrate(); initIdentity(); initNavigation();
-    var heroPrice = document.querySelector('[data-hero-price]');
-    var heroProduct = window.Shop.byId('pen-holder-round-9');
-    if (heroPrice && heroProduct) heroPrice.textContent = window.Shop.formatPrice(heroProduct.price, heroProduct.currency);
-    window.NordFormCatalog.init(); window.NordFormProduct.init();
+    window.STYKKCatalog.init(); window.STYKKProduct.init();
     initAccordions(); initCustomForm(); initLayerReveal();
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);

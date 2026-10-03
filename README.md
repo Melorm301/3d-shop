@@ -1,129 +1,76 @@
-# NordForm
+# STYKK
 
-En dansk butik til 3D-printede opbevarings- og organiseringsprodukter. Ren HTML,
-CSS og JavaScript. Ingen framework-, installations- eller buildkrav til butikken.
+Nordisk design, printet med omtanke. Statisk butik i HTML, CSS og JavaScript.
 
 ## Lokal preview
-
-Kør fra projektmappen:
 
 ```sh
 python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
-Åbn `http://127.0.0.1:4173/`. Filerne kan også åbnes direkte eller hostes statisk
-på GitHub Pages. Brug en lokal server til at teste kurvens lagring på tværs af sider.
+Åbn http://127.0.0.1:4173/. Ingen installation eller build er nødvendigt.
 
-## Struktur
+## Sider og moduler
 
-- `index.html`: produktorienteret forside, udvalgte objekter, historie,
-  samlinger, printlag og specialprint.
-- `shop.html`: søgning, samlinger, kategorier, sortering og quick add.
-- `product.html?id=pen-case`: galleri, lysboks, produktinformation, varianter
-  når de findes i data, antal og mobil købsknap.
-- `cart.html`: browserlokal kurv og ordreoversigt.
-- `checkout.html`: gennemse varer, tilføj en bemærkning og klargør Telegram-ordre.
-- `contact.html`: direkte kontakt og formular til specialønsker.
-- `faq.html`: eksisterende svar om produkter, bestilling, specialprint og levering.
-- `css/style.css`: fælles tokens, typografi, komponenter, responsive regler og
-  reduceret bevægelse.
-- `js/products.js`: den eksisterende butiksidentitet, produktdata og priser i øre.
-- `js/image-data.js`: billedmål og responsive versioner af produktbillederne.
-- `js/ui.js`: genbrugelige billed-, ikon- og dialogfunktioner.
-- `js/catalog.js`: produktkort og katalogfiltre.
-- `js/product.js`: produktgalleri, metadata, varianter og købskontroller.
-- `js/cart.js`: kurv, prisberegning, lagring, kurvskuffe og Telegram-kladder.
-- `js/main.js`: fælles navigation, FAQ, kontaktformular og printlagsanimation.
+- `index.html`: fotografisk hero, udvalgte STYKK, filosofi, dekorative objekter, fremstilling, specialdesign og kundeservice.
+- `shop.html`: syv produkter i Bolig, Tilbehør og Objekter; søgning, kategori og sortering.
+- `about.html`: brandets tilgang til form, funktion og materialevalg.
+- `product.html?id=bue-knage`: galleri, lysboks, ønsket farve, antal, produktdetaljer og relaterede STYKK.
+- `cart.html` og `checkout.html`: vedvarende kurv, vejledende varetotal, bemærkning og manuel ordrekladde.
+- `contact.html`: kontakt og formular til specialdesign. `?product=bue-knage#custom` udfylder en produktforespørgsel.
+- `faq.html`: materialer, farver, bestilling, tilpasning og levering.
+- `js/products.js`: brandkonfiguration, produktbeskrivelser, vejledende priser i øre, visuelle farveønsker, billeder og alt-tekster.
+- `js/image-data.js`: billedmål og responsive WebP-kilder.
+- `js/ui.js`, `catalog.js`, `product.js`, `main.js`: delte UI-primitiver, katalog, produktvisning, navigation og formularer.
+- `js/cart.js`: kurv, antal, variantegenskaber, totaler, lagring og Telegram-kladde.
+- `css/style.css`: fælles typografi, flader, komponenter, responsive layouts og reduced-motion-regler.
+- `images/stykk/`: otte originale referencebilleder og versioner til 480 og 960 px.
+- `docs/REDESIGN-RAPPORT.md`: designvalg, billedoversigt, kontrolresultater og næste iteration.
 
-Header og footer findes i HTML på alle sider, så navigationen ikke afhænger af
-JavaScript. Dialoger bruger browserens native fokusstyring. Escape lukker dem,
-og fokus returnerer til det element, der åbnede dem. Bevægelse respekterer
-`prefers-reduced-motion`.
+## Sortiment og cirka-priser
 
-## Produkter og varianter
+Det tidligere sortiment er fjernet efter ejerens udtrykkelige instruktion. Der er syv nye STYKK med vejledende designpriser: Rib / vægknage 89 DKK, Bue / knage 109 DKK, Rib / dørknage 129 DKK, Klem / poseclip 39 DKK, Skrå / holder 79 DKK, Tak / objekt 119 DKK og Svøb / figur 89 DKK.
 
-Alle otte eksisterende produkter, deres IDs, SKU'er, priser, tekster og originale
-billeder er bevaret i `js/products.js`. Der er én eksisterende kategori: Peptides.
-Samlingerne Cases, Holdere & indsatser og Stationer grupperer det eksisterende
-udvalg efter funktion; de erstatter ikke kategoridata.
-
-Samlingen vælges med `shop.html?collection=cases`, `holders` eller `stations`.
-Søgning, kategori og sortering fungerer sammen.
-
-Farve- og størrelseskontroller vises kun, når produktet faktisk har disse data.
-Eksempel på dataskema:
-
-```js
-colors: [{ name: 'Sort', hex: '#252720' }],
-sizes: [{ name: 'Lille', price: 14900 }, { name: 'Stor', price: 19900 }]
-```
-
-Kurven holder kombinationer af produkt, farve og størrelse adskilt. Den valgte
-størrelses pris bruges i varetotal og Telegram-kladde. Produkter med flere
-varianter henviser fra kataloget til produktsiden i stedet for at tilføje et
-uklart valg direkte.
-
-Den oprindelige lagringsnøgle `nordform.cart.v1` bevares. Tidligere kurve med
-`{ id, qty }` læses fortsat. Antal begrænses til 1–99, ukendte produkter afvises,
-og beskadigede data håndteres. Flere åbne faner synkroniseres. Hvis lagring er
-blokeret, virker kurven i den aktuelle side uden vedvarende lagring.
+`estimatedPrice: true` markerer de vejledende priser. Produktschema indeholder derfor ikke et fast pristilbud. Prisen er pr. STYKK, selv om billederne viser flere farver. Farvevalg er ønsker baseret på billedmaterialet og bekræftes før bestilling. Der findes ingen dokumenterede produktmål, materialetyper, belastningsgrænser eller certificeringer i det nye materiale.
 
 ## Bestilling og kontakt
 
-**NordForm · CVR 41693908**. Telegram-brugernavnet ligger i `Shop.config` i
-`js/products.js` og er fortsat **`@test`**. Ret det til virksomhedens rigtige
-brugernavn, før butikken bruges til reelle ordreforespørgsler.
+Brand: **STYKK**. Eksisterende CVR **41693908** er bevaret. Kontakt i `Shop.config.telegram` er stadig **@test**, en placeholder fra det oprindelige projekt. Udskift den med den rigtige kontakt før brug til reelle bestillinger. Statisk fallback-kontakt i HTML skal opdateres samtidig, hvis kontakt ændres.
 
-Checkout foretager ingen betaling og sender ingen besked automatisk. Kunden
-åbner en ordrekladde i Telegram og vælger selv at sende den. Lagerstatus, fragt,
-levering og betaling aftales direkte. Ordreteksten kan også kopieres.
+Der er ingen betaling, lagerstyring eller formularserver. Checkout klargør en forespørgsel i Telegram, som kunden selv sender; endelig pris, materiale, mål, farve, levering og betaling aftales direkte. Ordreteksten kan kopieres. Kontaktformularen validerer input og laver tilsvarende en kladde uden automatisk afsendelse.
 
-Kontaktformularen validerer idé og antal og klargør en Telegram-besked med de
-oplysninger, kunden har indtastet. Fotos og modeller kan vedhæftes i Telegram.
-Der findes ingen upload-, betalings-, lager- eller formularserver i projektet.
-Ordrebemærkninger og kontaktoplysninger gemmes ikke i localStorage.
+Kurven holder produkt/farve/størrelse adskilt og begrænser antal til 1–99. Ukendte og udgåede produkt-ID'er afvises. Den interne lagringsnøgle `nordform.cart.v1` bevares til sikker håndtering af eksisterende browserdata; den er ikke kundevendt branding. Kontaktoplysninger og ordrebemærkninger gemmes ikke i localStorage. Ved blokeret lagring virker kurven i hukommelsen på den aktuelle side.
 
-## Billeder og SEO
+## Vedligeholdelse
 
-Eksisterende billedfiler er bevaret. `*-480.webp` og `*-960.webp` er mindre,
-fulde versioner af de samme billeder; ingen nye produkter eller billeder er
-AI-genereret til redesignets brug. Billederne vises uden at beskære vigtige
-produktdele. Den eksisterende billedkvalitet og baggrunde varierer.
-
-Katalog og udvalgte produkter findes også som statisk HTML for hurtig første
-visning og crawlbare produktlinks. JavaScript tilføjer filtre og kurvfunktioner.
-Efter ændring af produktdata kan den statiske visning opdateres med:
+Efter ændringer i produktdata:
 
 ```sh
 node scripts/render-catalog.cjs
 ```
 
-Det er en valgfri vedligeholdelseskommando, ikke et buildkrav. JavaScript bruger
-altid de aktuelle produktdata. Billedvarianter og manifest kan opdateres med
-`scripts/prepare-images.py` (Python med Pillow; kun til billedvedligeholdelse).
+Billedmanifest og responsive filer kan opdateres med Python og Pillow:
 
-Sidetitler, beskrivelser, canonical- og Open Graph-tags, eksisterende
-virksomhedsdata, dynamisk Product-schema, `sitemap.xml` og `robots.txt` er bevaret.
-Kurv og checkout er `noindex,follow`. Ukendte produkt-IDs viser en tydelig fejl
-frem for et andet produkt. Produktspecifik metadata kræver som før JavaScript;
-separate statiske produkt-URLs kan være en senere forbedring.
+```sh
+python3 scripts/prepare-images.py
+```
 
-Ved en ny designudgivelse ændres `?v=` på CSS- og scriptlinks, så besøgende med
-cachede filer får de nye ressourcer sammen. Kanoniske URLs og sitemap skal
-opdateres, hvis butikken flytter fra GitHub Pages til et andet domæne.
+Scriptet læser kun projektets egne `images/stykk/`-filer. Ingen assets afhænger af eksterne lokale mapper. Originalerne bevares, og billeddele ændres ikke.
+
+## SEO og tilgængelighed
+
+Alle sider har dansk sprog, titel, description, canonical og Open Graph. Forsiden har WebSite- og Organization-schema; produktsiden har dynamisk Product-schema. Sitemap indeholder de nye produkt-ID'er og Om-siden. Kurv og checkout er noindex. GitHub Pages-URL er bevaret; skift canonical, OG, dynamiske produkt-URLs, robots og sitemap ved et domæneskift.
+
+Produktkort findes i statisk HTML for hurtig første visning og crawlbare links. Produktspecifik metadata kræver JavaScript; separate statiske produktsider kan være en senere forbedring.
+
+Navigation, galleri og lysboks bruger native dialoger med Escape, fokusretur og keyboard-kontroller. Der er skip-link, labels, focus states, alternative billedtekster og reduced-motion-understøttelse. Systemfonte og CSS-animationer holder siden uafhængig af font-CDN'er og animationspakker.
 
 ## Validering
-
-Kør regressionstests uden ekstra pakker (Node.js 18 eller nyere):
 
 ```sh
 node --test tests/*.test.cjs
 ```
 
-Testene kontrollerer gamle kurve, prisberegning, varianter, antal, fjernelse,
-synkronisering, interne links, fragmenter, billedfiler, metadata og JavaScript.
+12 tests dækker prisberegning, farve/størrelsesvarianter, antal, fjernelse, lagring, udgåede varer, synkronisering, lokale links, fragmenter, assets, metadata og JavaScript-syntaks. Projektet har ingen separat lint-, typecheck- eller build-pipeline. Den statiske kataloggenerering er kørt.
 
-Browserkontrol ved redesign: alle syv sider ved 320, 375, 390, 430, 768, 1024,
-1280, 1440 og 1920 px. Interaktioner kontrolleres i den faktiske browser:
-filtre, søgning, sortering, galleri, lysboks, mobile menu/dialoger, fokus,
-kurvkontroller, checkout og formularvalidering. Der sendes ingen testordrer.
+Browserkontrol ved redesign: alle otte sider ved 320, 390, 768, 1024 og 1440 px. Søgning, sortering, kategori, galleri, lysboks, farveønske, kurv, mobil købsknap, fokusretur, kontaktvalidering, FAQ og ordrekladde er kontrolleret. Ingen eksterne testordrer er sendt.

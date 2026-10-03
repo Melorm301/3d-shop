@@ -5,7 +5,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
 images = {}
-for path in (ROOT / 'images/products').glob('*.webp'):
+for path in (ROOT / 'images/stykk').glob('*.webp'):
     if path.stem.endswith(('-480', '-960')):
         continue
     with Image.open(path) as original:
@@ -19,5 +19,5 @@ for path in (ROOT / 'images/products').glob('*.webp'):
             sources.append({'src': str(output.relative_to(ROOT)), 'width': size})
         sources.append({'src': str(path.relative_to(ROOT)), 'width': width})
         images[str(path.relative_to(ROOT))] = {'width': width, 'height': height, 'sources': sources}
-(ROOT / 'js/image-data.js').write_text('/* Dimensions and responsive derivatives of existing product assets. */\nwindow.NordFormImages = ' + json.dumps(images, separators=(',', ':')) + ';\n')
+(ROOT / 'js/image-data.js').write_text('/* Dimensions and responsive derivatives of existing product assets. */\nwindow.STYKKImages = ' + json.dumps(images, separators=(',', ':')) + ';\n')
 print('Responsive product images and manifest updated.')

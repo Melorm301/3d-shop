@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   var STORAGE_KEY = 'nordform.cart.v1';
-  var ui = window.NordFormUI;
+  var ui = window.STYKKUI;
   var items = [];
   var drawer;
   var orderNote = '';
@@ -44,7 +44,7 @@
     var variant = [item.color, item.size].filter(Boolean).join(' / ');
     return '<article class="cart-row"><a class="cart-thumb" href="product.html?id=' + encodeURIComponent(product.id) + '" tabindex="-1">' + ui.imageHTML(product.images[0], '', '100px') + '</a>' +
       '<div class="cart-item-main"><a class="cart-item-name" href="product.html?id=' + encodeURIComponent(product.id) + '">' + ui.esc(product.name) + '</a>' +
-      (variant ? '<span class="body-sm">' + ui.esc(variant) + '</span>' : '') + '<span class="body-sm">' + window.Shop.formatPrice(unitPrice(item), product.currency) + ' / stk.</span></div>' +
+      (variant ? '<span class="body-sm">' + ui.esc(variant) + '</span>' : '') + '<span class="body-sm">' + (product.estimatedPrice ? 'ca. ' : '') + window.Shop.formatPrice(unitPrice(item), product.currency) + ' / stk.</span></div>' +
       '<strong class="cart-line-price">' + window.Shop.formatPrice(unitPrice(item) * item.qty, product.currency) + '</strong>' +
       '<div class="cart-quantity" role="group" aria-label="Antal af ' + ui.esc(product.name) + '">' +
       '<button type="button" data-cart-action="decrease" data-item-key="' + itemKey + '" aria-label="Fjern én ' + ui.esc(product.name) + '">−</button><span aria-live="polite">' + item.qty + '</span>' +
@@ -55,15 +55,15 @@
     return '<div class="cart-empty"><div class="cart-empty-mark" aria-hidden="true">∅</div><h2 class="h3">Plads til noget godt.</h2><p class="body mt-md">Din kurv er tom. Find en form, der passer ind i din hverdag.</p><a class="btn btn-primary mt-md" href="shop.html">Se udvalget <span class="arrow" aria-hidden="true">↗</span></a></div>';
   }
   function orderText() {
-    var lines = ['Hej NordForm, jeg vil gerne bestille:'];
+    var lines = ['Hej STYKK, jeg vil gerne bestille:'];
     items.forEach(function (item) {
       var product = productFor(item);
       var variant = [item.color, item.size].filter(Boolean).join(' / ');
-      lines.push('– ' + product.name + (variant ? ' (' + variant + ')' : '') + ' × ' + item.qty + ' (' + window.Shop.formatPrice(unitPrice(item) * item.qty, product.currency) + ')');
+      lines.push('– ' + product.name + (variant ? ' (' + variant + ')' : '') + ' × ' + item.qty + ' (ca. ' + window.Shop.formatPrice(unitPrice(item) * item.qty, product.currency) + ')');
     });
-    lines.push('Varetotal: ' + window.Shop.formatPrice(subtotal()));
+    lines.push('Vejledende varetotal: ' + window.Shop.formatPrice(subtotal()));
     if (orderNote.trim()) lines.push('Bemærkning: ' + orderNote.trim());
-    lines.push('Vil I bekræfte lagerstatus, fragt og samlet pris?');
+    lines.push('Vil I bekræfte farve, mål, materiale, lagerstatus, fragt og endelig samlet pris?');
     return lines.join('\n');
   }
   function syncOrderLinks() {
@@ -75,9 +75,9 @@
   function summaryHTML(checkout) {
     var total = window.Shop.formatPrice(subtotal());
     return '<aside class="cart-summary"><p class="eyebrow">' + (checkout ? 'Din ordreforespørgsel' : 'Det, du har valgt') + '</p>' +
-      '<div class="cart-total"><span>Varetotal</span><strong>' + total + '</strong></div><div class="summary-line"><span>Fragt</span><span>Aftales</span></div><div class="summary-line"><span>Betaling</span><span>Aftales på Telegram</span></div>' +
-      '<p class="body-sm mt-md">' + (checkout ? 'Telegram åbner med din ordre som kladde. Du sender selv beskeden. Lagerstatus, fragt og betaling aftales, før ordren bekræftes.' : 'Fragt og endelig total bekræftes på Telegram, før du bestiller.') + '</p>' +
-      (checkout ? '<a class="btn btn-primary btn-block mt-md" data-telegram-order target="_blank" rel="noopener noreferrer">Åbn ordre i Telegram <span class="arrow" aria-hidden="true">↗</span></a><button class="order-copy mt-md" type="button" data-copy-order>Kopiér ordretekst</button><textarea class="copy-fallback" data-copy-fallback aria-label="Ordretekst til kopiering" readonly hidden></textarea><a class="link-quiet mt-md" href="cart.html">Tilbage til kurven</a>' : '<a class="btn btn-primary btn-block mt-md" href="checkout.html">Gennemse din ordre <span class="arrow" aria-hidden="true">↗</span></a><a class="link-quiet mt-md" href="shop.html">Fortsæt med at shoppe</a>') + '</aside>';
+      '<div class="cart-total"><span>Vejledende varetotal</span><strong>' + total + '</strong></div><div class="summary-line"><span>Fragt</span><span>Aftales</span></div><div class="summary-line"><span>Betaling</span><span>Aftales på Telegram</span></div>' +
+      '<p class="body-sm mt-md">' + (checkout ? 'Telegram åbner med din forespørgsel som kladde. Du sender selv beskeden. Detaljer, endelig pris, fragt og betaling aftales derefter.' : 'Fragt og endelig total bekræftes på Telegram, før du bestiller.') + '</p>' +
+      (checkout ? '<a class="btn btn-primary btn-block mt-md" data-telegram-order target="_blank" rel="noopener noreferrer">Åbn ordre i Telegram <span class="arrow" aria-hidden="true">↗</span></a><button class="order-copy mt-md" type="button" data-copy-order>Kopiér ordretekst</button><textarea class="copy-fallback" data-copy-fallback aria-label="Ordretekst til kopiering" readonly hidden></textarea><a class="link-quiet mt-md" href="cart.html">Tilbage til kurven</a>' : '<a class="btn btn-primary btn-block mt-md" href="checkout.html">Gennemse din forespørgsel <span class="arrow" aria-hidden="true">↗</span></a><a class="link-quiet mt-md" href="shop.html">Fortsæt med at shoppe</a>') + '</aside>';
   }
   function render() {
     var focused = document.activeElement;
@@ -99,7 +99,7 @@
       drawer.querySelector('[data-drawer-items]').innerHTML = items.length ? '<div class="cart-items">' + rows + '</div>' : emptyHTML();
       var footer = drawer.querySelector('[data-drawer-footer]');
       footer.hidden = !items.length;
-      footer.innerHTML = '<div class="cart-total"><span>Varetotal</span><strong>' + window.Shop.formatPrice(subtotal()) + '</strong></div><p class="body-sm">Fragt og betaling aftales på Telegram.</p><a class="btn btn-primary btn-block" href="checkout.html">Gennemse din ordre <span class="arrow" aria-hidden="true">↗</span></a><a class="link-quiet" href="cart.html">Se hele kurven</a>';
+      footer.innerHTML = '<div class="cart-total"><span>Vejledende varetotal</span><strong>' + window.Shop.formatPrice(subtotal()) + '</strong></div><p class="body-sm">Endelig pris, fragt og betaling aftales på Telegram.</p><a class="btn btn-primary btn-block" href="checkout.html">Gennemse din forespørgsel <span class="arrow" aria-hidden="true">↗</span></a><a class="link-quiet" href="cart.html">Se hele kurven</a>';
     }
     syncOrderLinks();
     if (focusKey && focusedMount) {

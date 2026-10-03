@@ -1,7 +1,7 @@
 /* Gallery, genuine product variants and responsive purchase controls. */
 (function () {
   'use strict';
-  var ui = window.NordFormUI;
+  var ui = window.STYKKUI;
   function init() {
     var root = document.querySelector('[data-product-page]');
     if (!root) return;
@@ -9,14 +9,14 @@
     var product = id ? window.Shop.byId(id) : window.Shop.all()[0];
     if (!product) {
       root.hidden = true;
-      root.insertAdjacentHTML('beforebegin', '<section class="wrap section"><p class="eyebrow">NordForm / Produkt</p><h1 class="h2">Den form kunne vi ikke finde.</h1><p class="body mt-md">Produktet findes ikke i vores nuværende udvalg.</p><a class="btn btn-primary mt-md" href="shop.html">Se alle objekter ↗</a></section>');
-      document.title = 'Produkt ikke fundet · NordForm';
+      root.insertAdjacentHTML('beforebegin', '<section class="wrap section"><p class="eyebrow">STYKK / Produkt</p><h1 class="h2">Den form kunne vi ikke finde.</h1><p class="body mt-md">Produktet findes ikke i vores nuværende udvalg.</p><a class="btn btn-primary mt-md" href="shop.html">Se alle objekter ↗</a></section>');
+      document.title = 'Produkt ikke fundet · STYKK';
       var robots = document.createElement('meta'); robots.name = 'robots'; robots.content = 'noindex,follow'; document.head.appendChild(robots);
       return;
     }
     var state = { color: ((product.colors || [])[0] || {}).name || '', size: ((product.sizes || [])[0] || {}).name || '', imageIndex: 0 };
     document.title = product.name + " · " + window.Shop.config.name;
-    var description = (product.tagline + " Se billeder og pris hos NordForm.").slice(0, 160);
+    var description = (product.tagline + " Se billeder og vejledende pris hos STYKK.").slice(0, 160);
     var descriptionMeta = document.querySelector('meta[name="description"]');
     if (descriptionMeta) descriptionMeta.content = description;
     var canonical = document.querySelector('link[rel="canonical"]');
@@ -41,25 +41,26 @@
         sku: product.sku,
         category: product.category,
         brand: { "@type": "Brand", name: window.Shop.config.name },
-        offers: {
+        ...(product.estimatedPrice ? {} : { offers: {
           "@type": "Offer",
           url: productUrl,
           priceCurrency: product.currency,
           price: (product.price / 100).toFixed(2),
           seller: { "@type": "Organization", name: window.Shop.config.name }
-        }
+        } })
       });
     }
     root.querySelector('[data-p-name]').textContent = product.name;
     root.querySelector('[data-p-description]').textContent = product.tagline;
     root.querySelector('[data-p-detail]').textContent = product.description;
+    root.querySelector('[data-product-enquiry]').href = 'contact.html?product=' + encodeURIComponent(product.id) + '#custom';
     root.querySelector('[data-p-category]').textContent = product.category || '';
     root.querySelector('[data-p-sku]').textContent = product.sku ? 'Objekt / ' + product.sku : '';
     document.querySelector('[data-p-crumb]').textContent = product.name;
     root.querySelector('[data-mobile-product]').textContent = product.name;
     var quantity = 1;
     function paintPrice() {
-      var price = window.Shop.formatPrice(window.Shop.priceForSize(product, state.size), product.currency);
+      var price = (product.estimatedPrice ? 'ca. ' : '') + window.Shop.formatPrice(window.Shop.priceForSize(product, state.size), product.currency);
       root.querySelector('[data-p-price]').textContent = price;
       root.querySelector('[data-mobile-price]').textContent = price;
     }
@@ -90,14 +91,14 @@
     var lightboxImage = root.querySelector('[data-lightbox-image]');
     function paintGallery() {
       var src = product.images[state.imageIndex];
-      var info = (window.NordFormImages || {})[src];
+      var info = (window.STYKKImages || {})[src];
       if (info) {
         image.setAttribute('srcset', info.sources.map(function (source) { return source.src + ' ' + source.width + 'w'; }).join(', '));
         image.setAttribute('sizes', '(max-width: 767px) 92vw, 51vw');
         image.width = info.width; image.height = info.height;
       }
       image.src = src;
-      image.alt = product.name + ', billede ' + (state.imageIndex + 1) + ' af ' + product.images.length;
+      image.alt = ((product.imageAlts || [])[state.imageIndex] || product.name) + ', billede ' + (state.imageIndex + 1) + ' af ' + product.images.length;
       thumbs.querySelectorAll('button').forEach(function (button, index) { button.setAttribute('aria-current', String(index === state.imageIndex)); });
       if (lightbox.open) { lightboxImage.src = src; lightboxImage.alt = image.alt; }
     }
@@ -152,7 +153,7 @@
       buyObserver.observe(addButton);
     }
     var related = root.querySelector('[data-related]');
-    if (related) related.innerHTML = window.Shop.related(product.id, 3).map(window.NordFormCatalog.cardHTML).join('');
+    if (related) related.innerHTML = window.Shop.related(product.id, 3).map(window.STYKKCatalog.cardHTML).join('');
   }
-  window.NordFormProduct = { init: init };
+  window.STYKKProduct = { init: init };
 })();

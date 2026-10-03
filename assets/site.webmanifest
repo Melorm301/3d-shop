@@ -1,0 +1,16 @@
+{
+  "name": "STYKK",
+  "short_name": "STYKK",
+  "lang": "da",
+  "start_url": "../index.html",
+  "display": "browser",
+  "background_color": "#f4f1e9",
+  "theme_color": "#252923",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

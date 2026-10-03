@@ -5,9 +5,9 @@
    at kende priser, farver eller billedstier.
 
    Sådan tilføjer du et produkt:
-   1. Læg billederne i images/products/ og brug filnavnet i "images".
+   1. Læg billederne i images/stykk/ og brug filnavnet i "images".
    2. Kopiér en blok nedenfor og ret felterne.
-   3. Produktet dukker automatisk op i shoppen, i "Latest off the printer"
+   3. Produktet dukker automatisk op i shoppen, i forsidens udvalg
       og i relaterede produkter.
 
    "sizes[].price" er prisen i ØRE (14900 = 149,00 DKK). Prisen vises ud fra
@@ -21,138 +21,220 @@ window.Shop = (function () {
   /* --- Butiksidentitet ---------------------------------------------------
      Ret navn og kontaktlinks her. Bruges på alle sider. */
   var config = {
-    name: "NordForm",
+    name: "STYKK",
     cvr: "41693908",
     telegram: "@test",
     currency: "DKK"
   };
 
+  // Vejledende designpriser, godkendt af ejeren til dette redesign.
   var products = [
-    {
-      id: "recon-station-v2",
-      sku: "SH-RECON-V2",
-      name: "Recon Station V2",
-      tagline: "Kompakt station til vials og tilbehør ved rekonstituering.",
-      description: "Kompakt station, der holder peptide-vials og tilbehør samlet ved rekonstituering af lyofiliseret peptidpulver. BAC-vand kan indgå, når det passer til det konkrete præparats anvisninger. Stationen er en organisatorisk holder og ikke medicinsk udstyr.",
-      price: 12900,
-      currency: "DKK",
-      category: "Peptides",
-      images: [
-        "images/products/recon-station-v2-01.webp",
-        "images/products/recon-station-v2-02.webp"
-      ],
-      featured: false
-    },
-    {
-      id: "recon-station-v1",
-      sku: "SH-RECON-V1",
-      name: "Recon Station V1",
-      tagline: "Cylindrisk station til vials og tilbehør ved rekonstituering.",
-      description: "Cylindrisk station, der holder peptide-vials og tilbehør samlet ved rekonstituering af lyofiliseret peptidpulver. BAC-vand kan indgå, når det passer til det konkrete præparats anvisninger. Stationen er en organisatorisk holder og ikke medicinsk udstyr.",
-      price: 15900,
-      currency: "DKK",
-      category: "Peptides",
-      images: ["images/products/recon-station-v1-01.webp"],
-      featured: false
-    },
-    {
-      id: "insulin-ready-to-go-case",
-      sku: "SH-CASE-INSULIN",
-      name: "Insulin Ready-to-Go Case",
-      tagline: "Kompakt rejsecase med opdelt opbevaring.",
-      description: "Kompakt rejsecase med opdelt opbevaring.",
-      price: 17900,
-      currency: "DKK",
-      category: "Peptides",
-      images: [
-        "images/products/insulin-ready-to-go-01.webp",
-        "images/products/insulin-ready-to-go-02.webp"
-      ],
-      featured: true,
-      featuredRank: 3
-    },
-    {
-      id: "pen-holder-round-9",
-      sku: "SH-PEN-009",
-      name: "9 Pen Holder Round",
-      tagline: "Rund holder med plads til op til 9 pens.",
-      description: "Rund holder med plads til op til 9 pens.",
-      price: 19900,
-      currency: "DKK",
-      category: "Peptides",
-      images: [
-        "images/products/pen-holder-round-01.webp",
-        "images/products/pen-holder-round-02.webp",
-        "images/products/pen-holder-round-03.webp",
-        "images/products/pen-holder-round-04.webp"
-      ],
-      featured: false
-    },
-    {
-      id: "peptide-case-50-vials",
-      sku: "SH-CASE-VIAL50",
-      name: "Peptide 50 Vials Case",
-      tagline: "Case med plads til op til 50 vials.",
-      description: "3D-printet case med plads til op til 50 vials.",
-      price: 24900,
-      currency: "DKK",
-      category: "Peptides",
-      images: [
-        "images/products/peptide-case-50-vials-01.webp",
-        "images/products/peptide-case-50-vials-02.webp"
-      ],
-      featured: false
-    },
-    {
-      id: "pen-case",
-      sku: "SH-PEN-CASE-005",
-      name: "Pen Case",
-      tagline: "Hardcase til pens og tilbehør.",
-      description: "Hardcase med organiseret plads til pens og tilbehør.",
-      price: 29900,
-      currency: "DKK",
-      category: "Peptides",
-      images: [
-        "images/products/pen-case-01.webp",
-        "images/products/pen-case-02.webp",
-        "images/products/pen-case-03.webp"
-      ],
-      featured: true,
-      featuredRank: 1
-    },
-    {
-      id: "prep-station-large",
-      sku: "SH-PREP-LARGE",
-      name: "Stor Prep Station",
-      tagline: "Stor prep station med dispenser og opbevaringsrum.",
-      description: "Stor prep station med dispenser og flere opbevaringsrum.",
-      price: 29900,
-      currency: "DKK",
-      category: "Peptides",
-      images: [
-        "images/products/prep-station-large-01.webp",
-        "images/products/prep-station-large-02.webp"
-      ],
-      featured: false
-    },
-    {
-      id: "64-vial-powcan-insert",
-      sku: "SH-64-VIAL-POWCAN",
-      name: "64 Vial Powcan Insert",
-      tagline: "Plads til 64 vials. Powcan-beholder medfølger.",
-      description: "64-vials insert til Powcan-beholder. Prisen inkluderer både indsatsen og Powcan-beholderen.",
-      price: 40000,
-      currency: "DKK",
-      category: "Peptides",
-      images: [
-        "images/products/64-vial-powcan-insert-01.webp",
-        "images/products/64-vial-powcan-insert-02.webp",
-        "images/products/64-vial-powcan-insert-03.webp"
-      ],
-      featured: true,
-      featuredRank: 2
-    }
-  ];
+  {
+    "id": "rib-vaeg",
+    "sku": "ST-001",
+    "name": "Rib / vægknage",
+    "tagline": "En enkel knage. En tydelig rytme.",
+    "description": "En vægknage med lodrette ribber og en afrundet krog. Til de ting, du gerne vil have ved hånden. Billederne viser designet i flere farver; vi aftaler farve og montering med dig før bestilling.",
+    "price": 8900,
+    "currency": "DKK",
+    "category": "Bolig",
+    "images": [
+      "images/stykk/rib-vaeg.webp"
+    ],
+    "featured": true,
+    "featuredRank": 1,
+    "estimatedPrice": true,
+    "colors": [
+      {
+        "name": "Varm brun",
+        "hex": "#aa7955"
+      },
+      {
+        "name": "Lys",
+        "hex": "#e3dfd5"
+      },
+      {
+        "name": "Mørk",
+        "hex": "#343737"
+      }
+    ],
+    "imageAlts": [
+      "Tre Rib-vægknager med afrundede kroge og lodrette ribber i brun, lys og mørk farve"
+    ]
+  },
+  {
+    "id": "bue-knage",
+    "sku": "ST-002",
+    "name": "Bue / knage",
+    "tagline": "En blød bue til det, der skal hænge.",
+    "description": "Den sammenhængende bue og den ribbede overflade giver knagen sit udtryk. En lille funktionel detalje på væggen. Farve, mål og montering aftales før bestilling.",
+    "price": 10900,
+    "currency": "DKK",
+    "category": "Bolig",
+    "images": [
+      "images/stykk/bue-knage.webp",
+      "images/stykk/bue-knage-02.webp"
+    ],
+    "featured": true,
+    "featuredRank": 2,
+    "estimatedPrice": true,
+    "colors": [
+      {
+        "name": "Varm brun",
+        "hex": "#aa7955"
+      },
+      {
+        "name": "Lys",
+        "hex": "#e3dfd5"
+      },
+      {
+        "name": "Mørk",
+        "hex": "#343737"
+      }
+    ],
+    "imageAlts": [
+      "Tre Bue-knager i brun, lys og mørk farve med en stofstrop i den brune knage",
+      "Bue-knagens afrundede profil og ribbede overflade vist i tre farver"
+    ]
+  },
+  {
+    "id": "rib-doer",
+    "sku": "ST-003",
+    "name": "Rib / dørknage",
+    "tagline": "Plads til mere. Lige ved døren.",
+    "description": "En knage med to kroge og en form, der går over dørens kant. Den lodrette ribbestruktur forbinder den med Rib-vægknagen. Oplys dørens tykkelse, så vi kan afklare pasformen før bestilling.",
+    "price": 12900,
+    "currency": "DKK",
+    "category": "Bolig",
+    "images": [
+      "images/stykk/rib-doer.webp"
+    ],
+    "featured": true,
+    "featuredRank": 3,
+    "estimatedPrice": true,
+    "colors": [
+      {
+        "name": "Varm brun",
+        "hex": "#aa7955"
+      },
+      {
+        "name": "Lys",
+        "hex": "#e3dfd5"
+      },
+      {
+        "name": "Mørk",
+        "hex": "#343737"
+      }
+    ],
+    "imageAlts": [
+      "Tre Rib-dørknager med to kroge, hængt over dørkanter"
+    ]
+  },
+  {
+    "id": "klem-clip",
+    "sku": "ST-004",
+    "name": "Klem / poseclip",
+    "tagline": "En lille ting, der samler.",
+    "description": "En ribbet clip til at samle kanten af en pose. De afrundede ender giver et roligt, enkelt udtryk. Spørg os om størrelse og anvendelse til den pose, du vil bruge den på.",
+    "price": 3900,
+    "currency": "DKK",
+    "category": "Tilbehør",
+    "images": [
+      "images/stykk/klem-clip.webp"
+    ],
+    "featured": false,
+    "featuredRank": 99,
+    "estimatedPrice": true,
+    "colors": [
+      {
+        "name": "Varm brun",
+        "hex": "#aa7955"
+      },
+      {
+        "name": "Lys",
+        "hex": "#e3dfd5"
+      },
+      {
+        "name": "Mørk",
+        "hex": "#343737"
+      }
+    ],
+    "imageAlts": [
+      "Tre ribbede Klem-poseclips i brun, lys og mørk farve; den brune clip holder en pose lukket"
+    ]
+  },
+  {
+    "id": "skra-holder",
+    "sku": "ST-005",
+    "name": "Skrå / holder",
+    "tagline": "Giv skærmen en fast plads.",
+    "description": "En vinklet holder med en åben, trekantet form og støtte i bunden. Billedet viser en sort udgave. Fortæl os, hvilken enhed du vil bruge den til, så afklarer vi mål og pasform.",
+    "price": 7900,
+    "currency": "DKK",
+    "category": "Tilbehør",
+    "images": [
+      "images/stykk/skra-holder.webp"
+    ],
+    "featured": false,
+    "featuredRank": 99,
+    "estimatedPrice": true,
+    "imageAlts": [
+      "Sort Skrå-holder med trekantet sideprofil og støtte i bunden på et skrivebord"
+    ]
+  },
+  {
+    "id": "tak-objekt",
+    "sku": "ST-006",
+    "name": "Tak / objekt",
+    "tagline": "Ribber, kurver og et lille gevir.",
+    "description": "Et dekorativt objekt med en bølgende, ribbet krop og et enkelt gevir. På en hylde, i vindueskarmen eller som en del af en sæsonopstilling. Pris er pr. objekt; farve og størrelse aftales.",
+    "price": 11900,
+    "currency": "DKK",
+    "category": "Objekter",
+    "images": [
+      "images/stykk/tak-objekt.webp"
+    ],
+    "featured": false,
+    "featuredRank": 99,
+    "estimatedPrice": true,
+    "colors": [
+      {
+        "name": "Grøn",
+        "hex": "#697863"
+      },
+      {
+        "name": "Sand",
+        "hex": "#b99b7c"
+      },
+      {
+        "name": "Rød",
+        "hex": "#883c35"
+      }
+    ],
+    "imageAlts": [
+      "Tre Tak-objekter med gevir og bølgende ribber i grøn, sand og rød"
+    ]
+  },
+  {
+    "id": "svoeb-figur",
+    "sku": "ST-007",
+    "name": "Svøb / figur",
+    "tagline": "En lille figur med sit eget udtryk.",
+    "description": "En dekorativ spøgelsesfigur med bløde folder og et legende udtryk. Billedet viser en lys udgave i en efterårsopstilling. Farve og størrelse aftales før bestilling.",
+    "price": 8900,
+    "currency": "DKK",
+    "category": "Objekter",
+    "images": [
+      "images/stykk/svoeb-figur.webp"
+    ],
+    "featured": false,
+    "featuredRank": 99,
+    "estimatedPrice": true,
+    "imageAlts": [
+      "Lys Svøb-spøgelsesfigur med foldet overflade i en efterårsopstilling"
+    ]
+  }
+];
 
   /* --- Hjælpefunktioner -------------------------------------------------- */
 
@@ -181,7 +263,9 @@ window.Shop = (function () {
   }
 
   function related(currentId, limit) {
+    var current = byId(currentId);
     var list = products.filter(function (p) { return p.id !== currentId; });
+    list.sort(function (a, b) { return Number(b.category === (current || {}).category) - Number(a.category === (current || {}).category); });
     return typeof limit === "number" ? list.slice(0, limit) : list;
   }
 

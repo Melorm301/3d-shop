@@ -1,21 +1,19 @@
 /* Product discovery, rendered from the existing Shop data. */
 (function () {
   'use strict';
-  var ui = window.NordFormUI;
+  var ui = window.STYKKUI;
   function collection(product) {
-    if (/case/.test(product.id)) return 'cases';
-    if (/station/.test(product.id)) return 'stations';
-    return 'holders';
+    return { Bolig: 'home', Tilbehør: 'accessories', Objekter: 'objects' }[product.category] || 'all';
   }
   function cardHTML(product) {
-    var price = (product.priceFrom ? 'fra ' : '') + window.Shop.formatPrice(product.price, product.currency);
+    var price = (product.estimatedPrice ? 'ca. ' : product.priceFrom ? 'fra ' : '') + window.Shop.formatPrice(product.price, product.currency);
     var colors = product.colors || [];
-    var swatches = colors.length ? '<span class="pcard-swatches" aria-label="Tilgængelige farver: ' + ui.esc(colors.map(function (color) { return color.name; }).join(', ')) + '">' + colors.map(function (color) { return '<i style="background:' + ui.esc(color.hex) + '" aria-hidden="true"></i>'; }).join('') + '</span>' : '';
+    var swatches = colors.length ? '<span class="pcard-swatches" aria-label="Farver vist på billederne: ' + ui.esc(colors.map(function (color) { return color.name; }).join(', ')) + '">' + colors.map(function (color) { return '<i style="background:' + ui.esc(color.hex) + '" aria-hidden="true"></i>'; }).join('') + '</span>' : '';
     return '<article class="pcard"><a class="pcard-link" href="product.html?id=' + encodeURIComponent(product.id) + '">' +
-      '<span class="pcard-media">' + ui.imageHTML(product.images[0], product.name) +
+      '<span class="pcard-media">' + ui.imageHTML(product.images[0], (product.imageAlts || [])[0] || product.name) +
       (product.images[1] ? '<img class="pcard-secondary"' + ui.imageAttributes(product.images[1]) + ' alt="" aria-hidden="true">' : '') +
-      '<span class="pcard-image-count" aria-hidden="true">' + String(product.images.length).padStart(2, '0') + ' / Billeder</span></span>' +
-      '<span class="pcard-body"><span class="pcard-meta"><span class="pcard-name">' + ui.esc(product.name) + '</span><span class="pcard-price">' + ui.esc(price) + '</span></span>' +
+      '</span>' +
+      '<span class="pcard-body"><span class="pcard-meta"><span class="pcard-name">' + ui.esc(product.name) + '</span><span class="pcard-price" title="Vejledende pris pr. STYKK">' + ui.esc(price) + '</span></span>' +
       '<span class="category-tag">' + ui.esc(product.category) + '</span><span class="pcard-desc body-sm">' + ui.esc(product.tagline) + '</span>' + swatches + '</span></a>' +
       (colors.length > 1 || (product.sizes || []).length > 1
         ? '<a class="btn btn-sm pcard-add" href="product.html?id=' + encodeURIComponent(product.id) + '">Vælg variant <span class="arrow" aria-hidden="true">↗</span></a>'
@@ -29,7 +27,7 @@
     var count = document.querySelector('[data-product-count]');
     var buttons = document.querySelectorAll('[data-collection]');
     var active = new URLSearchParams(window.location.search).get('collection') || 'all';
-    if (['all', 'cases', 'holders', 'stations'].indexOf(active) === -1) active = 'all';
+    if (['all', 'home', 'accessories', 'objects'].indexOf(active) === -1) active = 'all';
     if (category) {
       var categories = Array.from(new Set(window.Shop.all().map(function (product) { return product.category; }).filter(Boolean))).sort();
       categories.forEach(function (value) { category.insertAdjacentHTML('beforeend', '<option value="' + ui.esc(value) + '">' + ui.esc(value) + '</option>'); });
@@ -82,5 +80,5 @@
     });
     render();
   }
-  window.NordFormCatalog = { init: init, cardHTML: cardHTML };
+  window.STYKKCatalog = { init: init, cardHTML: cardHTML };
 })();

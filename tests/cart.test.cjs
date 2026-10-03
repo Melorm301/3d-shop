@@ -30,30 +30,30 @@ function boot(saved, customProducts) {
   return { cart: context.Cart, storage, nodes, emit: (event, value) => (listeners[event] || []).forEach(fn => fn(value)), dialog };
 }
 
-test('existing carts survive, invalid entries are rejected and duplicate rows merge', () => {
-  const { cart } = boot(JSON.stringify([{id:'pen-case',qty:2},{id:'pen-case',qty:3},{id:'deleted',qty:1},{id:'pen-case',qty:-1},{id:'pen-case',qty:1.5}]));
+test('current carts survive, invalid entries are rejected and duplicate rows merge', () => {
+  const { cart } = boot(JSON.stringify([{id:'rib-vaeg',qty:2},{id:'rib-vaeg',qty:3},{id:'deleted',qty:1},{id:'rib-vaeg',qty:-1},{id:'rib-vaeg',qty:1.5}]));
   assert.equal(cart.count(), 5);
   assert.equal(cart.items().length, 1);
-  assert.equal(cart.subtotal(), 149500);
+  assert.equal(cart.subtotal(), 44500);
 });
 
 test('invalid storage recovers and valid additions persist under the original key', () => {
   const {cart,storage} = boot('{ broken');
   assert.equal(cart.count(),0);
-  assert.equal(cart.add('pen-case',2),true);
-  assert.equal(cart.subtotal(),59800);
+  assert.equal(cart.add('rib-vaeg',2),true);
+  assert.equal(cart.subtotal(),17800);
   const saved = storage.get('nordform.cart.v1');
   assert.equal(JSON.parse(saved)[0].qty,2);
-  assert.equal(boot(saved).cart.subtotal(),59800);
+  assert.equal(boot(saved).cart.subtotal(),17800);
 });
 
 test('quantities are positive integers, bounded, and unknown products cannot be added', () => {
   const {cart} = boot();
-  for (const qty of [0,-1,1.5,NaN,'2']) assert.equal(cart.add('pen-case',qty),false);
+  for (const qty of [0,-1,1.5,NaN,'2']) assert.equal(cart.add('rib-vaeg',qty),false);
   assert.equal(cart.add('missing',1),false);
-  cart.add('pen-case',98); cart.add('pen-case',10);
+  cart.add('rib-vaeg',98); cart.add('rib-vaeg',10);
   assert.equal(cart.count(),99);
-  assert.equal(cart.subtotal(),2960100);
+  assert.equal(cart.subtotal(),881100);
 });
 
 test('variant rows stay distinct and size prices drive cart totals', () => {
@@ -69,26 +69,31 @@ test('variant rows stay distinct and size prices drive cart totals', () => {
 });
 
 test('returned cart items cannot mutate the live cart', () => {
-  const {cart} = boot(); cart.add('pen-case',1);
+  const {cart} = boot(); cart.add('rib-vaeg',1);
   cart.items()[0].qty = 50;
   assert.equal(cart.count(),1);
 });
 
 test('quantity and remove actions update totals through delegated controls', () => {
-  const {cart,emit} = boot(); cart.add('pen-case',2);
+  const {cart,emit} = boot(); cart.add('rib-vaeg',2);
   function click(action) {
-    const button = {dataset:{cartAction:action,itemKey:JSON.stringify(['pen-case','',''])}};
+    const button = {dataset:{cartAction:action,itemKey:JSON.stringify(['rib-vaeg','Varm brun',''])}};
     emit('click',{target:{closest: selector => selector === '[data-cart-action]' ? button : null}});
   }
-  click('increase');assert.equal(cart.subtotal(),89700);
+  click('increase');assert.equal(cart.subtotal(),26700);
   click('decrease');assert.equal(cart.count(),2);
   click('remove');assert.equal(cart.count(),0);
-  cart.add('pen-case',1);click('decrease');assert.equal(cart.count(),0);
+  cart.add('rib-vaeg',1);click('decrease');assert.equal(cart.count(),0);
 });
 
 test('storage changes synchronize the cart between tabs', () => {
   const {cart,storage,emit} = boot();
-  storage.set('nordform.cart.v1',JSON.stringify([{id:'pen-case',qty:4}]));
+  storage.set('nordform.cart.v1',JSON.stringify([{id:'rib-vaeg',qty:4}]));
   emit('storage',{key:'nordform.cart.v1'});
-  assert.equal(cart.count(),4);assert.equal(cart.subtotal(),119600);
+  assert.equal(cart.count(),4);assert.equal(cart.subtotal(),35600);
 });
+
+ test('retired assortment is safely removed from persisted baskets',()=>{
+  const {cart}=boot(JSON.stringify([{id:'pen-case',qty:2},{id:'peptide-case-50-vials',qty:1},{id:'bue-knage',qty:1}]));
+  assert.equal(cart.count(),1);assert.equal(cart.items()[0].id,'bue-knage');assert.equal(cart.subtotal(),10900);
+ });

@@ -13,7 +13,7 @@ for (const page of ['index.html','shop.html']) {
   const source = fs.readFileSync(file, 'utf8');
   const next = source.replace(/(<div class="product-grid[^"\n]*" data-products[^>]*>)[\s\S]*?(<\/div>)/g, (match, start, end) => {
     const products = start.includes('data-product-source="all"') ? context.Shop.all().sort((a,b)=>(b.featured?1:0)-(a.featured?1:0)||(a.featuredRank||99)-(b.featuredRank||99)) : context.Shop.featured(3);
-    return start+'\n'+products.map(context.NordFormCatalog.cardHTML).join('\n')+'\n'+end;
+    return start+'\n'+products.map(context.STYKKCatalog.cardHTML).join('\n')+'\n'+end;
   });
   fs.writeFileSync(file, next);
 }

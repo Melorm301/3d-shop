@@ -28,7 +28,7 @@ test('every product image and responsive source exists',()=>{
   assert.ok(product.price>0&&Number.isInteger(product.price));
   for(const image of product.images){
    assert.ok(fs.existsSync(path.join(root,image)),image);
-   const info=context.NordFormImages[image];assert.ok(info,image+' missing dimensions');
+   const info=context.STYKKImages[image];assert.ok(info,image+' missing dimensions');
    for(const entry of info.sources)assert.ok(fs.existsSync(path.join(root,entry.src)),entry.src);
   }
  }
@@ -38,7 +38,7 @@ test('page semantics, metadata and business identity remain present',()=>{
  for(const page of pages){
   const source=fs.readFileSync(path.join(root,page),'utf8');
   assert.equal((source.match(/<h1\b/g)||[]).length,1,page+' h1');
-  assert.match(source,/<html lang="da">/);assert.match(source,/<title>[^<]+NordForm[^<]*<\/title>|<title>NordForm[^<]*<\/title>/);
+  assert.match(source,/<html lang="da">/);assert.match(source,/<title>[^<]+STYKK[^<]*<\/title>|<title>STYKK[^<]*<\/title>/);
   assert.match(source,/<meta name="description" content="[^"]+">/);assert.match(source,/<link rel="canonical" href="https:\/\/melorm301.github.io\/3d-shop\//);
   assert.match(source,/41693908/);
   for(const match of source.matchAll(/<script type="application\/ld\+json"[^>]*>(.*?)<\/script>/gs))assert.doesNotThrow(()=>JSON.parse(match[1]));
