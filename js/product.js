@@ -63,6 +63,8 @@
       var price = product.estimatedPrice && !product.sizes ? window.Shop.productPrice(product) : (product.estimatedPrice ? 'ca. ' : '') + window.Shop.formatPrice(window.Shop.priceForSize(product, state.size), product.currency);
       root.querySelector('[data-p-price]').textContent = price;
       root.querySelector('[data-mobile-price]').textContent = price;
+      var priceNote = root.querySelector('[data-p-price-note]');
+      if (priceNote && product.category === 'Wall art') priceNote.textContent = 'Pris pr. værk: 399 DKK. Mål: ca. 20 × 20 × 0,3 cm. Fragt og levering aftales før bestilling.';
     }
     function initVariants(field, entries, initial) {
       var group = root.querySelector('[data-p-' + field + '-group]');

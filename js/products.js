@@ -333,6 +333,90 @@ window.Shop = (function () {
     "imageAlts": [
       "Sort, vinklet mobilholder med bred forkant og åben trekantet sideprofil"
     ]
+  },
+  {
+    "id": "wallart-nordisk-sol-bue",
+    "sku": "ST-013",
+    "name": "Nordisk sol og bue",
+    "tagline": "Grafisk ro med sol, blade og bløde former.",
+    "description": "Smukt 3D-printet wall art med sorte grene, en varm sol og nordiske bueformer. Et lille kunstværk, der giver væggen personlighed. Ca. 20 × 20 × 0,3 cm.",
+    "price": 39900,
+    "currency": "DKK",
+    "category": "Wall art",
+    "images": ["images/stykk/wallart-nordisk-bue-sol.webp"],
+    "imageAlts": ["Nordisk wall art med sorte blade, varm sol og grafisk bue på en lys væg"]
+  },
+  {
+    "id": "wallart-nordisk-silhuet",
+    "sku": "ST-014",
+    "name": "Nordisk kvindesilhuet",
+    "tagline": "En stille silhuet i solens varme skær.",
+    "description": "Smukt 3D-printet wall art med en stiliseret kvindesilhuet, en varm sol og enkle nordiske former. Et stemningsfuldt blikfang i hjemmet. Ca. 20 × 20 × 0,3 cm.",
+    "price": 39900,
+    "currency": "DKK",
+    "category": "Wall art",
+    "images": ["images/stykk/wallart-nordisk-silhuet.webp"],
+    "imageAlts": ["Nordisk wall art med kvindesilhuet, varm sol og grafiske former"]
+  },
+  {
+    "id": "wallart-nordisk-oliventrae",
+    "sku": "ST-015",
+    "name": "Nordisk oliventræ",
+    "tagline": "Et skulpturelt træ ved roligt vand.",
+    "description": "Smukt 3D-printet wall art med et oliventræ, roligt vand og en varm sol. Den grafiske kontrast giver motivet et enkelt, nordisk udtryk. Ca. 20 × 20 × 0,3 cm.",
+    "price": 39900,
+    "currency": "DKK",
+    "category": "Wall art",
+    "images": ["images/stykk/wallart-nordisk-oliventrae.webp"],
+    "imageAlts": ["Nordisk wall art med et mørkt oliventræ ved vandet under en varm sol"]
+  },
+  {
+    "id": "wallart-portraet-guld-ekko",
+    "sku": "ST-016",
+    "name": "Portræt med gyldent ekko",
+    "tagline": "Et udtryksfuldt portræt i sort, sand og okker.",
+    "description": "Smukt 3D-printet wall art med et markant stencilportræt og varme okkerfarvede detaljer. Et kunstnerisk statement i et kompakt format. Ca. 20 × 20 × 0,3 cm.",
+    "price": 39900,
+    "currency": "DKK",
+    "category": "Wall art",
+    "images": ["images/stykk/wallart-portraet-guld-ekko.webp"],
+    "imageAlts": ["Stencilportræt i sort, creme og okker vist som wall art på en lys væg"]
+  },
+  {
+    "id": "wallart-portraet-roed-sol",
+    "sku": "ST-017",
+    "name": "Portræt under rød sol",
+    "tagline": "Grafisk portræt med en stærk rød accent.",
+    "description": "Smukt 3D-printet wall art med et stiliseret portræt, mørke penselstrøg og en dyb rød sol. Skabt til at tilføre farve og karakter til væggen. Ca. 20 × 20 × 0,3 cm.",
+    "price": 39900,
+    "currency": "DKK",
+    "category": "Wall art",
+    "images": ["images/stykk/wallart-portraet-roed-sol.webp"],
+    "imageAlts": ["Stencilportræt under en rød sol med sorte og sandfarvede detaljer"]
+  },
+  {
+    "id": "wallart-new-nordic-banksy",
+    "sku": "ST-018",
+    "name": "New Nordic / Banksy",
+    "tagline": "Stencilkunst med bløde nordiske farver.",
+    "description": "Smukt 3D-printet wall art med en liggende figur, grafiske skygger og en varm okkerfarvet sol. Et markant motiv med et roligt nordisk farvespil. Ca. 20 × 20 × 0,3 cm.",
+    "price": 39900,
+    "currency": "DKK",
+    "category": "Wall art",
+    "images": ["images/stykk/wallart-new-nordic-banksy.webp"],
+    "imageAlts": ["Stencilinspireret wall art med liggende figur, okkersol og grafiske mørke former"]
+  },
+  {
+    "id": "wallart-maane-over-fjord",
+    "sku": "ST-019",
+    "name": "Måne over fjorden",
+    "tagline": "Et nordisk fjordlandskab i måneskin.",
+    "description": "Smukt 3D-printet wall art med måne, fjord, bjerge og små træer samlet i et roligt, rundt motiv. Et lille stykke nordisk natur til væggen. Ca. 20 × 20 × 0,3 cm.",
+    "price": 39900,
+    "currency": "DKK",
+    "category": "Wall art",
+    "images": ["images/stykk/wallart-maane-over-fjord.webp"],
+    "imageAlts": ["Rundt sort-hvidt fjordmotiv med måne, bjerge, vand og træer"]
   }
 ];
 

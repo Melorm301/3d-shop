@@ -3,7 +3,7 @@
   'use strict';
   var ui = window.STYKKUI;
   function collection(product) {
-    return product.isNew ? 'new' : { Bolig: 'home', Tilbehør: 'accessories', Objekter: 'objects', Legetøj: 'toys', Køkken: 'kitchen' }[product.category] || 'all';
+    return product.isNew ? 'new' : { Bolig: 'home', Tilbehør: 'accessories', Objekter: 'objects', Legetøj: 'toys', Køkken: 'kitchen', 'Wall art': 'wall-art' }[product.category] || 'all';
   }
   function cardHTML(product) {
     var price = product.estimatedPrice ? window.Shop.productPrice(product) : (product.priceFrom ? 'fra ' : '') + window.Shop.formatPrice(product.price, product.currency);
@@ -13,7 +13,7 @@
       '<span class="pcard-media">' + ui.imageHTML(product.images[0], (product.imageAlts || [])[0] || product.name) +
       (product.images[1] ? '<img class="pcard-secondary"' + ui.imageAttributes(product.images[1]) + ' alt="" aria-hidden="true">' : '') +
       '</span>' +
-      '<span class="pcard-body"><span class="pcard-meta"><span class="pcard-name">' + ui.esc(product.name) + '</span><span class="pcard-price" title="Vejledende pris pr. STYKK">' + ui.esc(price) + '</span></span>' +
+      '<span class="pcard-body"><span class="pcard-meta"><span class="pcard-name">' + ui.esc(product.name) + '</span><span class="pcard-price" title="' + (product.estimatedPrice ? 'Vejledende pris pr. STYKK' : 'Pris pr. STYKK') + '">' + ui.esc(price) + '</span></span>' +
       '<span class="category-tag">' + ui.esc(product.category) + '</span><span class="pcard-desc body-sm">' + ui.esc(product.tagline) + '</span>' + swatches + '</span></a>' +
       (colors.length > 1 || (product.sizes || []).length > 1
         ? '<a class="btn btn-sm pcard-add" href="product.html?id=' + encodeURIComponent(product.id) + '">Vælg variant <span class="arrow" aria-hidden="true">→</span></a>'
@@ -27,7 +27,7 @@
     var count = document.querySelector('[data-product-count]');
     var buttons = document.querySelectorAll('[data-collection]');
     var active = new URLSearchParams(window.location.search).get('collection') || 'all';
-    if (['all', 'home', 'accessories', 'objects', 'toys', 'kitchen', 'new'].indexOf(active) === -1) active = 'all';
+    if (['all', 'home', 'accessories', 'objects', 'toys', 'kitchen', 'wall-art', 'new'].indexOf(active) === -1) active = 'all';
     if (category) {
       var categories = Array.from(new Set(window.Shop.all().map(function (product) { return product.category; }).filter(Boolean))).sort();
       categories.forEach(function (value) { category.insertAdjacentHTML('beforeend', '<option value="' + ui.esc(value) + '">' + ui.esc(value) + '</option>'); });

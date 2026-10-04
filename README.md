@@ -13,7 +13,7 @@ python3 -m http.server 4173 --bind 127.0.0.1
 ## Sider og moduler
 
 - `index.html`: fotografisk hero, udvalgte STYKK, filosofi, dekorative objekter, fremstilling, specialdesign og kundeservice.
-- `shop.html`: 12 produkter i Bolig, Tilbehør, Objekter, Legetøj og Køkken; særskilt Nyheder-filter; søgning, kategori og sortering.
+- `shop.html`: 19 produkter i Bolig, Tilbehør, Objekter, Legetøj, Køkken og Wall art; særskilte kategori-filtre; søgning og sortering.
 - `about.html`: brandets tilgang til form, funktion og materialevalg.
 - `product.html?id=bue-knage`: galleri, lysboks, ønsket farve, antal, produktdetaljer og relaterede STYKK.
 - `cart.html` og `checkout.html`: vedvarende kurv, vejledende varetotal, bemærkning og manuel ordrekladde.
@@ -32,6 +32,8 @@ python3 -m http.server 4173 --bind 127.0.0.1
 Det tidligere sortiment er fjernet efter ejerens udtrykkelige instruktion. Der er syv nye STYKK med vejledende designpriser: Rib / vægknage 89 DKK, Bue / knage 109 DKK, Rib / dørknage 129 DKK, Klem / poseclip 39 DKK, Skrå / holder 79 DKK, Tak / objekt 119 DKK, Svøb / figur 89 DKK, Sno / flexifigur 49 DKK pr. figur, Krible / flexifigur 29 DKK pr. figur, Juletryk / kageform 79 DKK pr. form, Punkt / mobilholder 79 DKK pr. holder og Fold / mobilholder 69 DKK pr. holder.
 
 `estimatedPrice: true` markerer de vejledende priser. Produktschema indeholder derfor ikke et fast pristilbud. Prisen er pr. STYKK, selv om billederne viser flere farver. Farvevalg er ønsker baseret på billedmaterialet og bekræftes før bestilling. Der findes ingen dokumenterede produktmål, materialetyper, belastningsgrænser eller certificeringer i det nye materiale.
+
+Syv wall art-designs er tilføjet som selvstændige produkter under kategorien Wall art til 399 DKK pr. værk. Hvert værk har sit eget produktbillede og en cirka-størrelse på 20 × 20 × 0,3 cm.
 
 ## Bestilling og kontakt
 
