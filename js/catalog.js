@@ -3,7 +3,7 @@
   'use strict';
   var ui = window.STYKKUI;
   function collection(product) {
-    return product.isNew ? 'new' : { Bolig: 'home', Tilbehør: 'accessories', Figurer: 'figures', Legetøj: 'toys', Køkken: 'kitchen', 'Wall art': 'wall-art' }[product.category] || 'all';
+    return { Bolig: 'home', Tilbehør: 'accessories', Figurer: 'figures', Legetøj: 'toys', Køkken: 'kitchen', 'Wall art': 'wall-art' }[product.category] || 'all';
   }
   function cardHTML(product) {
     var price = product.estimatedPrice ? window.Shop.productPrice(product) : (product.priceFrom ? 'fra ' : '') + window.Shop.formatPrice(product.price, product.currency);
@@ -43,7 +43,7 @@
         if (all) {
           list = list.filter(function (product) {
             var query = search ? search.value.trim().toLocaleLowerCase('da') : '';
-            return (active === 'all' || collection(product) === active) &&
+            return (active === 'all' || (active === 'new' ? product.isNew : collection(product) === active)) &&
               (!category || category.value === 'all' || product.category === category.value) &&
               (!query || (product.name + ' ' + product.tagline + ' ' + product.category).toLocaleLowerCase('da').indexOf(query) !== -1);
           });
@@ -56,7 +56,7 @@
           });
           if (count) count.textContent = list.length + (list.length === 1 ? ' produkt' : ' produkter');
         }
-        mount.innerHTML = list.length ? list.map(cardHTML).join('') : '<div class="catalog-empty"><h2 class="h3">Vi fandt ikke den form.</h2><p class="body mt-md">Prøv en anden søgning, eller se hele udvalget.</p><button class="btn btn-primary" type="button" data-reset-filters>Vis alle objekter →</button></div>';
+        mount.innerHTML = list.length ? list.map(cardHTML).join('') : '<div class="catalog-empty"><h2 class="h3">Vi fandt ikke den form.</h2><p class="body mt-md">Prøv en anden søgning, eller se hele udvalget.</p><button class="btn btn-primary" type="button" data-reset-filters>Vis alle produkter →</button></div>';
       });
     }
     [category, sort].filter(Boolean).forEach(function (control) { control.addEventListener('change', render); });
