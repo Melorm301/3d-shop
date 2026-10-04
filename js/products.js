@@ -185,18 +185,19 @@ window.Shop = (function () {
   {
     "id": "tak-objekt",
     "sku": "ST-006",
-    "name": "Tak / objekt",
-    "tagline": "Ribber, kurver og et lille gevir.",
-    "description": "Et dekorativt objekt med en bølgende, ribbet krop og et enkelt gevir. På en hylde, i vindueskarmen eller som en del af en sæsonopstilling. Pris er pr. objekt; farve og størrelse aftales.",
+    "name": "Tak / rensdyrfigur",
+    "tagline": "Et lille rensdyr med bløde ribber.",
+    "description": "En dekorativ rensdyrfigur med bølgende, ribbet krop og et enkelt gevir. Den passer på hylden, i vindueskarmen eller i en hyggelig sæsonopstilling. Vejledende pris pr. figur; farve og størrelse aftales.",
     "price": 11900,
     "currency": "DKK",
-    "category": "Objekter",
+    "category": "Figurer",
     "images": [
       "images/stykk/tak-objekt.webp"
     ],
     "featured": false,
     "featuredRank": 99,
     "estimatedPrice": true,
+    "estimatedUnit": "pr. figur",
     "colors": [
       {
         "name": "Grøn",
@@ -212,18 +213,18 @@ window.Shop = (function () {
       }
     ],
     "imageAlts": [
-      "Tre Tak-objekter med gevir og bølgende ribber i grøn, sand og rød"
+      "Tre rensdyrfigurer med gevir og bølgende ribber i grøn, sand og rød"
     ]
   },
   {
     "id": "svoeb-figur",
     "sku": "ST-007",
-    "name": "Svøb / figur",
-    "tagline": "En lille figur med sit eget udtryk.",
-    "description": "En dekorativ spøgelsesfigur med bløde folder og et legende udtryk. Billedet viser en lys udgave i en efterårsopstilling. Farve og størrelse aftales før bestilling.",
+    "name": "Svøb / spøgelsesfigur",
+    "tagline": "En lille spøgelsesfigur fra Holiday-kollektionen.",
+    "description": "En dekorativ spøgelsesfigur med bløde folder og et legende udtryk — en del af STYKKs Holiday-kollektion. Billedet viser den lyse udgave. Farve og størrelse aftales før bestilling.",
     "price": 8900,
     "currency": "DKK",
-    "category": "Objekter",
+    "category": "Figurer",
     "images": [
       "images/stykk/svoeb-figur.webp"
     ],
@@ -231,7 +232,7 @@ window.Shop = (function () {
     "featuredRank": 99,
     "estimatedPrice": true,
     "imageAlts": [
-      "Lys Svøb-spøgelsesfigur med foldet overflade i en efterårsopstilling"
+      "Lys spøgelsesfigur med foldet overflade fra Holiday-kollektionen"
     ]
   },
   {
@@ -297,9 +298,9 @@ window.Shop = (function () {
   {
     "id": "punkt-mobilholder",
     "sku": "ST-011",
-    "name": "Punkt / mobilholder",
-    "tagline": "Et blødt punkt til mobilen.",
-    "description": "En lille, rund mobilholder med profileret overflade. Billedet viser en telefon, der står lodret i holderen. Prisen er vejledende pr. holder.",
+    "name": "Hjerte / billedholder",
+    "tagline": "Et lille hjerte til dine yndlingsbilleder.",
+    "description": "Et lyserødt hjerte med rillet overflade, der holder et foto fremme på bordet eller hylden. Prisen er vejledende pr. billedholder.",
     "price": 7900,
     "estimatedPrice": true,
     "estimatedUnit": "pr. holder",
@@ -311,7 +312,7 @@ window.Shop = (function () {
     "isNew": true,
     "featuredRank": 11,
     "imageAlts": [
-      "Lys mobilskærm placeret lodret i en lille rund, rosa holder på et bord"
+      "Et lyserødt, rillet hjerte holder et foto fremme på et bord"
     ]
   },
   {

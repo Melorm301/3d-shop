@@ -3,7 +3,7 @@
   'use strict';
   var ui = window.STYKKUI;
   function collection(product) {
-    return product.isNew ? 'new' : { Bolig: 'home', Tilbehør: 'accessories', Objekter: 'objects', Legetøj: 'toys', Køkken: 'kitchen', 'Wall art': 'wall-art' }[product.category] || 'all';
+    return product.isNew ? 'new' : { Bolig: 'home', Tilbehør: 'accessories', Figurer: 'figures', Legetøj: 'toys', Køkken: 'kitchen', 'Wall art': 'wall-art' }[product.category] || 'all';
   }
   function cardHTML(product) {
     var price = product.estimatedPrice ? window.Shop.productPrice(product) : (product.priceFrom ? 'fra ' : '') + window.Shop.formatPrice(product.price, product.currency);
@@ -27,7 +27,8 @@
     var count = document.querySelector('[data-product-count]');
     var buttons = document.querySelectorAll('[data-collection]');
     var active = new URLSearchParams(window.location.search).get('collection') || 'all';
-    if (['all', 'home', 'accessories', 'objects', 'toys', 'kitchen', 'wall-art', 'new'].indexOf(active) === -1) active = 'all';
+    if (active === 'objects') active = 'figures';
+    if (['all', 'home', 'accessories', 'figures', 'toys', 'kitchen', 'wall-art', 'new'].indexOf(active) === -1) active = 'all';
     if (category) {
       var categories = Array.from(new Set(window.Shop.all().map(function (product) { return product.category; }).filter(Boolean))).sort();
       categories.forEach(function (value) { category.insertAdjacentHTML('beforeend', '<option value="' + ui.esc(value) + '">' + ui.esc(value) + '</option>'); });
@@ -53,7 +54,7 @@
             if (order === 'name') return a.name.localeCompare(b.name, 'da');
             return (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || (a.featuredRank || 99) - (b.featuredRank || 99);
           });
-          if (count) count.textContent = list.length + (list.length === 1 ? ' objekt' : ' objekter');
+          if (count) count.textContent = list.length + (list.length === 1 ? ' produkt' : ' produkter');
         }
         mount.innerHTML = list.length ? list.map(cardHTML).join('') : '<div class="catalog-empty"><h2 class="h3">Vi fandt ikke den form.</h2><p class="body mt-md">Prøv en anden søgning, eller se hele udvalget.</p><button class="btn btn-primary" type="button" data-reset-filters>Vis alle objekter →</button></div>';
       });
