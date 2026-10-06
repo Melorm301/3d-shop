@@ -2,13 +2,13 @@
 /**
  * Plugin Name: STYKK Commerce
  * Description: WooCommerce-backed catalog data, STYKK shop filters, and native variation color controls.
- * Version: 1.2.3
+ * Version: 1.2.5
  * Author: STYKK
  */
 if (!defined('ABSPATH')) exit;
 
 final class STYKK_Commerce {
-	private const VERSION = '1.2.3';
+	private const VERSION = '1.2.5';
 	/** Stable Elementor card wrapper => WooCommerce SKU. Never infer from order/name. */
 	private static $cards = [
 		'290f7a8'=>'ST-001','d1cdec'=>'ST-002','6f3f6d6c'=>'ST-003','5198fbf'=>'ST-004','1a0eab95'=>'ST-005',
@@ -62,6 +62,7 @@ final class STYKK_Commerce {
 		if (function_exists('is_product') && is_product()) {
 			wp_enqueue_style('stykk-product',$base.'assets/css/product.css',['stykk-site'],self::VERSION);
 			wp_enqueue_script('stykk-product',$base.'assets/js/product.js',['jquery','stykk-site'],self::VERSION,true);
+			wp_enqueue_script('stykk-summary-fixed',$base.'assets/js/summary-fixed.js',['stykk-site'],self::VERSION,true);
 		}
 		if ((function_exists('is_cart') && is_cart()) || (function_exists('is_checkout') && is_checkout())) {
 			wp_enqueue_style('stykk-commerce',$base.'assets/css/commerce.css',['stykk-site'],self::VERSION);
