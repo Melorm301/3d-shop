@@ -1,0 +1,42 @@
+#stykk-shop-grid { row-gap: 56px !important; }
+#stykk-shop-grid .stykk-filter-hidden { display: none !important; }
+#stykk-catalog-tools {
+	width: 100%; max-width: 1480px; margin: 0 auto; padding: 0 clamp(20px, 4.3vw, 80px) 24px;
+	display: flex; align-items: center; flex-wrap: wrap; gap: 12px 32px;
+	color: var(--stykk-ink); font: inherit; font-size: 14px; line-height: 1.4;
+}
+#stykk-catalog-tools .stykk-search {
+	display: flex; align-items: center; flex: 1 1 240px; min-width: 180px;
+	border-bottom: 1px solid var(--stykk-line);
+}
+#stykk-catalog-tools input {
+	width: 100%; min-width: 0; min-height: 44px; padding: 8px 0;
+	border: 0; background: transparent; color: inherit; font: inherit;
+}
+#stykk-catalog-tools label { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--stykk-ink-soft); }
+#stykk-catalog-tools select { min-height: 44px; max-width: 190px; border: 0; background: transparent; color: inherit; font: inherit; }
+#stykk-catalog-tools output { margin-left: auto; font: 11px/1.4 monospace; text-transform: uppercase; letter-spacing: .05em; color: var(--stykk-ink-soft); }
+#stykk-catalog-empty { max-width: 1480px; margin: 0 auto; padding: 24px clamp(20px, 4.3vw, 80px) 96px; color: var(--stykk-ink-soft); }
+#stykk-catalog-collections { display: flex; flex-wrap: wrap; column-gap: 2rem; border-bottom: 1px solid var(--stykk-line); }
+#stykk-catalog-collections .stykk-filter-button {
+	position: relative; min-height: 48px; padding-block: 1.2rem; border: 0; border-radius: 0;
+	background: transparent; color: inherit; font: inherit; font-size: .9rem; cursor: pointer;
+}
+#stykk-catalog-collections .stykk-filter-button[aria-pressed="true"] { color: var(--stykk-accent); }
+#stykk-catalog-collections .stykk-filter-button[aria-pressed="true"]::after {
+	content: ""; position: absolute; inset: auto 0 -1px; height: 2px; background: var(--stykk-accent);
+}
+#stykk-catalog-collections .stykk-filter-button:focus-visible { outline-offset: -2px !important; }
+@media (max-width: 767px) {
+	#stykk-shop-grid { row-gap: 40px !important; }
+	#stykk-catalog-tools { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 14px; padding-bottom: 20px; }
+	#stykk-catalog-tools .stykk-search { grid-column: 1 / -1; }
+	#stykk-catalog-tools output { margin-left: 0; }
+	#stykk-catalog-collections { column-gap: 1.3rem; }
+}
+@media (max-width: 479px) {
+	#stykk-shop-grid { grid-template-columns: minmax(0, 1fr) !important; }
+	#stykk-catalog-tools { grid-template-columns: 1fr; }
+	#stykk-catalog-tools .stykk-search { grid-column: auto; }
+	#stykk-catalog-collections { column-gap: 1.2rem; }
+}
