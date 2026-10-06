@@ -2,13 +2,13 @@
 /**
  * Plugin Name: STYKK Commerce
  * Description: WooCommerce-backed catalog data, STYKK shop filters, and native variation color controls.
- * Version: 1.1.6
+ * Version: 1.2.1
  * Author: STYKK
  */
 if (!defined('ABSPATH')) exit;
 
 final class STYKK_Commerce {
-	private const VERSION = '1.1.6';
+	private const VERSION = '1.2.1';
 	/** Stable Elementor card wrapper => WooCommerce SKU. Never infer from order/name. */
 	private static $cards = [
 		'290f7a8'=>'ST-001','d1cdec'=>'ST-002','6f3f6d6c'=>'ST-003','5198fbf'=>'ST-004','1a0eab95'=>'ST-005',
@@ -62,6 +62,9 @@ final class STYKK_Commerce {
 		if (function_exists('is_product') && is_product()) {
 			wp_enqueue_style('stykk-product',$base.'assets/css/product.css',['stykk-site'],self::VERSION);
 			wp_enqueue_script('stykk-product',$base.'assets/js/product.js',['jquery','stykk-site'],self::VERSION,true);
+		}
+		if ((function_exists('is_cart') && is_cart()) || (function_exists('is_checkout') && is_checkout())) {
+			wp_enqueue_style('stykk-commerce',$base.'assets/css/commerce.css',['stykk-site'],self::VERSION);
 		}
 	}
 	public static function attachment_alt($attributes,$attachment,$size) {
@@ -249,10 +252,15 @@ add_action('wp', function () {
     remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
     add_action('woocommerce_single_product_summary', 'stykk_product_color_chips', 25);
     add_action('woocommerce_after_single_product_summary', 'stykk_product_details', 10);
-    add_action('woocommerce_after_single_product_summary', 'stykk_related_products', 20);
+    // Render related items after content-single-product closes so sticky summary is
+    // bounded by the main product detail wrapper, not by the related-products area.
+    add_action('woocommerce_after_single_product', 'stykk_related_products', 20);
 });
 add_action('wp_body_open', function () {
-    if (!function_exists('is_product') || !is_product()) { return; }
+    $is_product = function_exists('is_product') && is_product();
+    $is_cart = function_exists('is_cart') && is_cart();
+    $is_checkout = function_exists('is_checkout') && is_checkout();
+    if (!$is_product && !$is_cart && !$is_checkout) { return; }
     $links = ['Shop'=>wc_get_page_permalink('shop'),'Om STYKK'=>get_permalink(228),'Specialdesign'=>get_permalink(230),'Kontakt'=>get_permalink(229),'FAQ'=>get_permalink(231)];
     echo '<header class="stykk-product-header"><a class="stykk-product-brand" href="' . esc_url(home_url('/')) . '" aria-label="STYKK, forside">STYKK</a><nav class="stykk-product-desktop-nav" aria-label="Hovedmenu">';
     foreach ($links as $label=>$url) echo '<a href="' . esc_url($url) . '">' . esc_html($label) . '</a>';
@@ -262,6 +270,12 @@ add_action('wp_body_open', function () {
 });
 
 add_action('wp_footer', function () {
-    if (!function_exists('is_product') || !is_product()) { return; }
-    echo '<footer class="stykk-product-footer"><span>3D-print med nysgerrighed og kærlighed.</span><a href="' . esc_url(home_url('/')) . '">STYKK</a><small>© ' . esc_html(gmdate('Y')) . ' STYKK · Ét STYKK ad gangen.</small></footer>';
+    $is_product = function_exists('is_product') && is_product();
+    $is_cart = function_exists('is_cart') && is_cart();
+    $is_checkout = function_exists('is_checkout') && is_checkout();
+    if ($is_product) {
+        echo '<footer class="stykk-product-footer"><span>3D-print med nysgerrighed og kærlighed.</span><a href="' . esc_url(home_url('/')) . '">STYKK</a><small>© ' . esc_html(gmdate('Y')) . ' STYKK · Ét STYKK ad gangen.</small></footer>';
+    } elseif ($is_cart || $is_checkout) {
+        echo '<footer class="stykk-commerce-footer"><a class="stykk-commerce-footer-brand" href="' . esc_url(home_url('/')) . '">STYKK</a><nav aria-label="Footer navigation"><a href="' . esc_url(wc_get_page_permalink('shop')) . '">Shop</a><a href="' . esc_url(get_permalink(231)) . '">FAQ</a><a href="' . esc_url(get_permalink(229)) . '">Kontakt</a></nav><small>© ' . esc_html(gmdate('Y')) . ' STYKK · Ét STYKK ad gangen.</small></footer>';
+    }
 }, 1);
