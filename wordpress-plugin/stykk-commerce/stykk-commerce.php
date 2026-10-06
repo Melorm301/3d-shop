@@ -2,13 +2,13 @@
 /**
  * Plugin Name: STYKK Commerce
  * Description: WooCommerce-backed catalog data, STYKK shop filters, and native variation color controls.
- * Version: 1.2.1
+ * Version: 1.2.2
  * Author: STYKK
  */
 if (!defined('ABSPATH')) exit;
 
 final class STYKK_Commerce {
-	private const VERSION = '1.2.1';
+	private const VERSION = '1.2.2';
 	/** Stable Elementor card wrapper => WooCommerce SKU. Never infer from order/name. */
 	private static $cards = [
 		'290f7a8'=>'ST-001','d1cdec'=>'ST-002','6f3f6d6c'=>'ST-003','5198fbf'=>'ST-004','1a0eab95'=>'ST-005',
