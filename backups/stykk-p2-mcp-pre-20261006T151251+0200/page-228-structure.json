@@ -1,0 +1,511 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"elements\":[{\"id\":\"41ae53e8\",\"elType\":\"e-flexbox\",\"title\":\"page-root\",\"elements\":[{\"id\":\"12e2c2fc\",\"elType\":\"e-flexbox\",\"title\":\"site-header\",\"elements\":[{\"id\":\"502fe2d0\",\"elType\":\"e-flexbox\",\"title\":\"header-inner\",\"elements\":[{\"id\":\"2f4b5f91\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"brand\"},{\"id\":\"5d599b25\",\"elType\":\"e-flexbox\",\"title\":\"desktop-nav\",\"elements\":[{\"id\":\"62c51e69\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"nav-1\"},{\"id\":\"2e761c70\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"nav-2\"},{\"id\":\"7b4f6784\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"nav-3\"},{\"id\":\"73b0b00\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"nav-4\"}]},{\"id\":\"62cfb7ae\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"header-cart\"},{\"id\":\"63f77c91\",\"elType\":\"e-accordion\",\"title\":\"mobile-menu\",\"elements\":[{\"id\":\"448e02a\",\"elType\":\"e-accordion-item\",\"title\":\"mobile-item\",\"elements\":[{\"id\":\"43a9f325\",\"elType\":\"e-accordion-item-header\",\"title\":\"mobile-summary\",\"elements\":[{\"id\":\"429012fc\",\"elType\":\"e-accordion-item-title\",\"title\":\"mobile-title\",\"elements\":[{\"id\":\"1463cc45\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-trigger\"}]}]},{\"id\":\"3ff99f4f\",\"elType\":\"e-accordion-item-content\",\"title\":\"mobile-panel-content\",\"elements\":[{\"id\":\"2bf2e393\",\"elType\":\"e-flexbox\",\"title\":\"mobile-panel\",\"elements\":[{\"id\":\"2e6868ae\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-0\"},{\"id\":\"2744bdc6\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-1\"},{\"id\":\"12e84c91\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-2\"},{\"id\":\"d7c7c8a\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-3\"},{\"id\":\"79498f2c\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-4\"}]}]}]}]}]}]},{\"id\":\"33ec37b7\",\"elType\":\"e-flexbox\",\"title\":\"main-content\",\"elements\":[{\"id\":\"76e5e83c\",\"elType\":\"e-flexbox\",\"title\":\"about-intro\",\"elements\":[{\"id\":\"60d5f81b\",\"elType\":\"e-flexbox\",\"title\":\"about-intro-inner\",\"elements\":[{\"id\":\"3bab621\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"about-eyebrow\"},{\"id\":\"2378f429\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"about-title\"},{\"id\":\"e9625ac\",\"elType\":\"e-flexbox\",\"title\":\"about-lead-row\",\"elements\":[{\"id\":\"375489cc\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"about-lede\"},{\"id\":\"41024c8b\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"about-meta\"}]}]}]},{\"id\":\"52a151f5\",\"elType\":\"e-flexbox\",\"title\":\"about-image-section\",\"elements\":[{\"id\":\"8381457\",\"elType\":\"widget\",\"widgetType\":\"e-image\",\"title\":\"about-image\"}]},{\"id\":\"51185c0c\",\"elType\":\"e-flexbox\",\"title\":\"about-story\",\"elements\":[{\"id\":\"573e5cd6\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"about-story-label\"},{\"id\":\"581e533d\",\"elType\":\"e-flexbox\",\"title\":\"about-story-copy\",\"elements\":[{\"id\":\"52a2fb70\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"about-story-title\"},{\"id\":\"7ec4c1fc\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"about-story-lede\"},{\"id\":\"290c3493\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"about-story-p1\"},{\"id\":\"26747a59\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"about-story-p2\"},{\"id\":\"6be2c149\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"about-story-p3\"},{\"id\":\"29e52005\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"about-story-p4\"}]}]},{\"id\":\"604f783d\",\"elType\":\"e-flexbox\",\"title\":\"about-values\",\"elements\":[{\"id\":\"3f2da4b1\",\"elType\":\"e-flexbox\",\"title\":\"value-0\",\"elements\":[{\"id\":\"111887da\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"value-0-eyebrow\"},{\"id\":\"29a6a901\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"value-0-title\"},{\"id\":\"18e5ef07\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"value-0-desc\"}]},{\"id\":\"18e3d25a\",\"elType\":\"e-flexbox\",\"title\":\"value-1\",\"elements\":[{\"id\":\"5422ab16\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"value-1-eyebrow\"},{\"id\":\"105f81ef\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"value-1-title\"},{\"id\":\"3c797e88\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"value-1-desc\"}]},{\"id\":\"e0dde23\",\"elType\":\"e-flexbox\",\"title\":\"value-2\",\"elements\":[{\"id\":\"5bc79860\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"value-2-eyebrow\"},{\"id\":\"6833789a\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"value-2-title\"},{\"id\":\"24bf5ee8\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"value-2-desc\"}]}]},{\"id\":\"17723ffd\",\"elType\":\"e-flexbox\",\"title\":\"about-cta\",\"elements\":[{\"id\":\"522d2667\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"about-cta-title\"},{\"id\":\"10f90d70\",\"elType\":\"e-flexbox\",\"title\":\"about-cta-copy\",\"elements\":[{\"id\":\"569cdafa\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"about-cta-p\"},{\"id\":\"4e53ec6f\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"about-cta-link\"}]}]}]},{\"id\":\"7028737f\",\"elType\":\"e-flexbox\",\"title\":\"site-footer\",\"elements\":[{\"id\":\"24b0084a\",\"elType\":\"e-flexbox\",\"title\":\"footer-inner\",\"elements\":[{\"id\":\"78bc30f0\",\"elType\":\"e-flexbox\",\"title\":\"footer-top\",\"elements\":[{\"id\":\"778bd8c4\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-eyebrow\"},{\"id\":\"5b85cbbb\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-toplink\"}]},{\"id\":\"6d260fe5\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"footer-word\"},{\"id\":\"2f971b3e\",\"elType\":\"e-flexbox\",\"title\":\"footer-grid\",\"elements\":[{\"id\":\"1d9d4817\",\"elType\":\"e-flexbox\",\"title\":\"footer-col1\",\"elements\":[{\"id\":\"43fb97f\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-about\"}]},{\"id\":\"2681d5b\",\"elType\":\"e-flexbox\",\"title\":\"footer-col2\",\"elements\":[{\"id\":\"517045c8\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"footer-h2\"},{\"id\":\"177f6c9f\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-shop\"},{\"id\":\"6f8505ca\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-about-link\"},{\"id\":\"673542d0\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-special-link\"}]},{\"id\":\"1526c268\",\"elType\":\"e-flexbox\",\"title\":\"footer-col3\",\"elements\":[{\"id\":\"66f93aa1\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"footer-h3\"},{\"id\":\"127165c\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-faq\"},{\"id\":\"282ff84d\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-contact\"}]}]},{\"id\":\"221a5dfa\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-bottom\"}]}]}]}]}"
+    }
+  ],
+  "structuredContent": {
+    "elements": [
+      {
+        "id": "41ae53e8",
+        "elType": "e-flexbox",
+        "title": "page-root",
+        "elements": [
+          {
+            "id": "12e2c2fc",
+            "elType": "e-flexbox",
+            "title": "site-header",
+            "elements": [
+              {
+                "id": "502fe2d0",
+                "elType": "e-flexbox",
+                "title": "header-inner",
+                "elements": [
+                  {
+                    "id": "2f4b5f91",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "brand"
+                  },
+                  {
+                    "id": "5d599b25",
+                    "elType": "e-flexbox",
+                    "title": "desktop-nav",
+                    "elements": [
+                      {
+                        "id": "62c51e69",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "nav-1"
+                      },
+                      {
+                        "id": "2e761c70",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "nav-2"
+                      },
+                      {
+                        "id": "7b4f6784",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "nav-3"
+                      },
+                      {
+                        "id": "73b0b00",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "nav-4"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "62cfb7ae",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "header-cart"
+                  },
+                  {
+                    "id": "63f77c91",
+                    "elType": "e-accordion",
+                    "title": "mobile-menu",
+                    "elements": [
+                      {
+                        "id": "448e02a",
+                        "elType": "e-accordion-item",
+                        "title": "mobile-item",
+                        "elements": [
+                          {
+                            "id": "43a9f325",
+                            "elType": "e-accordion-item-header",
+                            "title": "mobile-summary",
+                            "elements": [
+                              {
+                                "id": "429012fc",
+                                "elType": "e-accordion-item-title",
+                                "title": "mobile-title",
+                                "elements": [
+                                  {
+                                    "id": "1463cc45",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-trigger"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "3ff99f4f",
+                            "elType": "e-accordion-item-content",
+                            "title": "mobile-panel-content",
+                            "elements": [
+                              {
+                                "id": "2bf2e393",
+                                "elType": "e-flexbox",
+                                "title": "mobile-panel",
+                                "elements": [
+                                  {
+                                    "id": "2e6868ae",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-0"
+                                  },
+                                  {
+                                    "id": "2744bdc6",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-1"
+                                  },
+                                  {
+                                    "id": "12e84c91",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-2"
+                                  },
+                                  {
+                                    "id": "d7c7c8a",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-3"
+                                  },
+                                  {
+                                    "id": "79498f2c",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-4"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "33ec37b7",
+            "elType": "e-flexbox",
+            "title": "main-content",
+            "elements": [
+              {
+                "id": "76e5e83c",
+                "elType": "e-flexbox",
+                "title": "about-intro",
+                "elements": [
+                  {
+                    "id": "60d5f81b",
+                    "elType": "e-flexbox",
+                    "title": "about-intro-inner",
+                    "elements": [
+                      {
+                        "id": "3bab621",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "about-eyebrow"
+                      },
+                      {
+                        "id": "2378f429",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "about-title"
+                      },
+                      {
+                        "id": "e9625ac",
+                        "elType": "e-flexbox",
+                        "title": "about-lead-row",
+                        "elements": [
+                          {
+                            "id": "375489cc",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "about-lede"
+                          },
+                          {
+                            "id": "41024c8b",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "about-meta"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "52a151f5",
+                "elType": "e-flexbox",
+                "title": "about-image-section",
+                "elements": [
+                  {
+                    "id": "8381457",
+                    "elType": "widget",
+                    "widgetType": "e-image",
+                    "title": "about-image"
+                  }
+                ]
+              },
+              {
+                "id": "51185c0c",
+                "elType": "e-flexbox",
+                "title": "about-story",
+                "elements": [
+                  {
+                    "id": "573e5cd6",
+                    "elType": "widget",
+                    "widgetType": "e-paragraph",
+                    "title": "about-story-label"
+                  },
+                  {
+                    "id": "581e533d",
+                    "elType": "e-flexbox",
+                    "title": "about-story-copy",
+                    "elements": [
+                      {
+                        "id": "52a2fb70",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "about-story-title"
+                      },
+                      {
+                        "id": "7ec4c1fc",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "about-story-lede"
+                      },
+                      {
+                        "id": "290c3493",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "about-story-p1"
+                      },
+                      {
+                        "id": "26747a59",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "about-story-p2"
+                      },
+                      {
+                        "id": "6be2c149",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "about-story-p3"
+                      },
+                      {
+                        "id": "29e52005",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "about-story-p4"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "604f783d",
+                "elType": "e-flexbox",
+                "title": "about-values",
+                "elements": [
+                  {
+                    "id": "3f2da4b1",
+                    "elType": "e-flexbox",
+                    "title": "value-0",
+                    "elements": [
+                      {
+                        "id": "111887da",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "value-0-eyebrow"
+                      },
+                      {
+                        "id": "29a6a901",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "value-0-title"
+                      },
+                      {
+                        "id": "18e5ef07",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "value-0-desc"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "18e3d25a",
+                    "elType": "e-flexbox",
+                    "title": "value-1",
+                    "elements": [
+                      {
+                        "id": "5422ab16",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "value-1-eyebrow"
+                      },
+                      {
+                        "id": "105f81ef",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "value-1-title"
+                      },
+                      {
+                        "id": "3c797e88",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "value-1-desc"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "e0dde23",
+                    "elType": "e-flexbox",
+                    "title": "value-2",
+                    "elements": [
+                      {
+                        "id": "5bc79860",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "value-2-eyebrow"
+                      },
+                      {
+                        "id": "6833789a",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "value-2-title"
+                      },
+                      {
+                        "id": "24bf5ee8",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "value-2-desc"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "17723ffd",
+                "elType": "e-flexbox",
+                "title": "about-cta",
+                "elements": [
+                  {
+                    "id": "522d2667",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "about-cta-title"
+                  },
+                  {
+                    "id": "10f90d70",
+                    "elType": "e-flexbox",
+                    "title": "about-cta-copy",
+                    "elements": [
+                      {
+                        "id": "569cdafa",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "about-cta-p"
+                      },
+                      {
+                        "id": "4e53ec6f",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "about-cta-link"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "7028737f",
+            "elType": "e-flexbox",
+            "title": "site-footer",
+            "elements": [
+              {
+                "id": "24b0084a",
+                "elType": "e-flexbox",
+                "title": "footer-inner",
+                "elements": [
+                  {
+                    "id": "78bc30f0",
+                    "elType": "e-flexbox",
+                    "title": "footer-top",
+                    "elements": [
+                      {
+                        "id": "778bd8c4",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "footer-eyebrow"
+                      },
+                      {
+                        "id": "5b85cbbb",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "footer-toplink"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "6d260fe5",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "footer-word"
+                  },
+                  {
+                    "id": "2f971b3e",
+                    "elType": "e-flexbox",
+                    "title": "footer-grid",
+                    "elements": [
+                      {
+                        "id": "1d9d4817",
+                        "elType": "e-flexbox",
+                        "title": "footer-col1",
+                        "elements": [
+                          {
+                            "id": "43fb97f",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-about"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2681d5b",
+                        "elType": "e-flexbox",
+                        "title": "footer-col2",
+                        "elements": [
+                          {
+                            "id": "517045c8",
+                            "elType": "widget",
+                            "widgetType": "e-heading",
+                            "title": "footer-h2"
+                          },
+                          {
+                            "id": "177f6c9f",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-shop"
+                          },
+                          {
+                            "id": "6f8505ca",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-about-link"
+                          },
+                          {
+                            "id": "673542d0",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-special-link"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1526c268",
+                        "elType": "e-flexbox",
+                        "title": "footer-col3",
+                        "elements": [
+                          {
+                            "id": "66f93aa1",
+                            "elType": "widget",
+                            "widgetType": "e-heading",
+                            "title": "footer-h3"
+                          },
+                          {
+                            "id": "127165c",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-faq"
+                          },
+                          {
+                            "id": "282ff84d",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-contact"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "221a5dfa",
+                    "elType": "widget",
+                    "widgetType": "e-paragraph",
+                    "title": "footer-bottom"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "isError": false
+}

@@ -42,7 +42,7 @@
 			const paragraphs = card.querySelectorAll('p');
 			if (paragraphs[0]) paragraphs[0].textContent = product.description || '';
 			if (paragraphs[1]) {
-				paragraphs[1].textContent = `${product.estimated ? 'ca. ' : ''}${new Intl.NumberFormat('da-DK', { maximumFractionDigits: 0 }).format(product.price)} DKK`;
+				paragraphs[1].textContent = `${new Intl.NumberFormat('da-DK', { maximumFractionDigits: 0 }).format(product.price)} DKK`;
 			}
 		});
 

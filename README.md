@@ -37,9 +37,9 @@ Syv wall art-designs er tilføjet som selvstændige produkter under kategorien W
 
 ## Bestilling og kontakt
 
-Brand: **STYKK**. Eksisterende CVR **41693908** er bevaret. Kontakt i `Shop.config.telegram` er stadig **@test**, en placeholder fra det oprindelige projekt. Udskift den med den rigtige kontakt før brug til reelle bestillinger. Statisk fallback-kontakt i HTML skal opdateres samtidig, hvis kontakt ændres.
+Brand: **STYKK**. Eksisterende CVR **41693908** er bevaret. Kontakt i `Shop.config.telegram` er stadig **@test**, en placeholder fra det oprindelige projekt. `ordersEnabled` er derfor `false`; checkout viser, at shoppen er under opbygning, og tilbyder ikke Telegram-bestilling. Slå først bestilling til, når en rigtig Telegram-kontakt er sat, og checkout er klar.
 
-Der er ingen betaling, lagerstyring eller formularserver. Checkout klargør en forespørgsel i Telegram, som kunden selv sender; endelig pris, materiale, mål, farve, levering og betaling aftales direkte. Ordreteksten kan kopieres. Kontaktformularen validerer input og laver tilsvarende en kladde uden automatisk afsendelse.
+Der er ingen betaling, lagerstyring eller formularserver. Når `ordersEnabled` er aktiveret med en rigtig kontakt, kan checkout klargøre en forespørgsel i Telegram, som kunden selv sender. Ordreteksten kan kopieres. Kontaktformularen validerer input og laver tilsvarende en kladde uden automatisk afsendelse.
 
 Kurven holder produkt/farve/størrelse adskilt og begrænser antal til 1–99. Ukendte og udgåede produkt-ID'er afvises. Den interne lagringsnøgle `nordform.cart.v1` bevares til sikker håndtering af eksisterende browserdata; den er ikke kundevendt branding. Kontaktoplysninger og ordrebemærkninger gemmes ikke i localStorage. Ved blokeret lagring virker kurven i hukommelsen på den aktuelle side.
 

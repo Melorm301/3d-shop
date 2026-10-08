@@ -1,0 +1,946 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"elements\":[{\"id\":\"1bac4d69\",\"elType\":\"e-flexbox\",\"title\":\"page-root\",\"elements\":[{\"id\":\"e5d9b49\",\"elType\":\"e-flexbox\",\"title\":\"site-header\",\"elements\":[{\"id\":\"6ec2c85b\",\"elType\":\"e-flexbox\",\"title\":\"header-inner\",\"elements\":[{\"id\":\"4ab05508\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"brand\"},{\"id\":\"1537c391\",\"elType\":\"e-flexbox\",\"title\":\"desktop-nav\",\"elements\":[{\"id\":\"13490f29\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"nav-1\"},{\"id\":\"18f464bf\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"nav-2\"},{\"id\":\"5eb0ed02\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"nav-3\"},{\"id\":\"355fe7af\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"nav-4\"}]},{\"id\":\"45793df2\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"header-cart\"},{\"id\":\"42de6091\",\"elType\":\"e-accordion\",\"title\":\"mobile-menu\",\"elements\":[{\"id\":\"7ed7102a\",\"elType\":\"e-accordion-item\",\"title\":\"mobile-item\",\"elements\":[{\"id\":\"67f106d9\",\"elType\":\"e-accordion-item-header\",\"title\":\"mobile-summary\",\"elements\":[{\"id\":\"1a1a2f18\",\"elType\":\"e-accordion-item-title\",\"title\":\"mobile-title\",\"elements\":[{\"id\":\"74d4063\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-trigger\"}]}]},{\"id\":\"47ee1c37\",\"elType\":\"e-accordion-item-content\",\"title\":\"mobile-panel-content\",\"elements\":[{\"id\":\"6b1dae41\",\"elType\":\"e-flexbox\",\"title\":\"mobile-panel\",\"elements\":[{\"id\":\"6ce8bcd5\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-0\"},{\"id\":\"5f28bd7d\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-1\"},{\"id\":\"a48bc13\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-2\"},{\"id\":\"4c4f8ac9\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-3\"},{\"id\":\"46cfc400\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-4\"}]}]}]}]}]}]},{\"id\":\"5f03c3f1\",\"elType\":\"e-flexbox\",\"title\":\"main-content\",\"elements\":[{\"id\":\"5c0a133e\",\"elType\":\"e-flexbox\",\"title\":\"faq-intro\",\"elements\":[{\"id\":\"4598b124\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-eyebrow\"},{\"id\":\"7c0f45d5\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"faq-title\"},{\"id\":\"3cac90f1\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-lede\"}]},{\"id\":\"16555d30\",\"elType\":\"e-flexbox\",\"title\":\"faq-groups\",\"elements\":[{\"id\":\"34f9203\",\"elType\":\"e-flexbox\",\"title\":\"faq-cat-0\",\"elements\":[{\"id\":\"51833f31\",\"elType\":\"e-flexbox\",\"title\":\"faq-cat-0-head\",\"elements\":[{\"id\":\"2f976f62\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"faq-cat-0-heading\"},{\"id\":\"585fcd1c\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-cat-0-count\"}]},{\"id\":\"2257def5\",\"elType\":\"e-accordion\",\"title\":\"faq-cat-0-accordion\",\"elements\":[{\"id\":\"746315\",\"elType\":\"e-accordion-item\",\"title\":\"faq-0-0-item\",\"elements\":[{\"id\":\"7d73c66\",\"elType\":\"e-accordion-item-header\",\"title\":\"faq-0-0-header\",\"elements\":[{\"id\":\"84016e5\",\"elType\":\"e-accordion-item-title\",\"title\":\"faq-0-0-title\",\"elements\":[{\"id\":\"4aafcafd\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-0-0-question\"}]}]},{\"id\":\"3f6bd1d2\",\"elType\":\"e-accordion-item-content\",\"title\":\"faq-0-0-content\",\"elements\":[{\"id\":\"5e85f0b4\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-0-0-answer\"}]}]},{\"id\":\"de39dab\",\"elType\":\"e-accordion-item\",\"title\":\"faq-0-1-item\",\"elements\":[{\"id\":\"5a6e6e2d\",\"elType\":\"e-accordion-item-header\",\"title\":\"faq-0-1-header\",\"elements\":[{\"id\":\"2f025add\",\"elType\":\"e-accordion-item-title\",\"title\":\"faq-0-1-title\",\"elements\":[{\"id\":\"5ae6cfbd\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-0-1-question\"}]}]},{\"id\":\"47a8df10\",\"elType\":\"e-accordion-item-content\",\"title\":\"faq-0-1-content\",\"elements\":[{\"id\":\"8a7f76a\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-0-1-answer\"}]}]},{\"id\":\"394b525f\",\"elType\":\"e-accordion-item\",\"title\":\"faq-0-2-item\",\"elements\":[{\"id\":\"48c989da\",\"elType\":\"e-accordion-item-header\",\"title\":\"faq-0-2-header\",\"elements\":[{\"id\":\"77031b43\",\"elType\":\"e-accordion-item-title\",\"title\":\"faq-0-2-title\",\"elements\":[{\"id\":\"17df9988\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-0-2-question\"}]}]},{\"id\":\"517c34a9\",\"elType\":\"e-accordion-item-content\",\"title\":\"faq-0-2-content\",\"elements\":[{\"id\":\"71f8885c\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-0-2-answer\"}]}]}]}]},{\"id\":\"6795370d\",\"elType\":\"e-flexbox\",\"title\":\"faq-cat-1\",\"elements\":[{\"id\":\"358bfe3e\",\"elType\":\"e-flexbox\",\"title\":\"faq-cat-1-head\",\"elements\":[{\"id\":\"66b7b0e6\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"faq-cat-1-heading\"},{\"id\":\"64bfa40d\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-cat-1-count\"}]},{\"id\":\"33b498e\",\"elType\":\"e-accordion\",\"title\":\"faq-cat-1-accordion\",\"elements\":[{\"id\":\"745ec27\",\"elType\":\"e-accordion-item\",\"title\":\"faq-1-0-item\",\"elements\":[{\"id\":\"c3fbf1f\",\"elType\":\"e-accordion-item-header\",\"title\":\"faq-1-0-header\",\"elements\":[{\"id\":\"342acce3\",\"elType\":\"e-accordion-item-title\",\"title\":\"faq-1-0-title\",\"elements\":[{\"id\":\"2d6e6749\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-1-0-question\"}]}]},{\"id\":\"623677c4\",\"elType\":\"e-accordion-item-content\",\"title\":\"faq-1-0-content\",\"elements\":[{\"id\":\"5d3755ae\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-1-0-answer\"}]}]},{\"id\":\"4cef3275\",\"elType\":\"e-accordion-item\",\"title\":\"faq-1-1-item\",\"elements\":[{\"id\":\"7bf5027e\",\"elType\":\"e-accordion-item-header\",\"title\":\"faq-1-1-header\",\"elements\":[{\"id\":\"e31756c\",\"elType\":\"e-accordion-item-title\",\"title\":\"faq-1-1-title\",\"elements\":[{\"id\":\"2b14fde\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-1-1-question\"}]}]},{\"id\":\"34b236d\",\"elType\":\"e-accordion-item-content\",\"title\":\"faq-1-1-content\",\"elements\":[{\"id\":\"6a57760f\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-1-1-answer\"}]}]},{\"id\":\"807757b\",\"elType\":\"e-accordion-item\",\"title\":\"faq-1-2-item\",\"elements\":[{\"id\":\"1c6fcd1c\",\"elType\":\"e-accordion-item-header\",\"title\":\"faq-1-2-header\",\"elements\":[{\"id\":\"40c31696\",\"elType\":\"e-accordion-item-title\",\"title\":\"faq-1-2-title\",\"elements\":[{\"id\":\"630cca6c\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-1-2-question\"}]}]},{\"id\":\"7f30114d\",\"elType\":\"e-accordion-item-content\",\"title\":\"faq-1-2-content\",\"elements\":[{\"id\":\"72431fbb\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-1-2-answer\"}]}]}]}]},{\"id\":\"58dec8ed\",\"elType\":\"e-flexbox\",\"title\":\"faq-cat-2\",\"elements\":[{\"id\":\"7f657c4f\",\"elType\":\"e-flexbox\",\"title\":\"faq-cat-2-head\",\"elements\":[{\"id\":\"5a0df3dc\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"faq-cat-2-heading\"},{\"id\":\"6aed2aaf\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-cat-2-count\"}]},{\"id\":\"4587f939\",\"elType\":\"e-accordion\",\"title\":\"faq-cat-2-accordion\",\"elements\":[{\"id\":\"1315f41f\",\"elType\":\"e-accordion-item\",\"title\":\"faq-2-0-item\",\"elements\":[{\"id\":\"3a806d18\",\"elType\":\"e-accordion-item-header\",\"title\":\"faq-2-0-header\",\"elements\":[{\"id\":\"43176e8f\",\"elType\":\"e-accordion-item-title\",\"title\":\"faq-2-0-title\",\"elements\":[{\"id\":\"6f909af9\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-2-0-question\"}]}]},{\"id\":\"209d6b9c\",\"elType\":\"e-accordion-item-content\",\"title\":\"faq-2-0-content\",\"elements\":[{\"id\":\"40ca6e7a\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-2-0-answer\"}]}]},{\"id\":\"22128878\",\"elType\":\"e-accordion-item\",\"title\":\"faq-2-1-item\",\"elements\":[{\"id\":\"1ad77630\",\"elType\":\"e-accordion-item-header\",\"title\":\"faq-2-1-header\",\"elements\":[{\"id\":\"53490483\",\"elType\":\"e-accordion-item-title\",\"title\":\"faq-2-1-title\",\"elements\":[{\"id\":\"76df86d6\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-2-1-question\"}]}]},{\"id\":\"1f81e5f9\",\"elType\":\"e-accordion-item-content\",\"title\":\"faq-2-1-content\",\"elements\":[{\"id\":\"699dbe90\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-2-1-answer\"}]}]},{\"id\":\"221aa558\",\"elType\":\"e-accordion-item\",\"title\":\"faq-2-2-item\",\"elements\":[{\"id\":\"6606e8f6\",\"elType\":\"e-accordion-item-header\",\"title\":\"faq-2-2-header\",\"elements\":[{\"id\":\"6c8bebd3\",\"elType\":\"e-accordion-item-title\",\"title\":\"faq-2-2-title\",\"elements\":[{\"id\":\"675f898\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-2-2-question\"}]}]},{\"id\":\"6064ba0b\",\"elType\":\"e-accordion-item-content\",\"title\":\"faq-2-2-content\",\"elements\":[{\"id\":\"66abaccc\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-2-2-answer\"}]}]}]}]},{\"id\":\"3aad6025\",\"elType\":\"e-flexbox\",\"title\":\"faq-cat-3\",\"elements\":[{\"id\":\"2895e79b\",\"elType\":\"e-flexbox\",\"title\":\"faq-cat-3-head\",\"elements\":[{\"id\":\"5cb7d106\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"faq-cat-3-heading\"},{\"id\":\"58f8c0bb\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-cat-3-count\"}]},{\"id\":\"4623d8f\",\"elType\":\"e-accordion\",\"title\":\"faq-cat-3-accordion\",\"elements\":[{\"id\":\"520078a1\",\"elType\":\"e-accordion-item\",\"title\":\"faq-3-0-item\",\"elements\":[{\"id\":\"673cc2bc\",\"elType\":\"e-accordion-item-header\",\"title\":\"faq-3-0-header\",\"elements\":[{\"id\":\"333bce22\",\"elType\":\"e-accordion-item-title\",\"title\":\"faq-3-0-title\",\"elements\":[{\"id\":\"4e937753\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-3-0-question\"}]}]},{\"id\":\"6efbd662\",\"elType\":\"e-accordion-item-content\",\"title\":\"faq-3-0-content\",\"elements\":[{\"id\":\"297844b7\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-3-0-answer\"}]}]},{\"id\":\"461b55e1\",\"elType\":\"e-accordion-item\",\"title\":\"faq-3-1-item\",\"elements\":[{\"id\":\"6b374a00\",\"elType\":\"e-accordion-item-header\",\"title\":\"faq-3-1-header\",\"elements\":[{\"id\":\"2c05410d\",\"elType\":\"e-accordion-item-title\",\"title\":\"faq-3-1-title\",\"elements\":[{\"id\":\"383b3ed2\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-3-1-question\"}]}]},{\"id\":\"2ca0ae3c\",\"elType\":\"e-accordion-item-content\",\"title\":\"faq-3-1-content\",\"elements\":[{\"id\":\"7795a190\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-3-1-answer\"}]}]},{\"id\":\"49d0120b\",\"elType\":\"e-accordion-item\",\"title\":\"faq-3-2-item\",\"elements\":[{\"id\":\"4380008f\",\"elType\":\"e-accordion-item-header\",\"title\":\"faq-3-2-header\",\"elements\":[{\"id\":\"6b006636\",\"elType\":\"e-accordion-item-title\",\"title\":\"faq-3-2-title\",\"elements\":[{\"id\":\"65580669\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-3-2-question\"}]}]},{\"id\":\"7f3cede4\",\"elType\":\"e-accordion-item-content\",\"title\":\"faq-3-2-content\",\"elements\":[{\"id\":\"1c17c7a6\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-3-2-answer\"}]}]}]}]}]},{\"id\":\"7437edb2\",\"elType\":\"e-flexbox\",\"title\":\"faq-contact\",\"elements\":[{\"id\":\"29eaaa0d\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"faq-end-copy\"},{\"id\":\"1e5e32db\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"faq-end-link\"}]}]},{\"id\":\"5fb5d8eb\",\"elType\":\"e-flexbox\",\"title\":\"site-footer\",\"elements\":[{\"id\":\"44a0402d\",\"elType\":\"e-flexbox\",\"title\":\"footer-inner\",\"elements\":[{\"id\":\"2b17a575\",\"elType\":\"e-flexbox\",\"title\":\"footer-top\",\"elements\":[{\"id\":\"6573b287\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-eyebrow\"},{\"id\":\"3435afbf\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-toplink\"}]},{\"id\":\"4df329c6\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"footer-word\"},{\"id\":\"5fdcf3fc\",\"elType\":\"e-flexbox\",\"title\":\"footer-grid\",\"elements\":[{\"id\":\"4479d46\",\"elType\":\"e-flexbox\",\"title\":\"footer-col1\",\"elements\":[{\"id\":\"59852607\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-about\"}]},{\"id\":\"356eb526\",\"elType\":\"e-flexbox\",\"title\":\"footer-col2\",\"elements\":[{\"id\":\"67239999\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"footer-h2\"},{\"id\":\"736e3bca\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-shop\"},{\"id\":\"2f9d175\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-about-link\"},{\"id\":\"754650bd\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-special-link\"}]},{\"id\":\"18aab3af\",\"elType\":\"e-flexbox\",\"title\":\"footer-col3\",\"elements\":[{\"id\":\"63faf8f\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"footer-h3\"},{\"id\":\"73cafc5e\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-faq\"},{\"id\":\"4cf30e4b\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-contact\"}]}]},{\"id\":\"611b68e8\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-bottom\"}]}]}]}]}"
+    }
+  ],
+  "structuredContent": {
+    "elements": [
+      {
+        "id": "1bac4d69",
+        "elType": "e-flexbox",
+        "title": "page-root",
+        "elements": [
+          {
+            "id": "e5d9b49",
+            "elType": "e-flexbox",
+            "title": "site-header",
+            "elements": [
+              {
+                "id": "6ec2c85b",
+                "elType": "e-flexbox",
+                "title": "header-inner",
+                "elements": [
+                  {
+                    "id": "4ab05508",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "brand"
+                  },
+                  {
+                    "id": "1537c391",
+                    "elType": "e-flexbox",
+                    "title": "desktop-nav",
+                    "elements": [
+                      {
+                        "id": "13490f29",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "nav-1"
+                      },
+                      {
+                        "id": "18f464bf",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "nav-2"
+                      },
+                      {
+                        "id": "5eb0ed02",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "nav-3"
+                      },
+                      {
+                        "id": "355fe7af",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "nav-4"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "45793df2",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "header-cart"
+                  },
+                  {
+                    "id": "42de6091",
+                    "elType": "e-accordion",
+                    "title": "mobile-menu",
+                    "elements": [
+                      {
+                        "id": "7ed7102a",
+                        "elType": "e-accordion-item",
+                        "title": "mobile-item",
+                        "elements": [
+                          {
+                            "id": "67f106d9",
+                            "elType": "e-accordion-item-header",
+                            "title": "mobile-summary",
+                            "elements": [
+                              {
+                                "id": "1a1a2f18",
+                                "elType": "e-accordion-item-title",
+                                "title": "mobile-title",
+                                "elements": [
+                                  {
+                                    "id": "74d4063",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-trigger"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "47ee1c37",
+                            "elType": "e-accordion-item-content",
+                            "title": "mobile-panel-content",
+                            "elements": [
+                              {
+                                "id": "6b1dae41",
+                                "elType": "e-flexbox",
+                                "title": "mobile-panel",
+                                "elements": [
+                                  {
+                                    "id": "6ce8bcd5",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-0"
+                                  },
+                                  {
+                                    "id": "5f28bd7d",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-1"
+                                  },
+                                  {
+                                    "id": "a48bc13",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-2"
+                                  },
+                                  {
+                                    "id": "4c4f8ac9",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-3"
+                                  },
+                                  {
+                                    "id": "46cfc400",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-4"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "5f03c3f1",
+            "elType": "e-flexbox",
+            "title": "main-content",
+            "elements": [
+              {
+                "id": "5c0a133e",
+                "elType": "e-flexbox",
+                "title": "faq-intro",
+                "elements": [
+                  {
+                    "id": "4598b124",
+                    "elType": "widget",
+                    "widgetType": "e-paragraph",
+                    "title": "faq-eyebrow"
+                  },
+                  {
+                    "id": "7c0f45d5",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "faq-title"
+                  },
+                  {
+                    "id": "3cac90f1",
+                    "elType": "widget",
+                    "widgetType": "e-paragraph",
+                    "title": "faq-lede"
+                  }
+                ]
+              },
+              {
+                "id": "16555d30",
+                "elType": "e-flexbox",
+                "title": "faq-groups",
+                "elements": [
+                  {
+                    "id": "34f9203",
+                    "elType": "e-flexbox",
+                    "title": "faq-cat-0",
+                    "elements": [
+                      {
+                        "id": "51833f31",
+                        "elType": "e-flexbox",
+                        "title": "faq-cat-0-head",
+                        "elements": [
+                          {
+                            "id": "2f976f62",
+                            "elType": "widget",
+                            "widgetType": "e-heading",
+                            "title": "faq-cat-0-heading"
+                          },
+                          {
+                            "id": "585fcd1c",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "faq-cat-0-count"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2257def5",
+                        "elType": "e-accordion",
+                        "title": "faq-cat-0-accordion",
+                        "elements": [
+                          {
+                            "id": "746315",
+                            "elType": "e-accordion-item",
+                            "title": "faq-0-0-item",
+                            "elements": [
+                              {
+                                "id": "7d73c66",
+                                "elType": "e-accordion-item-header",
+                                "title": "faq-0-0-header",
+                                "elements": [
+                                  {
+                                    "id": "84016e5",
+                                    "elType": "e-accordion-item-title",
+                                    "title": "faq-0-0-title",
+                                    "elements": [
+                                      {
+                                        "id": "4aafcafd",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "faq-0-0-question"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "3f6bd1d2",
+                                "elType": "e-accordion-item-content",
+                                "title": "faq-0-0-content",
+                                "elements": [
+                                  {
+                                    "id": "5e85f0b4",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "faq-0-0-answer"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "de39dab",
+                            "elType": "e-accordion-item",
+                            "title": "faq-0-1-item",
+                            "elements": [
+                              {
+                                "id": "5a6e6e2d",
+                                "elType": "e-accordion-item-header",
+                                "title": "faq-0-1-header",
+                                "elements": [
+                                  {
+                                    "id": "2f025add",
+                                    "elType": "e-accordion-item-title",
+                                    "title": "faq-0-1-title",
+                                    "elements": [
+                                      {
+                                        "id": "5ae6cfbd",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "faq-0-1-question"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "47a8df10",
+                                "elType": "e-accordion-item-content",
+                                "title": "faq-0-1-content",
+                                "elements": [
+                                  {
+                                    "id": "8a7f76a",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "faq-0-1-answer"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "394b525f",
+                            "elType": "e-accordion-item",
+                            "title": "faq-0-2-item",
+                            "elements": [
+                              {
+                                "id": "48c989da",
+                                "elType": "e-accordion-item-header",
+                                "title": "faq-0-2-header",
+                                "elements": [
+                                  {
+                                    "id": "77031b43",
+                                    "elType": "e-accordion-item-title",
+                                    "title": "faq-0-2-title",
+                                    "elements": [
+                                      {
+                                        "id": "17df9988",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "faq-0-2-question"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "517c34a9",
+                                "elType": "e-accordion-item-content",
+                                "title": "faq-0-2-content",
+                                "elements": [
+                                  {
+                                    "id": "71f8885c",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "faq-0-2-answer"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "6795370d",
+                    "elType": "e-flexbox",
+                    "title": "faq-cat-1",
+                    "elements": [
+                      {
+                        "id": "358bfe3e",
+                        "elType": "e-flexbox",
+                        "title": "faq-cat-1-head",
+                        "elements": [
+                          {
+                            "id": "66b7b0e6",
+                            "elType": "widget",
+                            "widgetType": "e-heading",
+                            "title": "faq-cat-1-heading"
+                          },
+                          {
+                            "id": "64bfa40d",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "faq-cat-1-count"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "33b498e",
+                        "elType": "e-accordion",
+                        "title": "faq-cat-1-accordion",
+                        "elements": [
+                          {
+                            "id": "745ec27",
+                            "elType": "e-accordion-item",
+                            "title": "faq-1-0-item",
+                            "elements": [
+                              {
+                                "id": "c3fbf1f",
+                                "elType": "e-accordion-item-header",
+                                "title": "faq-1-0-header",
+                                "elements": [
+                                  {
+                                    "id": "342acce3",
+                                    "elType": "e-accordion-item-title",
+                                    "title": "faq-1-0-title",
+                                    "elements": [
+                                      {
+                                        "id": "2d6e6749",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "faq-1-0-question"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "623677c4",
+                                "elType": "e-accordion-item-content",
+                                "title": "faq-1-0-content",
+                                "elements": [
+                                  {
+                                    "id": "5d3755ae",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "faq-1-0-answer"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "4cef3275",
+                            "elType": "e-accordion-item",
+                            "title": "faq-1-1-item",
+                            "elements": [
+                              {
+                                "id": "7bf5027e",
+                                "elType": "e-accordion-item-header",
+                                "title": "faq-1-1-header",
+                                "elements": [
+                                  {
+                                    "id": "e31756c",
+                                    "elType": "e-accordion-item-title",
+                                    "title": "faq-1-1-title",
+                                    "elements": [
+                                      {
+                                        "id": "2b14fde",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "faq-1-1-question"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "34b236d",
+                                "elType": "e-accordion-item-content",
+                                "title": "faq-1-1-content",
+                                "elements": [
+                                  {
+                                    "id": "6a57760f",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "faq-1-1-answer"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "807757b",
+                            "elType": "e-accordion-item",
+                            "title": "faq-1-2-item",
+                            "elements": [
+                              {
+                                "id": "1c6fcd1c",
+                                "elType": "e-accordion-item-header",
+                                "title": "faq-1-2-header",
+                                "elements": [
+                                  {
+                                    "id": "40c31696",
+                                    "elType": "e-accordion-item-title",
+                                    "title": "faq-1-2-title",
+                                    "elements": [
+                                      {
+                                        "id": "630cca6c",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "faq-1-2-question"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "7f30114d",
+                                "elType": "e-accordion-item-content",
+                                "title": "faq-1-2-content",
+                                "elements": [
+                                  {
+                                    "id": "72431fbb",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "faq-1-2-answer"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "58dec8ed",
+                    "elType": "e-flexbox",
+                    "title": "faq-cat-2",
+                    "elements": [
+                      {
+                        "id": "7f657c4f",
+                        "elType": "e-flexbox",
+                        "title": "faq-cat-2-head",
+                        "elements": [
+                          {
+                            "id": "5a0df3dc",
+                            "elType": "widget",
+                            "widgetType": "e-heading",
+                            "title": "faq-cat-2-heading"
+                          },
+                          {
+                            "id": "6aed2aaf",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "faq-cat-2-count"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "4587f939",
+                        "elType": "e-accordion",
+                        "title": "faq-cat-2-accordion",
+                        "elements": [
+                          {
+                            "id": "1315f41f",
+                            "elType": "e-accordion-item",
+                            "title": "faq-2-0-item",
+                            "elements": [
+                              {
+                                "id": "3a806d18",
+                                "elType": "e-accordion-item-header",
+                                "title": "faq-2-0-header",
+                                "elements": [
+                                  {
+                                    "id": "43176e8f",
+                                    "elType": "e-accordion-item-title",
+                                    "title": "faq-2-0-title",
+                                    "elements": [
+                                      {
+                                        "id": "6f909af9",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "faq-2-0-question"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "209d6b9c",
+                                "elType": "e-accordion-item-content",
+                                "title": "faq-2-0-content",
+                                "elements": [
+                                  {
+                                    "id": "40ca6e7a",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "faq-2-0-answer"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "22128878",
+                            "elType": "e-accordion-item",
+                            "title": "faq-2-1-item",
+                            "elements": [
+                              {
+                                "id": "1ad77630",
+                                "elType": "e-accordion-item-header",
+                                "title": "faq-2-1-header",
+                                "elements": [
+                                  {
+                                    "id": "53490483",
+                                    "elType": "e-accordion-item-title",
+                                    "title": "faq-2-1-title",
+                                    "elements": [
+                                      {
+                                        "id": "76df86d6",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "faq-2-1-question"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "1f81e5f9",
+                                "elType": "e-accordion-item-content",
+                                "title": "faq-2-1-content",
+                                "elements": [
+                                  {
+                                    "id": "699dbe90",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "faq-2-1-answer"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "221aa558",
+                            "elType": "e-accordion-item",
+                            "title": "faq-2-2-item",
+                            "elements": [
+                              {
+                                "id": "6606e8f6",
+                                "elType": "e-accordion-item-header",
+                                "title": "faq-2-2-header",
+                                "elements": [
+                                  {
+                                    "id": "6c8bebd3",
+                                    "elType": "e-accordion-item-title",
+                                    "title": "faq-2-2-title",
+                                    "elements": [
+                                      {
+                                        "id": "675f898",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "faq-2-2-question"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "6064ba0b",
+                                "elType": "e-accordion-item-content",
+                                "title": "faq-2-2-content",
+                                "elements": [
+                                  {
+                                    "id": "66abaccc",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "faq-2-2-answer"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "3aad6025",
+                    "elType": "e-flexbox",
+                    "title": "faq-cat-3",
+                    "elements": [
+                      {
+                        "id": "2895e79b",
+                        "elType": "e-flexbox",
+                        "title": "faq-cat-3-head",
+                        "elements": [
+                          {
+                            "id": "5cb7d106",
+                            "elType": "widget",
+                            "widgetType": "e-heading",
+                            "title": "faq-cat-3-heading"
+                          },
+                          {
+                            "id": "58f8c0bb",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "faq-cat-3-count"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "4623d8f",
+                        "elType": "e-accordion",
+                        "title": "faq-cat-3-accordion",
+                        "elements": [
+                          {
+                            "id": "520078a1",
+                            "elType": "e-accordion-item",
+                            "title": "faq-3-0-item",
+                            "elements": [
+                              {
+                                "id": "673cc2bc",
+                                "elType": "e-accordion-item-header",
+                                "title": "faq-3-0-header",
+                                "elements": [
+                                  {
+                                    "id": "333bce22",
+                                    "elType": "e-accordion-item-title",
+                                    "title": "faq-3-0-title",
+                                    "elements": [
+                                      {
+                                        "id": "4e937753",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "faq-3-0-question"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "6efbd662",
+                                "elType": "e-accordion-item-content",
+                                "title": "faq-3-0-content",
+                                "elements": [
+                                  {
+                                    "id": "297844b7",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "faq-3-0-answer"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "461b55e1",
+                            "elType": "e-accordion-item",
+                            "title": "faq-3-1-item",
+                            "elements": [
+                              {
+                                "id": "6b374a00",
+                                "elType": "e-accordion-item-header",
+                                "title": "faq-3-1-header",
+                                "elements": [
+                                  {
+                                    "id": "2c05410d",
+                                    "elType": "e-accordion-item-title",
+                                    "title": "faq-3-1-title",
+                                    "elements": [
+                                      {
+                                        "id": "383b3ed2",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "faq-3-1-question"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "2ca0ae3c",
+                                "elType": "e-accordion-item-content",
+                                "title": "faq-3-1-content",
+                                "elements": [
+                                  {
+                                    "id": "7795a190",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "faq-3-1-answer"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "49d0120b",
+                            "elType": "e-accordion-item",
+                            "title": "faq-3-2-item",
+                            "elements": [
+                              {
+                                "id": "4380008f",
+                                "elType": "e-accordion-item-header",
+                                "title": "faq-3-2-header",
+                                "elements": [
+                                  {
+                                    "id": "6b006636",
+                                    "elType": "e-accordion-item-title",
+                                    "title": "faq-3-2-title",
+                                    "elements": [
+                                      {
+                                        "id": "65580669",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "faq-3-2-question"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "id": "7f3cede4",
+                                "elType": "e-accordion-item-content",
+                                "title": "faq-3-2-content",
+                                "elements": [
+                                  {
+                                    "id": "1c17c7a6",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "faq-3-2-answer"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "7437edb2",
+                "elType": "e-flexbox",
+                "title": "faq-contact",
+                "elements": [
+                  {
+                    "id": "29eaaa0d",
+                    "elType": "widget",
+                    "widgetType": "e-paragraph",
+                    "title": "faq-end-copy"
+                  },
+                  {
+                    "id": "1e5e32db",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "faq-end-link"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "5fb5d8eb",
+            "elType": "e-flexbox",
+            "title": "site-footer",
+            "elements": [
+              {
+                "id": "44a0402d",
+                "elType": "e-flexbox",
+                "title": "footer-inner",
+                "elements": [
+                  {
+                    "id": "2b17a575",
+                    "elType": "e-flexbox",
+                    "title": "footer-top",
+                    "elements": [
+                      {
+                        "id": "6573b287",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "footer-eyebrow"
+                      },
+                      {
+                        "id": "3435afbf",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "footer-toplink"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "4df329c6",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "footer-word"
+                  },
+                  {
+                    "id": "5fdcf3fc",
+                    "elType": "e-flexbox",
+                    "title": "footer-grid",
+                    "elements": [
+                      {
+                        "id": "4479d46",
+                        "elType": "e-flexbox",
+                        "title": "footer-col1",
+                        "elements": [
+                          {
+                            "id": "59852607",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-about"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "356eb526",
+                        "elType": "e-flexbox",
+                        "title": "footer-col2",
+                        "elements": [
+                          {
+                            "id": "67239999",
+                            "elType": "widget",
+                            "widgetType": "e-heading",
+                            "title": "footer-h2"
+                          },
+                          {
+                            "id": "736e3bca",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-shop"
+                          },
+                          {
+                            "id": "2f9d175",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-about-link"
+                          },
+                          {
+                            "id": "754650bd",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-special-link"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "18aab3af",
+                        "elType": "e-flexbox",
+                        "title": "footer-col3",
+                        "elements": [
+                          {
+                            "id": "63faf8f",
+                            "elType": "widget",
+                            "widgetType": "e-heading",
+                            "title": "footer-h3"
+                          },
+                          {
+                            "id": "73cafc5e",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-faq"
+                          },
+                          {
+                            "id": "4cf30e4b",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-contact"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "611b68e8",
+                    "elType": "widget",
+                    "widgetType": "e-paragraph",
+                    "title": "footer-bottom"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "isError": false
+}

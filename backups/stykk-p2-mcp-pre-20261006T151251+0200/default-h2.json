@@ -1,0 +1,13 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"tag\":\"h2\",\"default_styles\":\"\"}"
+    }
+  ],
+  "structuredContent": {
+    "tag": "h2",
+    "default_styles": ""
+  },
+  "isError": false
+}

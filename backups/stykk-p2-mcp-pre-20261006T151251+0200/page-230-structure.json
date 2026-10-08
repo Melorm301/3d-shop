@@ -1,0 +1,402 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"elements\":[{\"id\":\"4a7eadfc\",\"elType\":\"e-flexbox\",\"title\":\"page-root\",\"elements\":[{\"id\":\"c221adb\",\"elType\":\"e-flexbox\",\"title\":\"site-header\",\"elements\":[{\"id\":\"73ad0b03\",\"elType\":\"e-flexbox\",\"title\":\"header-inner\",\"elements\":[{\"id\":\"19fc9ec3\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"brand\"},{\"id\":\"73872e0b\",\"elType\":\"e-flexbox\",\"title\":\"desktop-nav\",\"elements\":[{\"id\":\"172c3ef6\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"nav-1\"},{\"id\":\"219b7bde\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"nav-2\"},{\"id\":\"7595487b\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"nav-3\"},{\"id\":\"6d6e847b\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"nav-4\"}]},{\"id\":\"5d73bc8d\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"header-cart\"},{\"id\":\"121a2ea3\",\"elType\":\"e-accordion\",\"title\":\"mobile-menu\",\"elements\":[{\"id\":\"5b15da62\",\"elType\":\"e-accordion-item\",\"title\":\"mobile-item\",\"elements\":[{\"id\":\"7f76550b\",\"elType\":\"e-accordion-item-header\",\"title\":\"mobile-summary\",\"elements\":[{\"id\":\"fd8f282\",\"elType\":\"e-accordion-item-title\",\"title\":\"mobile-title\",\"elements\":[{\"id\":\"38e8519f\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-trigger\"}]}]},{\"id\":\"a3b9ccf\",\"elType\":\"e-accordion-item-content\",\"title\":\"mobile-panel-content\",\"elements\":[{\"id\":\"72089d72\",\"elType\":\"e-flexbox\",\"title\":\"mobile-panel\",\"elements\":[{\"id\":\"66408d9e\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-0\"},{\"id\":\"3e76d174\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-1\"},{\"id\":\"29021eba\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-2\"},{\"id\":\"69c7ab18\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-3\"},{\"id\":\"61d0df6e\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-4\"}]}]}]}]}]}]},{\"id\":\"27856823\",\"elType\":\"e-flexbox\",\"title\":\"main-content\",\"elements\":[{\"id\":\"100f728d\",\"elType\":\"e-flexbox\",\"title\":\"special-intro\",\"elements\":[{\"id\":\"3e9be2b9\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"special-eyebrow\"},{\"id\":\"5e0873a4\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"special-title\"},{\"id\":\"2c1fb3b4\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"special-lede\"}]},{\"id\":\"47dc7af5\",\"elType\":\"e-flexbox\",\"title\":\"special-body\",\"elements\":[{\"id\":\"7dc3b46\",\"elType\":\"e-flexbox\",\"title\":\"special-story\",\"elements\":[{\"id\":\"f7d9950\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"special-story-eyebrow\"},{\"id\":\"375a2d34\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"special-story-title\"},{\"id\":\"5ad5058c\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"special-story-copy\"}]},{\"id\":\"530f63f5\",\"elType\":\"e-flexbox\",\"title\":\"special-side\",\"elements\":[{\"id\":\"500e3ec9\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"special-steps-title\"},{\"id\":\"206d8218\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"special-step-0\"},{\"id\":\"60cfd055\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"special-step-1\"},{\"id\":\"4f383695\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"special-step-2\"},{\"id\":\"718378ca\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"special-faq-link\"}]}]},{\"id\":\"6ec2c120\",\"elType\":\"e-flexbox\",\"title\":\"special-note\",\"elements\":[{\"id\":\"ad7d017\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"special-note-title\"},{\"id\":\"69a30667\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"special-note-copy\"},{\"id\":\"cef249b\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"special-contact-link\"}]}]},{\"id\":\"54fe1f02\",\"elType\":\"e-flexbox\",\"title\":\"site-footer\",\"elements\":[{\"id\":\"29e4a396\",\"elType\":\"e-flexbox\",\"title\":\"footer-inner\",\"elements\":[{\"id\":\"2c2149c4\",\"elType\":\"e-flexbox\",\"title\":\"footer-top\",\"elements\":[{\"id\":\"23722760\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-eyebrow\"},{\"id\":\"7c7c89e\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-toplink\"}]},{\"id\":\"70316670\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"footer-word\"},{\"id\":\"38a23cc3\",\"elType\":\"e-flexbox\",\"title\":\"footer-grid\",\"elements\":[{\"id\":\"13fe2f05\",\"elType\":\"e-flexbox\",\"title\":\"footer-col1\",\"elements\":[{\"id\":\"5b2267db\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-about\"}]},{\"id\":\"55ce1619\",\"elType\":\"e-flexbox\",\"title\":\"footer-col2\",\"elements\":[{\"id\":\"783fa5c3\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"footer-h2\"},{\"id\":\"542a12d6\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-shop\"},{\"id\":\"6cce7de3\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-about-link\"},{\"id\":\"45ed7881\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-special-link\"}]},{\"id\":\"a5f151c\",\"elType\":\"e-flexbox\",\"title\":\"footer-col3\",\"elements\":[{\"id\":\"45ac1e1d\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"footer-h3\"},{\"id\":\"652a62e9\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-faq\"},{\"id\":\"299cc62c\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-contact\"}]}]},{\"id\":\"3bd186c1\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-bottom\"}]}]}]}]}"
+    }
+  ],
+  "structuredContent": {
+    "elements": [
+      {
+        "id": "4a7eadfc",
+        "elType": "e-flexbox",
+        "title": "page-root",
+        "elements": [
+          {
+            "id": "c221adb",
+            "elType": "e-flexbox",
+            "title": "site-header",
+            "elements": [
+              {
+                "id": "73ad0b03",
+                "elType": "e-flexbox",
+                "title": "header-inner",
+                "elements": [
+                  {
+                    "id": "19fc9ec3",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "brand"
+                  },
+                  {
+                    "id": "73872e0b",
+                    "elType": "e-flexbox",
+                    "title": "desktop-nav",
+                    "elements": [
+                      {
+                        "id": "172c3ef6",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "nav-1"
+                      },
+                      {
+                        "id": "219b7bde",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "nav-2"
+                      },
+                      {
+                        "id": "7595487b",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "nav-3"
+                      },
+                      {
+                        "id": "6d6e847b",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "nav-4"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "5d73bc8d",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "header-cart"
+                  },
+                  {
+                    "id": "121a2ea3",
+                    "elType": "e-accordion",
+                    "title": "mobile-menu",
+                    "elements": [
+                      {
+                        "id": "5b15da62",
+                        "elType": "e-accordion-item",
+                        "title": "mobile-item",
+                        "elements": [
+                          {
+                            "id": "7f76550b",
+                            "elType": "e-accordion-item-header",
+                            "title": "mobile-summary",
+                            "elements": [
+                              {
+                                "id": "fd8f282",
+                                "elType": "e-accordion-item-title",
+                                "title": "mobile-title",
+                                "elements": [
+                                  {
+                                    "id": "38e8519f",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-trigger"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "a3b9ccf",
+                            "elType": "e-accordion-item-content",
+                            "title": "mobile-panel-content",
+                            "elements": [
+                              {
+                                "id": "72089d72",
+                                "elType": "e-flexbox",
+                                "title": "mobile-panel",
+                                "elements": [
+                                  {
+                                    "id": "66408d9e",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-0"
+                                  },
+                                  {
+                                    "id": "3e76d174",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-1"
+                                  },
+                                  {
+                                    "id": "29021eba",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-2"
+                                  },
+                                  {
+                                    "id": "69c7ab18",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-3"
+                                  },
+                                  {
+                                    "id": "61d0df6e",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-4"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "27856823",
+            "elType": "e-flexbox",
+            "title": "main-content",
+            "elements": [
+              {
+                "id": "100f728d",
+                "elType": "e-flexbox",
+                "title": "special-intro",
+                "elements": [
+                  {
+                    "id": "3e9be2b9",
+                    "elType": "widget",
+                    "widgetType": "e-paragraph",
+                    "title": "special-eyebrow"
+                  },
+                  {
+                    "id": "5e0873a4",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "special-title"
+                  },
+                  {
+                    "id": "2c1fb3b4",
+                    "elType": "widget",
+                    "widgetType": "e-paragraph",
+                    "title": "special-lede"
+                  }
+                ]
+              },
+              {
+                "id": "47dc7af5",
+                "elType": "e-flexbox",
+                "title": "special-body",
+                "elements": [
+                  {
+                    "id": "7dc3b46",
+                    "elType": "e-flexbox",
+                    "title": "special-story",
+                    "elements": [
+                      {
+                        "id": "f7d9950",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "special-story-eyebrow"
+                      },
+                      {
+                        "id": "375a2d34",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "special-story-title"
+                      },
+                      {
+                        "id": "5ad5058c",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "special-story-copy"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "530f63f5",
+                    "elType": "e-flexbox",
+                    "title": "special-side",
+                    "elements": [
+                      {
+                        "id": "500e3ec9",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "special-steps-title"
+                      },
+                      {
+                        "id": "206d8218",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "special-step-0"
+                      },
+                      {
+                        "id": "60cfd055",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "special-step-1"
+                      },
+                      {
+                        "id": "4f383695",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "special-step-2"
+                      },
+                      {
+                        "id": "718378ca",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "special-faq-link"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "6ec2c120",
+                "elType": "e-flexbox",
+                "title": "special-note",
+                "elements": [
+                  {
+                    "id": "ad7d017",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "special-note-title"
+                  },
+                  {
+                    "id": "69a30667",
+                    "elType": "widget",
+                    "widgetType": "e-paragraph",
+                    "title": "special-note-copy"
+                  },
+                  {
+                    "id": "cef249b",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "special-contact-link"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "54fe1f02",
+            "elType": "e-flexbox",
+            "title": "site-footer",
+            "elements": [
+              {
+                "id": "29e4a396",
+                "elType": "e-flexbox",
+                "title": "footer-inner",
+                "elements": [
+                  {
+                    "id": "2c2149c4",
+                    "elType": "e-flexbox",
+                    "title": "footer-top",
+                    "elements": [
+                      {
+                        "id": "23722760",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "footer-eyebrow"
+                      },
+                      {
+                        "id": "7c7c89e",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "footer-toplink"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "70316670",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "footer-word"
+                  },
+                  {
+                    "id": "38a23cc3",
+                    "elType": "e-flexbox",
+                    "title": "footer-grid",
+                    "elements": [
+                      {
+                        "id": "13fe2f05",
+                        "elType": "e-flexbox",
+                        "title": "footer-col1",
+                        "elements": [
+                          {
+                            "id": "5b2267db",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-about"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "55ce1619",
+                        "elType": "e-flexbox",
+                        "title": "footer-col2",
+                        "elements": [
+                          {
+                            "id": "783fa5c3",
+                            "elType": "widget",
+                            "widgetType": "e-heading",
+                            "title": "footer-h2"
+                          },
+                          {
+                            "id": "542a12d6",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-shop"
+                          },
+                          {
+                            "id": "6cce7de3",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-about-link"
+                          },
+                          {
+                            "id": "45ed7881",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-special-link"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "a5f151c",
+                        "elType": "e-flexbox",
+                        "title": "footer-col3",
+                        "elements": [
+                          {
+                            "id": "45ac1e1d",
+                            "elType": "widget",
+                            "widgetType": "e-heading",
+                            "title": "footer-h3"
+                          },
+                          {
+                            "id": "652a62e9",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-faq"
+                          },
+                          {
+                            "id": "299cc62c",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-contact"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "3bd186c1",
+                    "elType": "widget",
+                    "widgetType": "e-paragraph",
+                    "title": "footer-bottom"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "isError": false
+}

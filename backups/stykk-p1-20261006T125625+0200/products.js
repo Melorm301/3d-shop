@@ -28,7 +28,7 @@ window.Shop = (function () {
     currency: "DKK"
   };
 
-  // WooCommerce is the live source of truth for published catalogue prices.
+  // Vejledende designpriser, godkendt af ejeren til dette redesign.
   var products = [
   {
     "id": "rib-vaeg",
@@ -44,6 +44,7 @@ window.Shop = (function () {
     ],
     "featured": true,
     "featuredRank": 1,
+    "estimatedPrice": true,
     "colors": [
       {
         "name": "Varm brun",
@@ -77,6 +78,7 @@ window.Shop = (function () {
     ],
     "featured": true,
     "featuredRank": 2,
+    "estimatedPrice": true,
     "colors": [
       {
         "name": "Varm brun",
@@ -110,6 +112,7 @@ window.Shop = (function () {
     ],
     "featured": true,
     "featuredRank": 3,
+    "estimatedPrice": true,
     "colors": [
       {
         "name": "Varm brun",
@@ -142,6 +145,7 @@ window.Shop = (function () {
     ],
     "featured": false,
     "featuredRank": 99,
+    "estimatedPrice": true,
     "colors": [
       {
         "name": "Varm brun",
@@ -174,6 +178,7 @@ window.Shop = (function () {
     ],
     "featured": false,
     "featuredRank": 99,
+    "estimatedPrice": true,
     "imageAlts": [
       "Sort Skrå-holder med trekantet sideprofil og støtte i bunden på et skrivebord"
     ]
@@ -183,7 +188,7 @@ window.Shop = (function () {
     "sku": "ST-006",
     "name": "Tak / rensdyrfigur",
     "tagline": "Et lille rensdyr med bløde ribber.",
-    "description": "En dekorativ rensdyrfigur med bølgende, ribbet krop og et enkelt gevir. Den passer på hylden, i vindueskarmen eller i en hyggelig sæsonopstilling. Farve vælges blandt varianterne på produktsiden.",
+    "description": "En dekorativ rensdyrfigur med bølgende, ribbet krop og et enkelt gevir. Den passer på hylden, i vindueskarmen eller i en hyggelig sæsonopstilling. Vejledende pris pr. figur; farve og størrelse aftales.",
     "price": 11900,
     "currency": "DKK",
     "category": "Figurer",
@@ -192,6 +197,8 @@ window.Shop = (function () {
     ],
     "featured": false,
     "featuredRank": 99,
+    "estimatedPrice": true,
+    "estimatedUnit": "pr. figur",
     "colors": [
       {
         "name": "Grøn",
@@ -224,6 +231,7 @@ window.Shop = (function () {
     ],
     "featured": false,
     "featuredRank": 99,
+    "estimatedPrice": true,
     "imageAlts": [
       "Lys spøgelsesfigur med foldet overflade fra Holiday-kollektionen"
     ]
@@ -233,8 +241,10 @@ window.Shop = (function () {
     "sku": "ST-008",
     "name": "Sno / flexifigur",
     "tagline": "En lille figur, der kan sno sig.",
-    "description": "En leddelt figur med en buet, farverig form. Den kan formes og snoes i hånden.",
+    "description": "En leddelt figur med en buet, farverig form. Den kan formes og snoes i hånden. Prisen er vejledende pr. figur.",
     "price": 4900,
+    "estimatedPrice": true,
+    "estimatedUnit": "pr. figur",
     "currency": "DKK",
     "category": "Legetøj",
     "images": [
@@ -251,8 +261,10 @@ window.Shop = (function () {
     "sku": "ST-009",
     "name": "Krible / flexifigur",
     "tagline": "Små dyr med en leddelt krop.",
-    "description": "Små, farverige figurer med en rund krop og små detaljer. Billedet viser dem i flere farver og former.",
+    "description": "Små, farverige figurer med en rund krop og små detaljer. Billedet viser dem i flere farver og former. Prisen er vejledende pr. figur.",
     "price": 2900,
+    "estimatedPrice": true,
+    "estimatedUnit": "pr. figur",
     "currency": "DKK",
     "category": "Legetøj",
     "images": [
@@ -269,8 +281,10 @@ window.Shop = (function () {
     "sku": "ST-010",
     "name": "Juletryk / kageform",
     "tagline": "Et lille juletryk til hjemmebag.",
-    "description": "En rund kageform med præget julehilsen. Billedet viser formen sammen med småkager, hvor teksten står frem i dejen.",
+    "description": "En rund kageform med præget julehilsen. Billedet viser formen sammen med småkager, hvor teksten står frem i dejen. Prisen er vejledende pr. form.",
     "price": 7900,
+    "estimatedPrice": true,
+    "estimatedUnit": "pr. form",
     "currency": "DKK",
     "category": "Køkken",
     "images": [
@@ -287,8 +301,10 @@ window.Shop = (function () {
     "sku": "ST-011",
     "name": "Hjerte / billedholder",
     "tagline": "Et lille hjerte til dine yndlingsbilleder.",
-    "description": "Et lyserødt hjerte med rillet overflade, der holder et foto fremme på bordet eller hylden.",
+    "description": "Et lyserødt hjerte med rillet overflade, der holder et foto fremme på bordet eller hylden. Prisen er vejledende pr. billedholder.",
     "price": 7900,
+    "estimatedPrice": true,
+    "estimatedUnit": "pr. holder",
     "currency": "DKK",
     "category": "Tilbehør",
     "images": [
@@ -305,8 +321,10 @@ window.Shop = (function () {
     "sku": "ST-012",
     "name": "Fold / mobilholder",
     "tagline": "En enkel vinkel til mobilen.",
-    "description": "En sort mobilholder med vinklet ryg og en bred, lav forkant. Den kompakte form lader telefonen stå oprejst på bordet.",
+    "description": "En sort mobilholder med vinklet ryg og en bred, lav forkant. Den kompakte form lader telefonen stå oprejst på bordet. Prisen er vejledende pr. holder.",
     "price": 6900,
+    "estimatedPrice": true,
+    "estimatedUnit": "pr. holder",
     "currency": "DKK",
     "category": "Tilbehør",
     "images": [
@@ -437,9 +455,10 @@ window.Shop = (function () {
   }
 
   function productPrice(product) {
-    var prefix = "";
+    var prefix = product && product.estimatedPrice ? "ca. " : "";
     var price = formatPrice(product ? product.price : 0, product ? product.currency : config.currency);
-    return prefix + price;
+    var unit = product && product.estimatedUnit ? " / " + product.estimatedUnit : "";
+    return prefix + price + unit;
   }
 
   function related(currentId, limit) {

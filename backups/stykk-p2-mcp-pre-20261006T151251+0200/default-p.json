@@ -1,0 +1,13 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"tag\":\"p\",\"default_styles\":\"\"}"
+    }
+  ],
+  "structuredContent": {
+    "tag": "p",
+    "default_styles": ""
+  },
+  "isError": false
+}

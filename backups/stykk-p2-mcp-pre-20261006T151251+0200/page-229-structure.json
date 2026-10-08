@@ -1,0 +1,397 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"elements\":[{\"id\":\"5088e919\",\"elType\":\"e-flexbox\",\"title\":\"page-root\",\"elements\":[{\"id\":\"732cb623\",\"elType\":\"e-flexbox\",\"title\":\"site-header\",\"elements\":[{\"id\":\"65c5b2f8\",\"elType\":\"e-flexbox\",\"title\":\"header-inner\",\"elements\":[{\"id\":\"2b2f889\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"brand\"},{\"id\":\"6f5647a3\",\"elType\":\"e-flexbox\",\"title\":\"desktop-nav\",\"elements\":[{\"id\":\"761afd75\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"nav-1\"},{\"id\":\"4667ce7f\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"nav-2\"},{\"id\":\"41988b6b\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"nav-3\"},{\"id\":\"6666929e\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"nav-4\"}]},{\"id\":\"5a896862\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"header-cart\"},{\"id\":\"6ba8e49a\",\"elType\":\"e-accordion\",\"title\":\"mobile-menu\",\"elements\":[{\"id\":\"22c71c77\",\"elType\":\"e-accordion-item\",\"title\":\"mobile-item\",\"elements\":[{\"id\":\"749e3755\",\"elType\":\"e-accordion-item-header\",\"title\":\"mobile-summary\",\"elements\":[{\"id\":\"19b770d3\",\"elType\":\"e-accordion-item-title\",\"title\":\"mobile-title\",\"elements\":[{\"id\":\"34deb8cd\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-trigger\"}]}]},{\"id\":\"14f00c0a\",\"elType\":\"e-accordion-item-content\",\"title\":\"mobile-panel-content\",\"elements\":[{\"id\":\"74974ca2\",\"elType\":\"e-flexbox\",\"title\":\"mobile-panel\",\"elements\":[{\"id\":\"7f8a95a0\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-0\"},{\"id\":\"11fe5cd8\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-1\"},{\"id\":\"17ff40e\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-2\"},{\"id\":\"6efa227a\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-3\"},{\"id\":\"28733c1\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-link-4\"}]}]}]}]}]}]},{\"id\":\"649c1abc\",\"elType\":\"e-flexbox\",\"title\":\"main-content\",\"elements\":[{\"id\":\"4f6c9d90\",\"elType\":\"e-flexbox\",\"title\":\"contact-intro\",\"elements\":[{\"id\":\"3fef44f4\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"contact-eyebrow\"},{\"id\":\"7988412f\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"contact-title\"},{\"id\":\"2d68af76\",\"elType\":\"e-flexbox\",\"title\":\"contact-intro-row\",\"elements\":[{\"id\":\"6812e126\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"contact-lede\"},{\"id\":\"7c3f795b\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"contact-meta\"}]}]},{\"id\":\"4ed8347e\",\"elType\":\"e-flexbox\",\"title\":\"contact-body\",\"elements\":[{\"id\":\"6c36613a\",\"elType\":\"e-flexbox\",\"title\":\"contact-story\",\"elements\":[{\"id\":\"7093ff72\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"contact-story-label\"},{\"id\":\"50dfa4b8\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"contact-story-title\"},{\"id\":\"52d57bd3\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"contact-story-copy\"}]},{\"id\":\"3c9745a3\",\"elType\":\"e-flexbox\",\"title\":\"contact-actions\",\"elements\":[{\"id\":\"7be029df\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"contact-shop-link\"},{\"id\":\"66d484f3\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"contact-special-link\"},{\"id\":\"4df31bf2\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"contact-faq-link\"}]}]},{\"id\":\"7a66a10c\",\"elType\":\"e-flexbox\",\"title\":\"contact-cta\",\"elements\":[{\"id\":\"4289e20d\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"contact-cta-title\"},{\"id\":\"57109cfb\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"contact-cta-link\"}]}]},{\"id\":\"3615a26a\",\"elType\":\"e-flexbox\",\"title\":\"site-footer\",\"elements\":[{\"id\":\"7e6cc842\",\"elType\":\"e-flexbox\",\"title\":\"footer-inner\",\"elements\":[{\"id\":\"6c7dcba0\",\"elType\":\"e-flexbox\",\"title\":\"footer-top\",\"elements\":[{\"id\":\"16d46334\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-eyebrow\"},{\"id\":\"6981c01b\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-toplink\"}]},{\"id\":\"3538da31\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"footer-word\"},{\"id\":\"5b317c5a\",\"elType\":\"e-flexbox\",\"title\":\"footer-grid\",\"elements\":[{\"id\":\"7a8b777\",\"elType\":\"e-flexbox\",\"title\":\"footer-col1\",\"elements\":[{\"id\":\"1d50c2d3\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-about\"}]},{\"id\":\"581badd7\",\"elType\":\"e-flexbox\",\"title\":\"footer-col2\",\"elements\":[{\"id\":\"1952d654\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"footer-h2\"},{\"id\":\"65aef64c\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-shop\"},{\"id\":\"73611890\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-about-link\"},{\"id\":\"2cc1aba8\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-special-link\"}]},{\"id\":\"43b3106d\",\"elType\":\"e-flexbox\",\"title\":\"footer-col3\",\"elements\":[{\"id\":\"1769553d\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"footer-h3\"},{\"id\":\"29a4e16b\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-faq\"},{\"id\":\"1fa6b642\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-contact\"}]}]},{\"id\":\"1f7224fe\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-bottom\"}]}]}]}]}"
+    }
+  ],
+  "structuredContent": {
+    "elements": [
+      {
+        "id": "5088e919",
+        "elType": "e-flexbox",
+        "title": "page-root",
+        "elements": [
+          {
+            "id": "732cb623",
+            "elType": "e-flexbox",
+            "title": "site-header",
+            "elements": [
+              {
+                "id": "65c5b2f8",
+                "elType": "e-flexbox",
+                "title": "header-inner",
+                "elements": [
+                  {
+                    "id": "2b2f889",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "brand"
+                  },
+                  {
+                    "id": "6f5647a3",
+                    "elType": "e-flexbox",
+                    "title": "desktop-nav",
+                    "elements": [
+                      {
+                        "id": "761afd75",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "nav-1"
+                      },
+                      {
+                        "id": "4667ce7f",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "nav-2"
+                      },
+                      {
+                        "id": "41988b6b",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "nav-3"
+                      },
+                      {
+                        "id": "6666929e",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "nav-4"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "5a896862",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "header-cart"
+                  },
+                  {
+                    "id": "6ba8e49a",
+                    "elType": "e-accordion",
+                    "title": "mobile-menu",
+                    "elements": [
+                      {
+                        "id": "22c71c77",
+                        "elType": "e-accordion-item",
+                        "title": "mobile-item",
+                        "elements": [
+                          {
+                            "id": "749e3755",
+                            "elType": "e-accordion-item-header",
+                            "title": "mobile-summary",
+                            "elements": [
+                              {
+                                "id": "19b770d3",
+                                "elType": "e-accordion-item-title",
+                                "title": "mobile-title",
+                                "elements": [
+                                  {
+                                    "id": "34deb8cd",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-trigger"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "14f00c0a",
+                            "elType": "e-accordion-item-content",
+                            "title": "mobile-panel-content",
+                            "elements": [
+                              {
+                                "id": "74974ca2",
+                                "elType": "e-flexbox",
+                                "title": "mobile-panel",
+                                "elements": [
+                                  {
+                                    "id": "7f8a95a0",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-0"
+                                  },
+                                  {
+                                    "id": "11fe5cd8",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-1"
+                                  },
+                                  {
+                                    "id": "17ff40e",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-2"
+                                  },
+                                  {
+                                    "id": "6efa227a",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-3"
+                                  },
+                                  {
+                                    "id": "28733c1",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-link-4"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "649c1abc",
+            "elType": "e-flexbox",
+            "title": "main-content",
+            "elements": [
+              {
+                "id": "4f6c9d90",
+                "elType": "e-flexbox",
+                "title": "contact-intro",
+                "elements": [
+                  {
+                    "id": "3fef44f4",
+                    "elType": "widget",
+                    "widgetType": "e-paragraph",
+                    "title": "contact-eyebrow"
+                  },
+                  {
+                    "id": "7988412f",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "contact-title"
+                  },
+                  {
+                    "id": "2d68af76",
+                    "elType": "e-flexbox",
+                    "title": "contact-intro-row",
+                    "elements": [
+                      {
+                        "id": "6812e126",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "contact-lede"
+                      },
+                      {
+                        "id": "7c3f795b",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "contact-meta"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "4ed8347e",
+                "elType": "e-flexbox",
+                "title": "contact-body",
+                "elements": [
+                  {
+                    "id": "6c36613a",
+                    "elType": "e-flexbox",
+                    "title": "contact-story",
+                    "elements": [
+                      {
+                        "id": "7093ff72",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "contact-story-label"
+                      },
+                      {
+                        "id": "50dfa4b8",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "contact-story-title"
+                      },
+                      {
+                        "id": "52d57bd3",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "contact-story-copy"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "3c9745a3",
+                    "elType": "e-flexbox",
+                    "title": "contact-actions",
+                    "elements": [
+                      {
+                        "id": "7be029df",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "contact-shop-link"
+                      },
+                      {
+                        "id": "66d484f3",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "contact-special-link"
+                      },
+                      {
+                        "id": "4df31bf2",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "contact-faq-link"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "7a66a10c",
+                "elType": "e-flexbox",
+                "title": "contact-cta",
+                "elements": [
+                  {
+                    "id": "4289e20d",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "contact-cta-title"
+                  },
+                  {
+                    "id": "57109cfb",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "contact-cta-link"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "3615a26a",
+            "elType": "e-flexbox",
+            "title": "site-footer",
+            "elements": [
+              {
+                "id": "7e6cc842",
+                "elType": "e-flexbox",
+                "title": "footer-inner",
+                "elements": [
+                  {
+                    "id": "6c7dcba0",
+                    "elType": "e-flexbox",
+                    "title": "footer-top",
+                    "elements": [
+                      {
+                        "id": "16d46334",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "footer-eyebrow"
+                      },
+                      {
+                        "id": "6981c01b",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "footer-toplink"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "3538da31",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "footer-word"
+                  },
+                  {
+                    "id": "5b317c5a",
+                    "elType": "e-flexbox",
+                    "title": "footer-grid",
+                    "elements": [
+                      {
+                        "id": "7a8b777",
+                        "elType": "e-flexbox",
+                        "title": "footer-col1",
+                        "elements": [
+                          {
+                            "id": "1d50c2d3",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-about"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "581badd7",
+                        "elType": "e-flexbox",
+                        "title": "footer-col2",
+                        "elements": [
+                          {
+                            "id": "1952d654",
+                            "elType": "widget",
+                            "widgetType": "e-heading",
+                            "title": "footer-h2"
+                          },
+                          {
+                            "id": "65aef64c",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-shop"
+                          },
+                          {
+                            "id": "73611890",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-about-link"
+                          },
+                          {
+                            "id": "2cc1aba8",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-special-link"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "43b3106d",
+                        "elType": "e-flexbox",
+                        "title": "footer-col3",
+                        "elements": [
+                          {
+                            "id": "1769553d",
+                            "elType": "widget",
+                            "widgetType": "e-heading",
+                            "title": "footer-h3"
+                          },
+                          {
+                            "id": "29a4e16b",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-faq"
+                          },
+                          {
+                            "id": "1fa6b642",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-contact"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "1f7224fe",
+                    "elType": "widget",
+                    "widgetType": "e-paragraph",
+                    "title": "footer-bottom"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "isError": false
+}

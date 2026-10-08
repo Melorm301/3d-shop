@@ -7,7 +7,7 @@ const root = path.join(__dirname, '..');
 
 // A minimal DOM isolates persisted cart data and pricing; real interaction is
 // separately exercised in the browser, including modal focus and checkout.
-function boot(saved, customProducts) {
+function boot(saved, customProducts, checkoutMount) {
   const listeners = {};
   const nodes = {};
   const storage = new Map([['nordform.cart.v1', saved || '[]']]);
@@ -17,7 +17,7 @@ function boot(saved, customProducts) {
     showModal() { this.open = true; }, close() { this.open = false; } };
   const document = { readyState: 'loading', activeElement: null,
     addEventListener(name, fn) { (listeners[name] ||= []).push(fn); },
-    querySelectorAll() { return []; }, querySelector() { return null; },
+    querySelectorAll(selector) { return selector.includes('[data-cart-page]') && checkoutMount ? [checkoutMount] : []; }, querySelector() { return null; },
     createElement() { return dialog; }, body: { appendChild() {}, classList: { add() {}, remove() {} } } };
   const context = { document, localStorage: { getItem: key => storage.get(key), setItem: (key, value) => storage.set(key, value) }, navigator: {}, console,
     setTimeout, requestAnimationFrame: fn => fn(), addEventListener(name, fn) { (listeners[name] ||= []).push(fn); } };
@@ -91,6 +91,16 @@ test('storage changes synchronize the cart between tabs', () => {
   storage.set('nordform.cart.v1',JSON.stringify([{id:'rib-vaeg',qty:4}]));
   emit('storage',{key:'nordform.cart.v1'});
   assert.equal(cart.count(),4);assert.equal(cart.subtotal(),35600);
+});
+
+test('checkout stays in work-in-progress state while Telegram is a placeholder', () => {
+  const mount = { innerHTML: '', hasAttribute: name => name === 'data-checkout-page' };
+  const { cart } = boot(JSON.stringify([{id:'rib-vaeg',qty:1}]), null, mount);
+  assert.equal(cart.count(), 1);
+  assert.match(mount.innerHTML, /Work in progress/);
+  assert.match(mount.innerHTML, /Næste STYKK-kollektion er på vej/);
+  assert.match(mount.innerHTML, /Bestilling åbner, når kollektionen er klar/);
+  assert.doesNotMatch(mount.innerHTML, /data-telegram-order|data-copy-order|t\.me\/test/);
 });
 
  test('retired assortment is safely removed from persisted baskets',()=>{

@@ -1,0 +1,1366 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"elements\":[{\"id\":\"3e9dc092\",\"elType\":\"e-flexbox\",\"title\":\"page-root\",\"elements\":[{\"id\":\"4982028f\",\"elType\":\"e-flexbox\",\"title\":\"site-header\",\"elements\":[{\"id\":\"68c541ef\",\"elType\":\"e-flexbox\",\"title\":\"header-inner\",\"elements\":[{\"id\":\"2dd23f16\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"brand\"},{\"id\":\"7c20f94b\",\"elType\":\"e-flexbox\",\"title\":\"desktop-nav\",\"elements\":[{\"id\":\"30203e42\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"nav-1\"},{\"id\":\"5c2c512f\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"nav-2\"},{\"id\":\"160cd0fc\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"nav-3\"},{\"id\":\"5693f86f\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"nav-4\"}]},{\"id\":\"5292f2aa\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"cart-link\"},{\"id\":\"4b248637\",\"elType\":\"e-accordion\",\"title\":\"mobile-menu\",\"elements\":[{\"id\":\"65316f94\",\"elType\":\"e-accordion-item\",\"title\":\"mobile-menu-item\",\"elements\":[{\"id\":\"4f57b70a\",\"elType\":\"e-accordion-item-header\",\"title\":\"mobile-menu-header\",\"elements\":[{\"id\":\"15a7b33a\",\"elType\":\"e-accordion-item-title\",\"title\":\"mobile-menu-title\",\"elements\":[{\"id\":\"732fa8f7\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-menu-trigger\"}]}]},{\"id\":\"614c76ce\",\"elType\":\"e-accordion-item-content\",\"title\":\"mobile-menu-panel\",\"elements\":[{\"id\":\"6062244d\",\"elType\":\"e-flexbox\",\"title\":\"mobile-nav\",\"elements\":[{\"id\":\"296f8692\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-nav-1\"},{\"id\":\"44699a41\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-nav-2\"},{\"id\":\"2fa27556\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-nav-3\"},{\"id\":\"358b62c2\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-nav-4\"},{\"id\":\"184c02b0\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"mobile-nav-5\"}]}]}]}]}]}]},{\"id\":\"6ff32010\",\"elType\":\"e-flexbox\",\"title\":\"main-content\",\"elements\":[{\"id\":\"40f166d4\",\"elType\":\"e-flexbox\",\"title\":\"hero-section\",\"elements\":[{\"id\":\"5b3e2c23\",\"elType\":\"e-flexbox\",\"title\":\"hero-copy\",\"elements\":[{\"id\":\"48fc03d5\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"hero-eyebrow\"},{\"id\":\"15f7bc84\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"hero-title\"},{\"id\":\"1433aa2c\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"hero-lede\"},{\"id\":\"6cc894ff\",\"elType\":\"widget\",\"widgetType\":\"e-button\",\"title\":\"hero-button\"},{\"id\":\"119b0c78\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"hero-about\"},{\"id\":\"5357bbb4\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"hero-index\"}]},{\"id\":\"5b31d24f\",\"elType\":\"e-flexbox\",\"title\":\"hero-visual\",\"elements\":[{\"id\":\"17d800b9\",\"elType\":\"widget\",\"widgetType\":\"e-image\",\"title\":\"hero-image\"},{\"id\":\"6de4f132\",\"elType\":\"e-flexbox\",\"title\":\"hero-caption\",\"elements\":[{\"id\":\"4adfc82c\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"caption-name\"},{\"id\":\"3e43f626\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"caption-link\"}]}]}]},{\"id\":\"30b58a18\",\"elType\":\"e-flexbox\",\"title\":\"intro-line\",\"elements\":[{\"id\":\"68fa1833\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"intro-copy\"},{\"id\":\"176a08bb\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"intro-scroll\"}]},{\"id\":\"32c3457\",\"elType\":\"e-flexbox\",\"title\":\"selected-section\",\"elements\":[{\"id\":\"6e25b093\",\"elType\":\"e-flexbox\",\"title\":\"selected-inner\",\"elements\":[{\"id\":\"581ca3ef\",\"elType\":\"e-flexbox\",\"title\":\"featured-head\",\"elements\":[{\"id\":\"1eb4a50a\",\"elType\":\"e-flexbox\",\"title\":\"featured-title-group\",\"elements\":[{\"id\":\"7bd2384d\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"featured-eyebrow\"},{\"id\":\"11bd6941\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"featured-title\"}]},{\"id\":\"7c6cca97\",\"elType\":\"e-flexbox\",\"title\":\"featured-aside\",\"elements\":[{\"id\":\"236e6b6b\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"featured-aside-copy\"},{\"id\":\"5163eb56\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"featured-all\"}]}]},{\"id\":\"1df8deb1\",\"elType\":\"e-flexbox\",\"title\":\"featured-grid\",\"elements\":[{\"id\":\"5b9e0e80\",\"elType\":\"e-flexbox\",\"title\":\"card-rib\",\"elements\":[{\"id\":\"5253a952\",\"elType\":\"widget\",\"widgetType\":\"e-image\",\"title\":\"card-rib-image\"},{\"id\":\"295ba4fa\",\"elType\":\"e-flexbox\",\"title\":\"card-rib-body\",\"elements\":[{\"id\":\"3c310222\",\"elType\":\"e-flexbox\",\"title\":\"card-rib-meta\",\"elements\":[{\"id\":\"325b9fde\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"card-rib-name\"},{\"id\":\"119ec90e\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"card-rib-price\"}]},{\"id\":\"2ca6ee91\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"card-rib-category\"},{\"id\":\"69de91fc\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"card-rib-description\"},{\"id\":\"587888be\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"card-rib-choose\"}]}]},{\"id\":\"a31ff8c\",\"elType\":\"e-flexbox\",\"title\":\"card-bue\",\"elements\":[{\"id\":\"7577e611\",\"elType\":\"widget\",\"widgetType\":\"e-image\",\"title\":\"card-bue-image\"},{\"id\":\"31fe402c\",\"elType\":\"e-flexbox\",\"title\":\"card-bue-body\",\"elements\":[{\"id\":\"1256eebe\",\"elType\":\"e-flexbox\",\"title\":\"card-bue-meta\",\"elements\":[{\"id\":\"c4c7050\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"card-bue-name\"},{\"id\":\"3342b36a\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"card-bue-price\"}]},{\"id\":\"4c148af0\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"card-bue-category\"},{\"id\":\"24bed8f7\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"card-bue-description\"},{\"id\":\"297aaa23\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"card-bue-choose\"}]}]},{\"id\":\"77e51ec7\",\"elType\":\"e-flexbox\",\"title\":\"card-ribdoor\",\"elements\":[{\"id\":\"71e5cedb\",\"elType\":\"widget\",\"widgetType\":\"e-image\",\"title\":\"card-ribdoor-image\"},{\"id\":\"10dc6cef\",\"elType\":\"e-flexbox\",\"title\":\"card-ribdoor-body\",\"elements\":[{\"id\":\"f9eba14\",\"elType\":\"e-flexbox\",\"title\":\"card-ribdoor-meta\",\"elements\":[{\"id\":\"792b5971\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"card-ribdoor-name\"},{\"id\":\"3cd148fc\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"card-ribdoor-price\"}]},{\"id\":\"2554cb31\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"card-ribdoor-category\"},{\"id\":\"58b47249\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"card-ribdoor-description\"},{\"id\":\"56fb40b8\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"card-ribdoor-choose\"}]}]}]},{\"id\":\"645639e5\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"featured-note\"}]}]},{\"id\":\"745b1d28\",\"elType\":\"e-flexbox\",\"title\":\"new-section\",\"elements\":[{\"id\":\"4eecb992\",\"elType\":\"e-flexbox\",\"title\":\"new-inner\",\"elements\":[{\"id\":\"6b5a70e3\",\"elType\":\"e-flexbox\",\"title\":\"new-head\",\"elements\":[{\"id\":\"3b3d492\",\"elType\":\"e-flexbox\",\"title\":\"new-title-group\",\"elements\":[{\"id\":\"b8408fc\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-eyebrow\"},{\"id\":\"50006633\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"new-title\"}]},{\"id\":\"1fe42c93\",\"elType\":\"e-flexbox\",\"title\":\"new-aside\",\"elements\":[{\"id\":\"5ec3202f\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-copy\"},{\"id\":\"37f59312\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-all\"}]}]},{\"id\":\"73f8d44e\",\"elType\":\"e-flexbox\",\"title\":\"new-grid\",\"elements\":[{\"id\":\"4e4c97eb\",\"elType\":\"e-flexbox\",\"title\":\"new-sno\",\"elements\":[{\"id\":\"4d4c95b7\",\"elType\":\"widget\",\"widgetType\":\"e-image\",\"title\":\"new-sno-image\"},{\"id\":\"46900178\",\"elType\":\"e-flexbox\",\"title\":\"new-sno-body\",\"elements\":[{\"id\":\"1fdb0f42\",\"elType\":\"e-flexbox\",\"title\":\"new-sno-meta\",\"elements\":[{\"id\":\"72fad2b3\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"new-sno-name\"},{\"id\":\"29b76f71\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-sno-price\"}]},{\"id\":\"7c8c012c\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-sno-category\"},{\"id\":\"6a40c2bf\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-sno-desc\"},{\"id\":\"5e41f865\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-sno-choose\"}]}]},{\"id\":\"7415fb68\",\"elType\":\"e-flexbox\",\"title\":\"new-krible\",\"elements\":[{\"id\":\"60fc20c3\",\"elType\":\"widget\",\"widgetType\":\"e-image\",\"title\":\"new-krible-image\"},{\"id\":\"3ab69634\",\"elType\":\"e-flexbox\",\"title\":\"new-krible-body\",\"elements\":[{\"id\":\"fc8393d\",\"elType\":\"e-flexbox\",\"title\":\"new-krible-meta\",\"elements\":[{\"id\":\"1bc9b4c4\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"new-krible-name\"},{\"id\":\"54923d74\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-krible-price\"}]},{\"id\":\"9e6d66e\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-krible-category\"},{\"id\":\"2a9e5a9b\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-krible-desc\"},{\"id\":\"34484628\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-krible-choose\"}]}]},{\"id\":\"10b7a3c9\",\"elType\":\"e-flexbox\",\"title\":\"new-juletryk\",\"elements\":[{\"id\":\"7c70554e\",\"elType\":\"widget\",\"widgetType\":\"e-image\",\"title\":\"new-juletryk-image\"},{\"id\":\"40ef1652\",\"elType\":\"e-flexbox\",\"title\":\"new-juletryk-body\",\"elements\":[{\"id\":\"2169f4e1\",\"elType\":\"e-flexbox\",\"title\":\"new-juletryk-meta\",\"elements\":[{\"id\":\"378b4ad1\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"new-juletryk-name\"},{\"id\":\"5bb42a69\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-juletryk-price\"}]},{\"id\":\"3eff1233\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-juletryk-category\"},{\"id\":\"4f25efe5\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-juletryk-desc\"},{\"id\":\"62066761\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-juletryk-choose\"}]}]},{\"id\":\"2ac3035f\",\"elType\":\"e-flexbox\",\"title\":\"new-hjerte\",\"elements\":[{\"id\":\"3868825b\",\"elType\":\"widget\",\"widgetType\":\"e-image\",\"title\":\"new-hjerte-image\"},{\"id\":\"119c9fff\",\"elType\":\"e-flexbox\",\"title\":\"new-hjerte-body\",\"elements\":[{\"id\":\"44e748ff\",\"elType\":\"e-flexbox\",\"title\":\"new-hjerte-meta\",\"elements\":[{\"id\":\"1e7216dd\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"new-hjerte-name\"},{\"id\":\"142b217a\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-hjerte-price\"}]},{\"id\":\"414a92e7\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-hjerte-category\"},{\"id\":\"30386a21\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-hjerte-desc\"},{\"id\":\"12791127\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-hjerte-choose\"}]}]},{\"id\":\"5fc83fba\",\"elType\":\"e-flexbox\",\"title\":\"new-fold\",\"elements\":[{\"id\":\"57b3670f\",\"elType\":\"widget\",\"widgetType\":\"e-image\",\"title\":\"new-fold-image\"},{\"id\":\"7a59ab26\",\"elType\":\"e-flexbox\",\"title\":\"new-fold-body\",\"elements\":[{\"id\":\"34b5753e\",\"elType\":\"e-flexbox\",\"title\":\"new-fold-meta\",\"elements\":[{\"id\":\"52e9f073\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"new-fold-name\"},{\"id\":\"615dc1fa\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-fold-price\"}]},{\"id\":\"3587fd58\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-fold-category\"},{\"id\":\"7707bec\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-fold-desc\"},{\"id\":\"7397734f\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-fold-choose\"}]}]}]},{\"id\":\"5fa7d098\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"new-note\"}]}]},{\"id\":\"261681fe\",\"elType\":\"e-flexbox\",\"title\":\"philosophy\",\"elements\":[{\"id\":\"71a2b0bc\",\"elType\":\"e-flexbox\",\"title\":\"philosophy-inner\",\"elements\":[{\"id\":\"32b034b9\",\"elType\":\"e-flexbox\",\"title\":\"philosophy-title-group\",\"elements\":[{\"id\":\"1d4f2967\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"philosophy-eyebrow\"},{\"id\":\"23090413\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"philosophy-title\"}]},{\"id\":\"2a723478\",\"elType\":\"e-flexbox\",\"title\":\"philosophy-copy\",\"elements\":[{\"id\":\"55baa7bb\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"philosophy-statement\"},{\"id\":\"519e30be\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"philosophy-text-1\"},{\"id\":\"66fcb9c4\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"philosophy-text-2\"},{\"id\":\"5f3bbf86\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"philosophy-about\"}]}]}]},{\"id\":\"746a2f3e\",\"elType\":\"e-flexbox\",\"title\":\"editorial\",\"elements\":[{\"id\":\"383bfd9f\",\"elType\":\"e-flexbox\",\"title\":\"editorial-image-wrap\",\"elements\":[{\"id\":\"31b2b891\",\"elType\":\"widget\",\"widgetType\":\"e-image\",\"title\":\"editorial-image\"}]},{\"id\":\"58a187dd\",\"elType\":\"e-flexbox\",\"title\":\"editorial-copy\",\"elements\":[{\"id\":\"38a62f11\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"editorial-eyebrow\"},{\"id\":\"535e9abc\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"editorial-title\"},{\"id\":\"9641110\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"editorial-text\"},{\"id\":\"39f54ddb\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"editorial-link\"},{\"id\":\"39c4bb69\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"editorial-note\"}]}]},{\"id\":\"d802fbe\",\"elType\":\"e-flexbox\",\"title\":\"process-section\",\"elements\":[{\"id\":\"fc2e486\",\"elType\":\"e-flexbox\",\"title\":\"process-inner\",\"elements\":[{\"id\":\"4ca7bbe1\",\"elType\":\"e-flexbox\",\"title\":\"process-head\",\"elements\":[{\"id\":\"64b415ce\",\"elType\":\"e-flexbox\",\"title\":\"process-title-group\",\"elements\":[{\"id\":\"3eb77a74\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"process-eyebrow\"},{\"id\":\"d808ed0\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"process-title\"}]},{\"id\":\"7d7a2749\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"process-lede\"}]},{\"id\":\"a7f62e4\",\"elType\":\"e-flexbox\",\"title\":\"process-grid\",\"elements\":[{\"id\":\"7938db8d\",\"elType\":\"e-flexbox\",\"title\":\"process-design\",\"elements\":[{\"id\":\"41aa803a\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"process-no-design\"},{\"id\":\"7d698bc5\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"process-title-design\"},{\"id\":\"7cda9af9\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"process-desc-design\"}]},{\"id\":\"b1886cc\",\"elType\":\"e-flexbox\",\"title\":\"process-print\",\"elements\":[{\"id\":\"58078ab4\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"process-no-print\"},{\"id\":\"6bdaad7\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"process-title-print\"},{\"id\":\"25dbedd4\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"process-desc-print\"}]},{\"id\":\"373f9c9c\",\"elType\":\"e-flexbox\",\"title\":\"process-detail\",\"elements\":[{\"id\":\"975c5f8\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"process-no-detail\"},{\"id\":\"5d099b58\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"process-title-detail\"},{\"id\":\"29275cf9\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"process-desc-detail\"}]}]}]}]},{\"id\":\"7ca8104a\",\"elType\":\"e-flexbox\",\"title\":\"custom-section\",\"elements\":[{\"id\":\"727363cb\",\"elType\":\"e-flexbox\",\"title\":\"custom-inner\",\"elements\":[{\"id\":\"2b66a3ce\",\"elType\":\"e-flexbox\",\"title\":\"custom-title-group\",\"elements\":[{\"id\":\"dad4e6d\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"custom-eyebrow\"},{\"id\":\"7be91cd4\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"custom-title\"}]},{\"id\":\"55459d40\",\"elType\":\"e-flexbox\",\"title\":\"custom-copy\",\"elements\":[{\"id\":\"702b0e67\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"custom-text\"},{\"id\":\"67d0bd3\",\"elType\":\"widget\",\"widgetType\":\"e-button\",\"title\":\"custom-button\"}]}]}]},{\"id\":\"e809281\",\"elType\":\"e-flexbox\",\"title\":\"service\",\"elements\":[{\"id\":\"701f17c7\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"service-title\"},{\"id\":\"6e4cae47\",\"elType\":\"e-flexbox\",\"title\":\"service-copy\",\"elements\":[{\"id\":\"248379ce\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"service-text\"},{\"id\":\"b995f3a\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"service-contact\"}]}]},{\"id\":\"4c7cad18\",\"elType\":\"e-flexbox\",\"title\":\"site-footer\",\"elements\":[{\"id\":\"266dd4d3\",\"elType\":\"e-flexbox\",\"title\":\"footer-inner\",\"elements\":[{\"id\":\"15db5ec0\",\"elType\":\"e-flexbox\",\"title\":\"footer-top\",\"elements\":[{\"id\":\"48727353\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-eyebrow\"},{\"id\":\"3108198d\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-top-link\"}]},{\"id\":\"55fc603a\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"footer-wordmark\"},{\"id\":\"45986dd9\",\"elType\":\"e-flexbox\",\"title\":\"footer-grid\",\"elements\":[{\"id\":\"38661ffd\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-about\"},{\"id\":\"4105d061\",\"elType\":\"e-flexbox\",\"title\":\"footer-discover\",\"elements\":[{\"id\":\"5617ed02\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"footer-discover-heading\"},{\"id\":\"4a0a7e04\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-shop\"},{\"id\":\"572ada42\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-about-link\"},{\"id\":\"968237d\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-custom\"}]},{\"id\":\"2f6bcda5\",\"elType\":\"e-flexbox\",\"title\":\"footer-help\",\"elements\":[{\"id\":\"377615d5\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"footer-help-heading\"},{\"id\":\"2ba6da1c\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-faq\"},{\"id\":\"2446df17\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-orders\"},{\"id\":\"48e4079\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-shipping\"},{\"id\":\"76128c5\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-contact\"}]},{\"id\":\"3dff7a67\",\"elType\":\"e-flexbox\",\"title\":\"footer-direct\",\"elements\":[{\"id\":\"4c0fc144\",\"elType\":\"widget\",\"widgetType\":\"e-heading\",\"title\":\"footer-direct-heading\"},{\"id\":\"4f8ad31f\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-telegram\"},{\"id\":\"11bcd402\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-handle\"}]}]},{\"id\":\"17fdc232\",\"elType\":\"e-flexbox\",\"title\":\"footer-bottom\",\"elements\":[{\"id\":\"71e309f3\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-copyright\"},{\"id\":\"4c6dfaf\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-cvr\"},{\"id\":\"6a258f36\",\"elType\":\"widget\",\"widgetType\":\"e-paragraph\",\"title\":\"footer-tagline\"}]}]}]}]}]}]}"
+    }
+  ],
+  "structuredContent": {
+    "elements": [
+      {
+        "id": "3e9dc092",
+        "elType": "e-flexbox",
+        "title": "page-root",
+        "elements": [
+          {
+            "id": "4982028f",
+            "elType": "e-flexbox",
+            "title": "site-header",
+            "elements": [
+              {
+                "id": "68c541ef",
+                "elType": "e-flexbox",
+                "title": "header-inner",
+                "elements": [
+                  {
+                    "id": "2dd23f16",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "brand"
+                  },
+                  {
+                    "id": "7c20f94b",
+                    "elType": "e-flexbox",
+                    "title": "desktop-nav",
+                    "elements": [
+                      {
+                        "id": "30203e42",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "nav-1"
+                      },
+                      {
+                        "id": "5c2c512f",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "nav-2"
+                      },
+                      {
+                        "id": "160cd0fc",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "nav-3"
+                      },
+                      {
+                        "id": "5693f86f",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "nav-4"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "5292f2aa",
+                    "elType": "widget",
+                    "widgetType": "e-paragraph",
+                    "title": "cart-link"
+                  },
+                  {
+                    "id": "4b248637",
+                    "elType": "e-accordion",
+                    "title": "mobile-menu",
+                    "elements": [
+                      {
+                        "id": "65316f94",
+                        "elType": "e-accordion-item",
+                        "title": "mobile-menu-item",
+                        "elements": [
+                          {
+                            "id": "4f57b70a",
+                            "elType": "e-accordion-item-header",
+                            "title": "mobile-menu-header",
+                            "elements": [
+                              {
+                                "id": "15a7b33a",
+                                "elType": "e-accordion-item-title",
+                                "title": "mobile-menu-title",
+                                "elements": [
+                                  {
+                                    "id": "732fa8f7",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-menu-trigger"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "614c76ce",
+                            "elType": "e-accordion-item-content",
+                            "title": "mobile-menu-panel",
+                            "elements": [
+                              {
+                                "id": "6062244d",
+                                "elType": "e-flexbox",
+                                "title": "mobile-nav",
+                                "elements": [
+                                  {
+                                    "id": "296f8692",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-nav-1"
+                                  },
+                                  {
+                                    "id": "44699a41",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-nav-2"
+                                  },
+                                  {
+                                    "id": "2fa27556",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-nav-3"
+                                  },
+                                  {
+                                    "id": "358b62c2",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-nav-4"
+                                  },
+                                  {
+                                    "id": "184c02b0",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "mobile-nav-5"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "6ff32010",
+            "elType": "e-flexbox",
+            "title": "main-content",
+            "elements": [
+              {
+                "id": "40f166d4",
+                "elType": "e-flexbox",
+                "title": "hero-section",
+                "elements": [
+                  {
+                    "id": "5b3e2c23",
+                    "elType": "e-flexbox",
+                    "title": "hero-copy",
+                    "elements": [
+                      {
+                        "id": "48fc03d5",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "hero-eyebrow"
+                      },
+                      {
+                        "id": "15f7bc84",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "hero-title"
+                      },
+                      {
+                        "id": "1433aa2c",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "hero-lede"
+                      },
+                      {
+                        "id": "6cc894ff",
+                        "elType": "widget",
+                        "widgetType": "e-button",
+                        "title": "hero-button"
+                      },
+                      {
+                        "id": "119b0c78",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "hero-about"
+                      },
+                      {
+                        "id": "5357bbb4",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "hero-index"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "5b31d24f",
+                    "elType": "e-flexbox",
+                    "title": "hero-visual",
+                    "elements": [
+                      {
+                        "id": "17d800b9",
+                        "elType": "widget",
+                        "widgetType": "e-image",
+                        "title": "hero-image"
+                      },
+                      {
+                        "id": "6de4f132",
+                        "elType": "e-flexbox",
+                        "title": "hero-caption",
+                        "elements": [
+                          {
+                            "id": "4adfc82c",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "caption-name"
+                          },
+                          {
+                            "id": "3e43f626",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "caption-link"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "30b58a18",
+                "elType": "e-flexbox",
+                "title": "intro-line",
+                "elements": [
+                  {
+                    "id": "68fa1833",
+                    "elType": "widget",
+                    "widgetType": "e-paragraph",
+                    "title": "intro-copy"
+                  },
+                  {
+                    "id": "176a08bb",
+                    "elType": "widget",
+                    "widgetType": "e-paragraph",
+                    "title": "intro-scroll"
+                  }
+                ]
+              },
+              {
+                "id": "32c3457",
+                "elType": "e-flexbox",
+                "title": "selected-section",
+                "elements": [
+                  {
+                    "id": "6e25b093",
+                    "elType": "e-flexbox",
+                    "title": "selected-inner",
+                    "elements": [
+                      {
+                        "id": "581ca3ef",
+                        "elType": "e-flexbox",
+                        "title": "featured-head",
+                        "elements": [
+                          {
+                            "id": "1eb4a50a",
+                            "elType": "e-flexbox",
+                            "title": "featured-title-group",
+                            "elements": [
+                              {
+                                "id": "7bd2384d",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "featured-eyebrow"
+                              },
+                              {
+                                "id": "11bd6941",
+                                "elType": "widget",
+                                "widgetType": "e-heading",
+                                "title": "featured-title"
+                              }
+                            ]
+                          },
+                          {
+                            "id": "7c6cca97",
+                            "elType": "e-flexbox",
+                            "title": "featured-aside",
+                            "elements": [
+                              {
+                                "id": "236e6b6b",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "featured-aside-copy"
+                              },
+                              {
+                                "id": "5163eb56",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "featured-all"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1df8deb1",
+                        "elType": "e-flexbox",
+                        "title": "featured-grid",
+                        "elements": [
+                          {
+                            "id": "5b9e0e80",
+                            "elType": "e-flexbox",
+                            "title": "card-rib",
+                            "elements": [
+                              {
+                                "id": "5253a952",
+                                "elType": "widget",
+                                "widgetType": "e-image",
+                                "title": "card-rib-image"
+                              },
+                              {
+                                "id": "295ba4fa",
+                                "elType": "e-flexbox",
+                                "title": "card-rib-body",
+                                "elements": [
+                                  {
+                                    "id": "3c310222",
+                                    "elType": "e-flexbox",
+                                    "title": "card-rib-meta",
+                                    "elements": [
+                                      {
+                                        "id": "325b9fde",
+                                        "elType": "widget",
+                                        "widgetType": "e-heading",
+                                        "title": "card-rib-name"
+                                      },
+                                      {
+                                        "id": "119ec90e",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "card-rib-price"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "2ca6ee91",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "card-rib-category"
+                                  },
+                                  {
+                                    "id": "69de91fc",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "card-rib-description"
+                                  },
+                                  {
+                                    "id": "587888be",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "card-rib-choose"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "a31ff8c",
+                            "elType": "e-flexbox",
+                            "title": "card-bue",
+                            "elements": [
+                              {
+                                "id": "7577e611",
+                                "elType": "widget",
+                                "widgetType": "e-image",
+                                "title": "card-bue-image"
+                              },
+                              {
+                                "id": "31fe402c",
+                                "elType": "e-flexbox",
+                                "title": "card-bue-body",
+                                "elements": [
+                                  {
+                                    "id": "1256eebe",
+                                    "elType": "e-flexbox",
+                                    "title": "card-bue-meta",
+                                    "elements": [
+                                      {
+                                        "id": "c4c7050",
+                                        "elType": "widget",
+                                        "widgetType": "e-heading",
+                                        "title": "card-bue-name"
+                                      },
+                                      {
+                                        "id": "3342b36a",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "card-bue-price"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "4c148af0",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "card-bue-category"
+                                  },
+                                  {
+                                    "id": "24bed8f7",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "card-bue-description"
+                                  },
+                                  {
+                                    "id": "297aaa23",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "card-bue-choose"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "77e51ec7",
+                            "elType": "e-flexbox",
+                            "title": "card-ribdoor",
+                            "elements": [
+                              {
+                                "id": "71e5cedb",
+                                "elType": "widget",
+                                "widgetType": "e-image",
+                                "title": "card-ribdoor-image"
+                              },
+                              {
+                                "id": "10dc6cef",
+                                "elType": "e-flexbox",
+                                "title": "card-ribdoor-body",
+                                "elements": [
+                                  {
+                                    "id": "f9eba14",
+                                    "elType": "e-flexbox",
+                                    "title": "card-ribdoor-meta",
+                                    "elements": [
+                                      {
+                                        "id": "792b5971",
+                                        "elType": "widget",
+                                        "widgetType": "e-heading",
+                                        "title": "card-ribdoor-name"
+                                      },
+                                      {
+                                        "id": "3cd148fc",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "card-ribdoor-price"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "2554cb31",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "card-ribdoor-category"
+                                  },
+                                  {
+                                    "id": "58b47249",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "card-ribdoor-description"
+                                  },
+                                  {
+                                    "id": "56fb40b8",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "card-ribdoor-choose"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "645639e5",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "featured-note"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "745b1d28",
+                "elType": "e-flexbox",
+                "title": "new-section",
+                "elements": [
+                  {
+                    "id": "4eecb992",
+                    "elType": "e-flexbox",
+                    "title": "new-inner",
+                    "elements": [
+                      {
+                        "id": "6b5a70e3",
+                        "elType": "e-flexbox",
+                        "title": "new-head",
+                        "elements": [
+                          {
+                            "id": "3b3d492",
+                            "elType": "e-flexbox",
+                            "title": "new-title-group",
+                            "elements": [
+                              {
+                                "id": "b8408fc",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "new-eyebrow"
+                              },
+                              {
+                                "id": "50006633",
+                                "elType": "widget",
+                                "widgetType": "e-heading",
+                                "title": "new-title"
+                              }
+                            ]
+                          },
+                          {
+                            "id": "1fe42c93",
+                            "elType": "e-flexbox",
+                            "title": "new-aside",
+                            "elements": [
+                              {
+                                "id": "5ec3202f",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "new-copy"
+                              },
+                              {
+                                "id": "37f59312",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "new-all"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "73f8d44e",
+                        "elType": "e-flexbox",
+                        "title": "new-grid",
+                        "elements": [
+                          {
+                            "id": "4e4c97eb",
+                            "elType": "e-flexbox",
+                            "title": "new-sno",
+                            "elements": [
+                              {
+                                "id": "4d4c95b7",
+                                "elType": "widget",
+                                "widgetType": "e-image",
+                                "title": "new-sno-image"
+                              },
+                              {
+                                "id": "46900178",
+                                "elType": "e-flexbox",
+                                "title": "new-sno-body",
+                                "elements": [
+                                  {
+                                    "id": "1fdb0f42",
+                                    "elType": "e-flexbox",
+                                    "title": "new-sno-meta",
+                                    "elements": [
+                                      {
+                                        "id": "72fad2b3",
+                                        "elType": "widget",
+                                        "widgetType": "e-heading",
+                                        "title": "new-sno-name"
+                                      },
+                                      {
+                                        "id": "29b76f71",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "new-sno-price"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "7c8c012c",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "new-sno-category"
+                                  },
+                                  {
+                                    "id": "6a40c2bf",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "new-sno-desc"
+                                  },
+                                  {
+                                    "id": "5e41f865",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "new-sno-choose"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "7415fb68",
+                            "elType": "e-flexbox",
+                            "title": "new-krible",
+                            "elements": [
+                              {
+                                "id": "60fc20c3",
+                                "elType": "widget",
+                                "widgetType": "e-image",
+                                "title": "new-krible-image"
+                              },
+                              {
+                                "id": "3ab69634",
+                                "elType": "e-flexbox",
+                                "title": "new-krible-body",
+                                "elements": [
+                                  {
+                                    "id": "fc8393d",
+                                    "elType": "e-flexbox",
+                                    "title": "new-krible-meta",
+                                    "elements": [
+                                      {
+                                        "id": "1bc9b4c4",
+                                        "elType": "widget",
+                                        "widgetType": "e-heading",
+                                        "title": "new-krible-name"
+                                      },
+                                      {
+                                        "id": "54923d74",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "new-krible-price"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "9e6d66e",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "new-krible-category"
+                                  },
+                                  {
+                                    "id": "2a9e5a9b",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "new-krible-desc"
+                                  },
+                                  {
+                                    "id": "34484628",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "new-krible-choose"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "10b7a3c9",
+                            "elType": "e-flexbox",
+                            "title": "new-juletryk",
+                            "elements": [
+                              {
+                                "id": "7c70554e",
+                                "elType": "widget",
+                                "widgetType": "e-image",
+                                "title": "new-juletryk-image"
+                              },
+                              {
+                                "id": "40ef1652",
+                                "elType": "e-flexbox",
+                                "title": "new-juletryk-body",
+                                "elements": [
+                                  {
+                                    "id": "2169f4e1",
+                                    "elType": "e-flexbox",
+                                    "title": "new-juletryk-meta",
+                                    "elements": [
+                                      {
+                                        "id": "378b4ad1",
+                                        "elType": "widget",
+                                        "widgetType": "e-heading",
+                                        "title": "new-juletryk-name"
+                                      },
+                                      {
+                                        "id": "5bb42a69",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "new-juletryk-price"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "3eff1233",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "new-juletryk-category"
+                                  },
+                                  {
+                                    "id": "4f25efe5",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "new-juletryk-desc"
+                                  },
+                                  {
+                                    "id": "62066761",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "new-juletryk-choose"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "2ac3035f",
+                            "elType": "e-flexbox",
+                            "title": "new-hjerte",
+                            "elements": [
+                              {
+                                "id": "3868825b",
+                                "elType": "widget",
+                                "widgetType": "e-image",
+                                "title": "new-hjerte-image"
+                              },
+                              {
+                                "id": "119c9fff",
+                                "elType": "e-flexbox",
+                                "title": "new-hjerte-body",
+                                "elements": [
+                                  {
+                                    "id": "44e748ff",
+                                    "elType": "e-flexbox",
+                                    "title": "new-hjerte-meta",
+                                    "elements": [
+                                      {
+                                        "id": "1e7216dd",
+                                        "elType": "widget",
+                                        "widgetType": "e-heading",
+                                        "title": "new-hjerte-name"
+                                      },
+                                      {
+                                        "id": "142b217a",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "new-hjerte-price"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "414a92e7",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "new-hjerte-category"
+                                  },
+                                  {
+                                    "id": "30386a21",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "new-hjerte-desc"
+                                  },
+                                  {
+                                    "id": "12791127",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "new-hjerte-choose"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": "5fc83fba",
+                            "elType": "e-flexbox",
+                            "title": "new-fold",
+                            "elements": [
+                              {
+                                "id": "57b3670f",
+                                "elType": "widget",
+                                "widgetType": "e-image",
+                                "title": "new-fold-image"
+                              },
+                              {
+                                "id": "7a59ab26",
+                                "elType": "e-flexbox",
+                                "title": "new-fold-body",
+                                "elements": [
+                                  {
+                                    "id": "34b5753e",
+                                    "elType": "e-flexbox",
+                                    "title": "new-fold-meta",
+                                    "elements": [
+                                      {
+                                        "id": "52e9f073",
+                                        "elType": "widget",
+                                        "widgetType": "e-heading",
+                                        "title": "new-fold-name"
+                                      },
+                                      {
+                                        "id": "615dc1fa",
+                                        "elType": "widget",
+                                        "widgetType": "e-paragraph",
+                                        "title": "new-fold-price"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "id": "3587fd58",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "new-fold-category"
+                                  },
+                                  {
+                                    "id": "7707bec",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "new-fold-desc"
+                                  },
+                                  {
+                                    "id": "7397734f",
+                                    "elType": "widget",
+                                    "widgetType": "e-paragraph",
+                                    "title": "new-fold-choose"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "5fa7d098",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "new-note"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "261681fe",
+                "elType": "e-flexbox",
+                "title": "philosophy",
+                "elements": [
+                  {
+                    "id": "71a2b0bc",
+                    "elType": "e-flexbox",
+                    "title": "philosophy-inner",
+                    "elements": [
+                      {
+                        "id": "32b034b9",
+                        "elType": "e-flexbox",
+                        "title": "philosophy-title-group",
+                        "elements": [
+                          {
+                            "id": "1d4f2967",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "philosophy-eyebrow"
+                          },
+                          {
+                            "id": "23090413",
+                            "elType": "widget",
+                            "widgetType": "e-heading",
+                            "title": "philosophy-title"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "2a723478",
+                        "elType": "e-flexbox",
+                        "title": "philosophy-copy",
+                        "elements": [
+                          {
+                            "id": "55baa7bb",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "philosophy-statement"
+                          },
+                          {
+                            "id": "519e30be",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "philosophy-text-1"
+                          },
+                          {
+                            "id": "66fcb9c4",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "philosophy-text-2"
+                          },
+                          {
+                            "id": "5f3bbf86",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "philosophy-about"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "746a2f3e",
+                "elType": "e-flexbox",
+                "title": "editorial",
+                "elements": [
+                  {
+                    "id": "383bfd9f",
+                    "elType": "e-flexbox",
+                    "title": "editorial-image-wrap",
+                    "elements": [
+                      {
+                        "id": "31b2b891",
+                        "elType": "widget",
+                        "widgetType": "e-image",
+                        "title": "editorial-image"
+                      }
+                    ]
+                  },
+                  {
+                    "id": "58a187dd",
+                    "elType": "e-flexbox",
+                    "title": "editorial-copy",
+                    "elements": [
+                      {
+                        "id": "38a62f11",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "editorial-eyebrow"
+                      },
+                      {
+                        "id": "535e9abc",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "editorial-title"
+                      },
+                      {
+                        "id": "9641110",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "editorial-text"
+                      },
+                      {
+                        "id": "39f54ddb",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "editorial-link"
+                      },
+                      {
+                        "id": "39c4bb69",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "editorial-note"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "d802fbe",
+                "elType": "e-flexbox",
+                "title": "process-section",
+                "elements": [
+                  {
+                    "id": "fc2e486",
+                    "elType": "e-flexbox",
+                    "title": "process-inner",
+                    "elements": [
+                      {
+                        "id": "4ca7bbe1",
+                        "elType": "e-flexbox",
+                        "title": "process-head",
+                        "elements": [
+                          {
+                            "id": "64b415ce",
+                            "elType": "e-flexbox",
+                            "title": "process-title-group",
+                            "elements": [
+                              {
+                                "id": "3eb77a74",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "process-eyebrow"
+                              },
+                              {
+                                "id": "d808ed0",
+                                "elType": "widget",
+                                "widgetType": "e-heading",
+                                "title": "process-title"
+                              }
+                            ]
+                          },
+                          {
+                            "id": "7d7a2749",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "process-lede"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "a7f62e4",
+                        "elType": "e-flexbox",
+                        "title": "process-grid",
+                        "elements": [
+                          {
+                            "id": "7938db8d",
+                            "elType": "e-flexbox",
+                            "title": "process-design",
+                            "elements": [
+                              {
+                                "id": "41aa803a",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "process-no-design"
+                              },
+                              {
+                                "id": "7d698bc5",
+                                "elType": "widget",
+                                "widgetType": "e-heading",
+                                "title": "process-title-design"
+                              },
+                              {
+                                "id": "7cda9af9",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "process-desc-design"
+                              }
+                            ]
+                          },
+                          {
+                            "id": "b1886cc",
+                            "elType": "e-flexbox",
+                            "title": "process-print",
+                            "elements": [
+                              {
+                                "id": "58078ab4",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "process-no-print"
+                              },
+                              {
+                                "id": "6bdaad7",
+                                "elType": "widget",
+                                "widgetType": "e-heading",
+                                "title": "process-title-print"
+                              },
+                              {
+                                "id": "25dbedd4",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "process-desc-print"
+                              }
+                            ]
+                          },
+                          {
+                            "id": "373f9c9c",
+                            "elType": "e-flexbox",
+                            "title": "process-detail",
+                            "elements": [
+                              {
+                                "id": "975c5f8",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "process-no-detail"
+                              },
+                              {
+                                "id": "5d099b58",
+                                "elType": "widget",
+                                "widgetType": "e-heading",
+                                "title": "process-title-detail"
+                              },
+                              {
+                                "id": "29275cf9",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "process-desc-detail"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "7ca8104a",
+                "elType": "e-flexbox",
+                "title": "custom-section",
+                "elements": [
+                  {
+                    "id": "727363cb",
+                    "elType": "e-flexbox",
+                    "title": "custom-inner",
+                    "elements": [
+                      {
+                        "id": "2b66a3ce",
+                        "elType": "e-flexbox",
+                        "title": "custom-title-group",
+                        "elements": [
+                          {
+                            "id": "dad4e6d",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "custom-eyebrow"
+                          },
+                          {
+                            "id": "7be91cd4",
+                            "elType": "widget",
+                            "widgetType": "e-heading",
+                            "title": "custom-title"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "55459d40",
+                        "elType": "e-flexbox",
+                        "title": "custom-copy",
+                        "elements": [
+                          {
+                            "id": "702b0e67",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "custom-text"
+                          },
+                          {
+                            "id": "67d0bd3",
+                            "elType": "widget",
+                            "widgetType": "e-button",
+                            "title": "custom-button"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "e809281",
+                "elType": "e-flexbox",
+                "title": "service",
+                "elements": [
+                  {
+                    "id": "701f17c7",
+                    "elType": "widget",
+                    "widgetType": "e-heading",
+                    "title": "service-title"
+                  },
+                  {
+                    "id": "6e4cae47",
+                    "elType": "e-flexbox",
+                    "title": "service-copy",
+                    "elements": [
+                      {
+                        "id": "248379ce",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "service-text"
+                      },
+                      {
+                        "id": "b995f3a",
+                        "elType": "widget",
+                        "widgetType": "e-paragraph",
+                        "title": "service-contact"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "4c7cad18",
+                "elType": "e-flexbox",
+                "title": "site-footer",
+                "elements": [
+                  {
+                    "id": "266dd4d3",
+                    "elType": "e-flexbox",
+                    "title": "footer-inner",
+                    "elements": [
+                      {
+                        "id": "15db5ec0",
+                        "elType": "e-flexbox",
+                        "title": "footer-top",
+                        "elements": [
+                          {
+                            "id": "48727353",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-eyebrow"
+                          },
+                          {
+                            "id": "3108198d",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-top-link"
+                          }
+                        ]
+                      },
+                      {
+                        "id": "55fc603a",
+                        "elType": "widget",
+                        "widgetType": "e-heading",
+                        "title": "footer-wordmark"
+                      },
+                      {
+                        "id": "45986dd9",
+                        "elType": "e-flexbox",
+                        "title": "footer-grid",
+                        "elements": [
+                          {
+                            "id": "38661ffd",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-about"
+                          },
+                          {
+                            "id": "4105d061",
+                            "elType": "e-flexbox",
+                            "title": "footer-discover",
+                            "elements": [
+                              {
+                                "id": "5617ed02",
+                                "elType": "widget",
+                                "widgetType": "e-heading",
+                                "title": "footer-discover-heading"
+                              },
+                              {
+                                "id": "4a0a7e04",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "footer-shop"
+                              },
+                              {
+                                "id": "572ada42",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "footer-about-link"
+                              },
+                              {
+                                "id": "968237d",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "footer-custom"
+                              }
+                            ]
+                          },
+                          {
+                            "id": "2f6bcda5",
+                            "elType": "e-flexbox",
+                            "title": "footer-help",
+                            "elements": [
+                              {
+                                "id": "377615d5",
+                                "elType": "widget",
+                                "widgetType": "e-heading",
+                                "title": "footer-help-heading"
+                              },
+                              {
+                                "id": "2ba6da1c",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "footer-faq"
+                              },
+                              {
+                                "id": "2446df17",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "footer-orders"
+                              },
+                              {
+                                "id": "48e4079",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "footer-shipping"
+                              },
+                              {
+                                "id": "76128c5",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "footer-contact"
+                              }
+                            ]
+                          },
+                          {
+                            "id": "3dff7a67",
+                            "elType": "e-flexbox",
+                            "title": "footer-direct",
+                            "elements": [
+                              {
+                                "id": "4c0fc144",
+                                "elType": "widget",
+                                "widgetType": "e-heading",
+                                "title": "footer-direct-heading"
+                              },
+                              {
+                                "id": "4f8ad31f",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "footer-telegram"
+                              },
+                              {
+                                "id": "11bcd402",
+                                "elType": "widget",
+                                "widgetType": "e-paragraph",
+                                "title": "footer-handle"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "17fdc232",
+                        "elType": "e-flexbox",
+                        "title": "footer-bottom",
+                        "elements": [
+                          {
+                            "id": "71e309f3",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-copyright"
+                          },
+                          {
+                            "id": "4c6dfaf",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-cvr"
+                          },
+                          {
+                            "id": "6a258f36",
+                            "elType": "widget",
+                            "widgetType": "e-paragraph",
+                            "title": "footer-tagline"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "isError": false
+}
